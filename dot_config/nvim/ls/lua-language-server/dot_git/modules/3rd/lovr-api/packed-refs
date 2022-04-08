@@ -1,0 +1,20 @@
+# pack-refs with: peeled fully-peeled sorted 
+21db73a6247a0377e55dc01ed73960d6bc5b8948 refs/remotes/origin/gpu
+92d3742eb6c3f4999a0c575984c82a75652e2b74 refs/remotes/origin/master
+2daf0a984eedbc90ace54f88adacb199cebd9edc refs/remotes/origin/v0.1.0
+3fa46c866d281a04ef2b01aa24f4a65c25f6fa3c refs/remotes/origin/v0.10.0
+af9e15701cf38df1125775652f34f7eb47837549 refs/remotes/origin/v0.11.0
+71892bd40b31e9ec4557443c5b1f22f5fcb65289 refs/remotes/origin/v0.12.0
+25026c5a533917a771e3dbeaf05a0094d9068379 refs/remotes/origin/v0.13.0
+a1c4e079330ba4a44b71e3a5410e9eb800d51344 refs/remotes/origin/v0.14.0
+62ba70d92b4797c60085ff2d360452c26ba67c4a refs/remotes/origin/v0.15.0
+87faa068fffa38097f200f5a6c73de614d063904 refs/remotes/origin/v0.2.0
+f4e8a809e25ec4a1caf6c30062dc3ce449c3419e refs/remotes/origin/v0.3.0
+c5d24bb85857ab21db7a1daaba84e3adb9635481 refs/remotes/origin/v0.4.0
+3dbd58c2c5a23806b37129164f0dcf9c59de07da refs/remotes/origin/v0.5.0
+92b886208a98bd7091433f0c9d13ada1ae904fa2 refs/remotes/origin/v0.6.0
+7f206972fa7798ab68c80dd38afa4ade6b0b834c refs/remotes/origin/v0.7.0
+7ec813c1748048daf1dcdfc14311c6f6493280cf refs/remotes/origin/v0.7.1
+65b9e9b76434ad75f3343e5a71829bd0c127f3b3 refs/remotes/origin/v0.8.0
+c77e99287b0d60871a5521bbd13cc9223fdad365 refs/remotes/origin/v0.9.0
+64f99b6352202c391e0582f52367d5321628ebcc refs/remotes/origin/v0.9.1

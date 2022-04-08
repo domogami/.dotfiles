@@ -1,0 +1,39 @@
+name: build
+on: push
+jobs:
+  compile:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-latest, ubuntu-18.04, macos-latest]
+    steps:
+    - uses: actions/checkout@v1
+      with:
+        ref: refs/heads/master
+        submodules : recursive
+    - uses: actboy168/setup-luamake@master
+    - run: luamake
+    - uses: actions/upload-artifact@v2
+      with:
+        name: lua-language-server
+        path: |
+          bin
+          !bin/**/*.lib
+          !bin/**/*.exp
+  resource:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+      with:
+        ref: refs/heads/master
+        submodules : recursive
+    - uses: actions/upload-artifact@v2
+      with:
+        name: lua-language-server
+        path: |
+          main.lua
+          debugger.lua
+          locale
+          meta
+          script

@@ -1,0 +1,1291 @@
+
+- command: -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)
+  exit_code: 1
+  shell: zsh
+  session_id: w0t0p0:32F28D3A-898F-4CA7-9D43-DAD041EECE6F
+  cwd: /Users/dom
+  time: 1648628794
+- command: ler/install.sh)
+  exit_code: 1
+  shell: zsh
+  session_id: w0t0p0:32F28D3A-898F-4CA7-9D43-DAD041EECE6F
+  cwd: /Users/dom
+  time: 1648628866
+- command: ler/install.sh)
+  exit_code: 1
+  shell: zsh
+  session_id: w0t0p0:32F28D3A-898F-4CA7-9D43-DAD041EECE6F
+  cwd: /Users/dom
+  time: 1648629240
+- command: ler/install.sh)
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:32F28D3A-898F-4CA7-9D43-DAD041EECE6F
+  cwd: /Users/dom
+  time: 1648629356
+- command: s stop yabai
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:B55C1730-5F04-4DC0-AD49-9AE6B58106A3
+  cwd: /Users/dom
+  time: 1648679044
+- command: s stop yabai
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:B55C1730-5F04-4DC0-AD49-9AE6B58106A3
+  cwd: /Users/dom
+  time: 1648679044
+- command: s stop yabai
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:B55C1730-5F04-4DC0-AD49-9AE6B58106A3
+  cwd: /Users/dom
+  time: 1648679044
+- command: s stop yabai
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:B55C1730-5F04-4DC0-AD49-9AE6B58106A3
+  cwd: /Users/dom
+  time: 1648679044
+- command: s stop yabai
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:B55C1730-5F04-4DC0-AD49-9AE6B58106A3
+  cwd: /Users/dom
+  time: 1648679044
+- command: s stop yabai
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:B55C1730-5F04-4DC0-AD49-9AE6B58106A3
+  cwd: /Users/dom
+  time: 1648679044
+- command: s stop yabai
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:B55C1730-5F04-4DC0-AD49-9AE6B58106A3
+  cwd: /Users/dom
+  time: 1648679044
+- command: s stop yabai
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:B55C1730-5F04-4DC0-AD49-9AE6B58106A3
+  cwd: /Users/dom
+  time: 1648679044
+- command: s stop yabai
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:B55C1730-5F04-4DC0-AD49-9AE6B58106A3
+  cwd: /Users/dom
+  time: 1648679044
+- command: s stop yabai
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:B55C1730-5F04-4DC0-AD49-9AE6B58106A3
+  cwd: /Users/dom
+  time: 1648679044
+- command: s stop yabai
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:B55C1730-5F04-4DC0-AD49-9AE6B58106A3
+  cwd: /Users/dom
+  time: 1648679044
+- command: s stop yabai
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:B55C1730-5F04-4DC0-AD49-9AE6B58106A3
+  cwd: /Users/dom
+  time: 1648679044
+- command: s stop yabai
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:B55C1730-5F04-4DC0-AD49-9AE6B58106A3
+  cwd: /Users/dom
+  time: 1648679044
+- command: s stop yabai
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:B55C1730-5F04-4DC0-AD49-9AE6B58106A3
+  cwd: /Users/dom
+  time: 1648679044
+- command: s stop yabai
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:B55C1730-5F04-4DC0-AD49-9AE6B58106A3
+  cwd: /Users/dom
+  time: 1648679044
+- command: yabairc
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:FD11FDE6-64FE-49DF-943D-91162C6EF354
+  cwd: /Users/dom
+  time: 1648678905
+- command: chezmoi
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:B4CB1C0B-8FBE-442C-9C62-BB0E1CBFA488
+  cwd: /Users/dom
+  time: 1648680269
+- command: chezmoi
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:B4CB1C0B-8FBE-442C-9C62-BB0E1CBFA488
+  cwd: /Users/dom
+  time: 1648680269
+- command: chezmoi
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:B4CB1C0B-8FBE-442C-9C62-BB0E1CBFA488
+  cwd: /Users/dom
+  time: 1648680269
+- command: chezmoi
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:B4CB1C0B-8FBE-442C-9C62-BB0E1CBFA488
+  cwd: /Users/dom
+  time: 1648680269
+- command: ls
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:0DAA7C4B-FFE9-42DF-88BD-C3AD90006212
+  cwd: /Users/dom
+  time: 1648684475
+- command: p10k install
+  exit_code: 127
+  shell: zsh
+  session_id: w0t0p0:0DAA7C4B-FFE9-42DF-88BD-C3AD90006212
+  cwd: /Users/dom
+  time: 1648684512
+- command: p10k configure
+  exit_code: 127
+  shell: zsh
+  session_id: w0t0p0:0DAA7C4B-FFE9-42DF-88BD-C3AD90006212
+  cwd: /Users/dom
+  time: 1648684525
+- command: brew install romkatv/powerlevel10k/powerlevel10k                                                                      echo \"source $(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme\" >>~/.zshrc
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:0DAA7C4B-FFE9-42DF-88BD-C3AD90006212
+  cwd: /Users/dom
+  time: 1648684552
+- command: p10k configure
+  exit_code: 127
+  shell: zsh
+  session_id: w0t0p0:0DAA7C4B-FFE9-42DF-88BD-C3AD90006212
+  cwd: /Users/dom
+  time: 1648684576
+- command: cd Downloads/
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:6B8F2E7C-95DB-4F6D-9658-E13A3C9D0D25
+  cwd: /Users/dom
+  time: 1648685357
+- command: ls
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:6B8F2E7C-95DB-4F6D-9658-E13A3C9D0D25
+  cwd: /Users/dom/Downloads
+  time: 1648685358
+- command: unzip santana-ally-assignment2.zip
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:6B8F2E7C-95DB-4F6D-9658-E13A3C9D0D25
+  cwd: /Users/dom/Downloads
+  time: 1648685380
+- command: ls
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:6B8F2E7C-95DB-4F6D-9658-E13A3C9D0D25
+  cwd: /Users/dom/Downloads
+  time: 1648685382
+- command: cd santana-ally-assignment2/
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:6B8F2E7C-95DB-4F6D-9658-E13A3C9D0D25
+  cwd: /Users/dom/Downloads
+  time: 1648685386
+- command: ls
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:6B8F2E7C-95DB-4F6D-9658-E13A3C9D0D25
+  cwd: /Users/dom/Downloads/santana-ally-assignment2
+  time: 1648685387
+- command: lvim
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:6B8F2E7C-95DB-4F6D-9658-E13A3C9D0D25
+  cwd: /Users/dom/Downloads/santana-ally-assignment2
+  time: 1648685392
+- command: sudo lvim
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:6B8F2E7C-95DB-4F6D-9658-E13A3C9D0D25
+  cwd: /Users/dom/Downloads/santana-ally-assignment2
+  time: 1648685525
+- command: ls
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:6B8F2E7C-95DB-4F6D-9658-E13A3C9D0D25
+  cwd: /Users/dom/Downloads/santana-ally-assignment2
+  time: 1648687083
+- command: sudo lvim
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:6B8F2E7C-95DB-4F6D-9658-E13A3C9D0D25
+  cwd: /Users/dom/Downloads/santana-ally-assignment2
+  time: 1648687088
+- command: sudo lvim
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:A883774C-CBF0-4FAF-91B8-9C55CC40D258
+  cwd: /Users/dom
+  time: 1648688014
+- command: sudo lvim
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:A883774C-CBF0-4FAF-91B8-9C55CC40D258
+  cwd: /Users/dom
+  time: 1648688221
+- command: sudo lvim
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:A883774C-CBF0-4FAF-91B8-9C55CC40D258
+  cwd: /Users/dom
+  time: 1648688236
+- command: sudo lvim
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:A883774C-CBF0-4FAF-91B8-9C55CC40D258
+  cwd: /Users/dom
+  time: 1648688433
+- command: sudo lvim
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:A883774C-CBF0-4FAF-91B8-9C55CC40D258
+  cwd: /Users/dom
+  time: 1648688446
+- command: lvim ~/Documents/GitHub/dominicklee.net
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:A883774C-CBF0-4FAF-91B8-9C55CC40D258
+  cwd: /Users/dom
+  time: 1649179800
+- command: lvim ~/Documents/GitHub/dominicklee.net
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:A883774C-CBF0-4FAF-91B8-9C55CC40D258
+  cwd: /Users/dom
+  time: 1649179957
+- command: lvim ~/Documents/GitHub/dominicklee.net
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:A883774C-CBF0-4FAF-91B8-9C55CC40D258
+  cwd: /Users/dom
+  time: 1649180127
+- command: lvim ~/Documents/GitHub/dominicklee.net
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:A883774C-CBF0-4FAF-91B8-9C55CC40D258
+  cwd: /Users/dom
+  time: 1649180493
+- command: ls
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:A883774C-CBF0-4FAF-91B8-9C55CC40D258
+  cwd: /Users/dom
+  time: 1649197704
+- command: chezmoi add  ~/.zshrc
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:A883774C-CBF0-4FAF-91B8-9C55CC40D258
+  cwd: /Users/dom
+  time: 1649197719
+- command: chezmoi add  ~/.vimrc
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:A883774C-CBF0-4FAF-91B8-9C55CC40D258
+  cwd: /Users/dom
+  time: 1649197727
+- command: chezmoi add  ~/.yabairc
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:A883774C-CBF0-4FAF-91B8-9C55CC40D258
+  cwd: /Users/dom
+  time: 1649197797
+- command: chezmoi add  ~/.skhdrc
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:A883774C-CBF0-4FAF-91B8-9C55CC40D258
+  cwd: /Users/dom
+  time: 1649197807
+- command: chezmoi add  ~/.skhdrc
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:A883774C-CBF0-4FAF-91B8-9C55CC40D258
+  cwd: /Users/dom
+  time: 1649197807
+- command: chezmoi add  ~/.skhdrc
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:A883774C-CBF0-4FAF-91B8-9C55CC40D258
+  cwd: /Users/dom
+  time: 1649197807
+- command: chezmoi add  ~/.skhdrc
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:A883774C-CBF0-4FAF-91B8-9C55CC40D258
+  cwd: /Users/dom
+  time: 1649197807
+- command: chezmoi add  ~/.skhdrc
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:A883774C-CBF0-4FAF-91B8-9C55CC40D258
+  cwd: /Users/dom
+  time: 1649197807
+- command: chezmoi cd
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:A883774C-CBF0-4FAF-91B8-9C55CC40D258
+  cwd: /Users/dom
+  time: 1649197894
+- command: git remote add origin git@github.com:domogami/.dotfiles.git
+  exit_code: 3
+  shell: zsh
+  session_id: w0t0p0:A883774C-CBF0-4FAF-91B8-9C55CC40D258
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649197974
+- command: git remote add origin git@github.com:domogami/.dotfiles.git
+  exit_code: 3
+  shell: zsh
+  session_id: w0t0p0:A883774C-CBF0-4FAF-91B8-9C55CC40D258
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649198088
+- command: git remote add origin git@github.com:domogami/.dotfiles.git
+  exit_code: 3
+  shell: zsh
+  session_id: w0t0p0:A883774C-CBF0-4FAF-91B8-9C55CC40D258
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649198171
+- command: git remote add origin git@github.com:domogami/.dotfiles.git
+  exit_code: 3
+  shell: zsh
+  session_id: w0t0p0:A883774C-CBF0-4FAF-91B8-9C55CC40D258
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649198174
+- command: git remote remove origin
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:A883774C-CBF0-4FAF-91B8-9C55CC40D258
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649198320
+- command: git remote add origin git@github.com:domogami/.dotfiles.git
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:A883774C-CBF0-4FAF-91B8-9C55CC40D258
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649198323
+- command: git add .
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:A883774C-CBF0-4FAF-91B8-9C55CC40D258
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649198383
+- command: git branch -M main
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:A883774C-CBF0-4FAF-91B8-9C55CC40D258
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649198396
+- command: git add .
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:A883774C-CBF0-4FAF-91B8-9C55CC40D258
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649198397
+- command: git commit -m \"First Commit using Chezmoi\"
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:A883774C-CBF0-4FAF-91B8-9C55CC40D258
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649198426
+- command: git push -u origin main
+  exit_code: 128
+  shell: zsh
+  session_id: w0t0p0:A883774C-CBF0-4FAF-91B8-9C55CC40D258
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649198433
+- command: git config
+  exit_code: 129
+  shell: zsh
+  session_id: w0t0p0:A883774C-CBF0-4FAF-91B8-9C55CC40D258
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649198476
+- command: $ git config --global user.name \"domogami\"
+  exit_code: 127
+  shell: zsh
+  session_id: w0t0p0:A883774C-CBF0-4FAF-91B8-9C55CC40D258
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649198505
+- command: git config --global user.name \"domogami\"
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:A883774C-CBF0-4FAF-91B8-9C55CC40D258
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649198512
+- command: git config --global user.email domogami@gmail.com
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:A883774C-CBF0-4FAF-91B8-9C55CC40D258
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649198535
+- command: git push -u origin main
+  exit_code: 128
+  shell: zsh
+  session_id: w0t0p0:A883774C-CBF0-4FAF-91B8-9C55CC40D258
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649198539
+- command: ssh-keygen -t ed25519 -C \"your_email@example.com\"
+  exit_code: 130
+  shell: zsh
+  session_id: w1t0p0:35496CFE-CE40-4956-9917-62D26F42363B
+  cwd: /Users/dom
+  time: 1649199039
+- command: ssh-keygen -t ed25519 -C \"domogami@gmail.com\"
+  exit_code: 0
+  shell: zsh
+  session_id: w1t0p0:35496CFE-CE40-4956-9917-62D26F42363B
+  cwd: /Users/dom
+  time: 1649199083
+- command: eval \"$(ssh-agent -s)\"
+  exit_code: 0
+  shell: zsh
+  session_id: w1t1p0:4CF19221-277D-48D9-A6D1-E190CA9AA088
+  cwd: /Users/dom
+  time: 1649199149
+- command: open ~/.ssh/config
+  exit_code: 1
+  shell: zsh
+  session_id: w1t2p0:0D9171A1-18A4-4458-B65D-51C4626BBBE6
+  cwd: /Users/dom
+  time: 1649199167
+- command: touch ~/.ssh/config
+  exit_code: 0
+  shell: zsh
+  session_id: w1t2p0:0D9171A1-18A4-4458-B65D-51C4626BBBE6
+  cwd: /Users/dom
+  time: 1649199176
+- command: sudo vim ~/.ssh/config
+  exit_code: 0
+  shell: zsh
+  session_id: w1t2p0:0D9171A1-18A4-4458-B65D-51C4626BBBE6
+  cwd: /Users/dom
+  time: 1649199194
+- command: gh auth login
+  exit_code: 127
+  shell: zsh
+  session_id: w1t2p0:0D9171A1-18A4-4458-B65D-51C4626BBBE6
+  cwd: /Users/dom
+  time: 1649199338
+- command: github auth login
+  exit_code: 127
+  shell: zsh
+  session_id: w1t2p0:0D9171A1-18A4-4458-B65D-51C4626BBBE6
+  cwd: /Users/dom
+  time: 1649199342
+- command: brew install gh
+  exit_code: 0
+  shell: zsh
+  session_id: w1t2p0:0D9171A1-18A4-4458-B65D-51C4626BBBE6
+  cwd: /Users/dom
+  time: 1649199394
+- command: gh auth login
+  exit_code: 0
+  shell: zsh
+  session_id: w1t2p0:0D9171A1-18A4-4458-B65D-51C4626BBBE6
+  cwd: /Users/dom
+  time: 1649199417
+- command: git push -u origin main
+  exit_code: 128
+  shell: zsh
+  session_id: w0t0p0:A883774C-CBF0-4FAF-91B8-9C55CC40D258
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649198539
+- command: vim ~/.ssh/id_ed25519
+  exit_code: 0
+  shell: zsh
+  session_id: w1t1p0:4CF19221-277D-48D9-A6D1-E190CA9AA088
+  cwd: /Users/dom
+  time: 1649199712
+- command: ssh-add -K ~/.ssh/id_ed25519
+  exit_code: 0
+  shell: zsh
+  session_id: w1t2p0:0D9171A1-18A4-4458-B65D-51C4626BBBE6
+  cwd: /Users/dom
+  time: 1649199778
+- command: pbcopy < ~/.ssh/id_ed25519.pub
+  exit_code: 0
+  shell: zsh
+  session_id: w1t2p0:0D9171A1-18A4-4458-B65D-51C4626BBBE6
+  cwd: /Users/dom
+  time: 1649199798
+- command: git push -u origin main
+  exit_code: 1
+  shell: zsh
+  session_id: w0t0p0:A883774C-CBF0-4FAF-91B8-9C55CC40D258
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649199858
+- command: spicetify
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:025CF393-CDC3-4E1D-99CA-6314002594A2
+  cwd: /Users/dom
+  time: 1649199998
+- command: spicetify -h
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:025CF393-CDC3-4E1D-99CA-6314002594A2
+  cwd: /Users/dom
+  time: 1649200001
+- command: spicetify config current_theme Glaze
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:025CF393-CDC3-4E1D-99CA-6314002594A2
+  cwd: /Users/dom
+  time: 1649200075
+- command: spicetify config color_scheme Dark
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:025CF393-CDC3-4E1D-99CA-6314002594A2
+  cwd: /Users/dom
+  time: 1649200096
+- command: spicetify apply
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:025CF393-CDC3-4E1D-99CA-6314002594A2
+  cwd: /Users/dom
+  time: 1649200101
+- command: spicetify apply
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:025CF393-CDC3-4E1D-99CA-6314002594A2
+  cwd: /Users/dom
+  time: 1649200101
+- command: git push -u origin main
+  exit_code: 1
+  shell: zsh
+  session_id: w0t0p0:A883774C-CBF0-4FAF-91B8-9C55CC40D258
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649199858
+- command: spicetify apply
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:025CF393-CDC3-4E1D-99CA-6314002594A2
+  cwd: /Users/dom
+  time: 1649200101
+- command: git push -u origin main
+  exit_code: 1
+  shell: zsh
+  session_id: w0t0p0:A883774C-CBF0-4FAF-91B8-9C55CC40D258
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649199858
+- command: pbcopy < ~/.ssh/id_ed25519.pub
+  exit_code: 0
+  shell: zsh
+  session_id: w1t2p0:0D9171A1-18A4-4458-B65D-51C4626BBBE6
+  cwd: /Users/dom
+  time: 1649199798
+- command: ssh-keygen -t ed25519 -C \"domogami@gmail.com\"
+  exit_code: 0
+  shell: zsh
+  session_id: w1t0p0:35496CFE-CE40-4956-9917-62D26F42363B
+  cwd: /Users/dom
+  time: 1649199083
+- command: spicetify apply
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:025CF393-CDC3-4E1D-99CA-6314002594A2
+  cwd: /Users/dom
+  time: 1649200101
+- command: git push -u origin main
+  exit_code: 1
+  shell: zsh
+  session_id: w0t0p0:A883774C-CBF0-4FAF-91B8-9C55CC40D258
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649199858
+- command: spicetify apply
+  exit_code: 1
+  shell: zsh
+  session_id: w0t1p0:025CF393-CDC3-4E1D-99CA-6314002594A2
+  cwd: /Users/dom
+  time: 1649201067
+- command: spicetify backup apply
+  exit_code: 2
+  shell: zsh
+  session_id: w0t1p0:025CF393-CDC3-4E1D-99CA-6314002594A2
+  cwd: /Users/dom
+  time: 1649201086
+- command: spicetify apply
+  exit_code: 2
+  shell: zsh
+  session_id: w0t1p0:025CF393-CDC3-4E1D-99CA-6314002594A2
+  cwd: /Users/dom
+  time: 1649201097
+- command: git clone https://github.com/spicetify/spicetify-themes.git
+  exit_code: 128
+  shell: zsh
+  session_id: w0t1p0:025CF393-CDC3-4E1D-99CA-6314002594A2
+  cwd: /Users/dom
+  time: 1649201402
+- command: git push -u origin main
+  exit_code: 1
+  shell: zsh
+  session_id: w0t0p0:A883774C-CBF0-4FAF-91B8-9C55CC40D258
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649199858
+- command: git clone https://github.com/spicetify/spicetify-themes.git
+  exit_code: 128
+  shell: zsh
+  session_id: w0t1p0:025CF393-CDC3-4E1D-99CA-6314002594A2
+  cwd: /Users/dom
+  time: 1649201402
+- command: git push -u origin main
+  exit_code: 1
+  shell: zsh
+  session_id: w0t0p0:A883774C-CBF0-4FAF-91B8-9C55CC40D258
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649199858
+- command: git clone https://github.com/spicetify/spicetify-themes.git
+  exit_code: 128
+  shell: zsh
+  session_id: w0t1p0:025CF393-CDC3-4E1D-99CA-6314002594A2
+  cwd: /Users/dom
+  time: 1649201402
+- command: git clone https://github.com/spicetify/spicetify-themes.git
+  exit_code: 128
+  shell: zsh
+  session_id: w0t1p0:025CF393-CDC3-4E1D-99CA-6314002594A2
+  cwd: /Users/dom
+  time: 1649201402
+- command: git push -u origin main
+  exit_code: 1
+  shell: zsh
+  session_id: w0t0p0:A883774C-CBF0-4FAF-91B8-9C55CC40D258
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649199858
+- command: git clone https://github.com/spicetify/spicetify-themes.git
+  exit_code: 128
+  shell: zsh
+  session_id: w0t1p0:025CF393-CDC3-4E1D-99CA-6314002594A2
+  cwd: /Users/dom
+  time: 1649201402
+- command: git push -u origin main
+  exit_code: 1
+  shell: zsh
+  session_id: w0t0p0:A883774C-CBF0-4FAF-91B8-9C55CC40D258
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649199858
+- command: git clone https://github.com/spicetify/spicetify-themes.git
+  exit_code: 128
+  shell: zsh
+  session_id: w0t1p0:025CF393-CDC3-4E1D-99CA-6314002594A2
+  cwd: /Users/dom
+  time: 1649201402
+- command: git push -u origin main
+  exit_code: 1
+  shell: zsh
+  session_id: w0t0p0:A883774C-CBF0-4FAF-91B8-9C55CC40D258
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649199858
+- command: git push -u origin main
+  exit_code: 1
+  shell: zsh
+  session_id: w0t0p0:A883774C-CBF0-4FAF-91B8-9C55CC40D258
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649199858
+- command: git clone https://github.com/spicetify/spicetify-themes.git
+  exit_code: 128
+  shell: zsh
+  session_id: w0t1p0:025CF393-CDC3-4E1D-99CA-6314002594A2
+  cwd: /Users/dom
+  time: 1649201402
+- command: git clone https://github.com/spicetify/spicetify-themes.git
+  exit_code: 128
+  shell: zsh
+  session_id: w0t1p0:025CF393-CDC3-4E1D-99CA-6314002594A2
+  cwd: /Users/dom
+  time: 1649201402
+- command: git push -u origin main
+  exit_code: 1
+  shell: zsh
+  session_id: w0t0p0:A883774C-CBF0-4FAF-91B8-9C55CC40D258
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649199858
+- command: git push -u origin main
+  exit_code: 1
+  shell: zsh
+  session_id: w0t0p0:A883774C-CBF0-4FAF-91B8-9C55CC40D258
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649199858
+- command: git clone https://github.com/spicetify/spicetify-themes.git
+  exit_code: 128
+  shell: zsh
+  session_id: w0t1p0:025CF393-CDC3-4E1D-99CA-6314002594A2
+  cwd: /Users/dom
+  time: 1649201402
+- command: git clone https://github.com/spicetify/spicetify-themes.git
+  exit_code: 128
+  shell: zsh
+  session_id: w0t1p0:025CF393-CDC3-4E1D-99CA-6314002594A2
+  cwd: /Users/dom
+  time: 1649201402
+- command: git push -u origin main
+  exit_code: 1
+  shell: zsh
+  session_id: w0t0p0:A883774C-CBF0-4FAF-91B8-9C55CC40D258
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649199858
+- command: git clone https://github.com/spicetify/spicetify-themes.git
+  exit_code: 128
+  shell: zsh
+  session_id: w0t1p0:025CF393-CDC3-4E1D-99CA-6314002594A2
+  cwd: /Users/dom
+  time: 1649201402
+- command: git push -u origin main
+  exit_code: 1
+  shell: zsh
+  session_id: w0t0p0:A883774C-CBF0-4FAF-91B8-9C55CC40D258
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649199858
+- command: chezmoi cd
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:F79C91AD-96B9-406B-9D4D-3F9A9D846731
+  cwd: /Users/dom
+  time: 1649403067
+- command: git remote add origin git@github.com:domogami/.dotfiles.git
+  exit_code: 3
+  shell: zsh
+  session_id: w0t0p0:F79C91AD-96B9-406B-9D4D-3F9A9D846731
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649403091
+- command: git remote show origin
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:F79C91AD-96B9-406B-9D4D-3F9A9D846731
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649403105
+- command: git add .
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:F79C91AD-96B9-406B-9D4D-3F9A9D846731
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649403128
+- command: git commit -m \"First Commit\"
+  exit_code: 1
+  shell: zsh
+  session_id: w0t0p0:F79C91AD-96B9-406B-9D4D-3F9A9D846731
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649403144
+- command: ls
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:F79C91AD-96B9-406B-9D4D-3F9A9D846731
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649403147
+- command: git add .
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:F79C91AD-96B9-406B-9D4D-3F9A9D846731
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649403151
+- command: git commit -m \"First Commit\"
+  exit_code: 1
+  shell: zsh
+  session_id: w0t0p0:F79C91AD-96B9-406B-9D4D-3F9A9D846731
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649403153
+- command: git push -u origin main
+  exit_code: 1
+  shell: zsh
+  session_id: w0t0p0:F79C91AD-96B9-406B-9D4D-3F9A9D846731
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649403174
+- command: git pull
+  exit_code: 1
+  shell: zsh
+  session_id: w0t0p0:F79C91AD-96B9-406B-9D4D-3F9A9D846731
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649403190
+- command: ls
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:F79C91AD-96B9-406B-9D4D-3F9A9D846731
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649403195
+- command: git pull origin main
+  exit_code: 128
+  shell: zsh
+  session_id: w0t0p0:F79C91AD-96B9-406B-9D4D-3F9A9D846731
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649403355
+- command: git fetch origin
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:F79C91AD-96B9-406B-9D4D-3F9A9D846731
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649403409
+- command: git diff main origin/main
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:F79C91AD-96B9-406B-9D4D-3F9A9D846731
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649403499
+- command: chezmoi cd
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:5F94836F-CB36-47CA-AA94-38654A26C5DC
+  cwd: /Users/dom
+  time: 1649455448
+- command: git branch -u origin/main
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:5F94836F-CB36-47CA-AA94-38654A26C5DC
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649455453
+- command: git pull
+  exit_code: 128
+  shell: zsh
+  session_id: w0t0p0:5F94836F-CB36-47CA-AA94-38654A26C5DC
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649455485
+- command: git config pull.rebase true
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:5F94836F-CB36-47CA-AA94-38654A26C5DC
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649455554
+- command: git pull
+  exit_code: 1
+  shell: zsh
+  session_id: w0t0p0:5F94836F-CB36-47CA-AA94-38654A26C5DC
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649455557
+- command: git add .
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:5F94836F-CB36-47CA-AA94-38654A26C5DC
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649455592
+- command: ls
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:5F94836F-CB36-47CA-AA94-38654A26C5DC
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649455596
+- command: ls -la
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:5F94836F-CB36-47CA-AA94-38654A26C5DC
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649455600
+- command: git rebase --skip
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:5F94836F-CB36-47CA-AA94-38654A26C5DC
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649455623
+- command: ls
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:5F94836F-CB36-47CA-AA94-38654A26C5DC
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649455626
+- command: git pull
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:5F94836F-CB36-47CA-AA94-38654A26C5DC
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649455630
+- command: git push
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:5F94836F-CB36-47CA-AA94-38654A26C5DC
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649455634
+- command: lvim ~/.zshrc
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:6D77635F-956F-4F88-A756-9C161274DB23
+  cwd: /Users/dom
+  time: 1649456362
+- command: source ~/.zshrc
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:6D77635F-956F-4F88-A756-9C161274DB23
+  cwd: /Users/dom
+  time: 1649456393
+- command: v ~/.zshrc
+  exit_code: 127
+  shell: zsh
+  session_id: w0t0p0:6D77635F-956F-4F88-A756-9C161274DB23
+  cwd: /Users/dom
+  time: 1649456401
+- command: lvim ~/.zshrc
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:6D77635F-956F-4F88-A756-9C161274DB23
+  cwd: /Users/dom
+  time: 1649456409
+- command: v ~/.zshrc
+  exit_code: 127
+  shell: zsh
+  session_id: w0t0p0:B9C5F49B-16AE-4E69-BA5E-F98061F56A3F
+  cwd: /Users/dom
+  time: 1649456484
+- command: vim ~/.zshrc
+  exit_code: 127
+  shell: zsh
+  session_id: w0t0p0:B9C5F49B-16AE-4E69-BA5E-F98061F56A3F
+  cwd: /Users/dom
+  time: 1649456486
+- command: lvim ~/.zshrc
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:B9C5F49B-16AE-4E69-BA5E-F98061F56A3F
+  cwd: /Users/dom
+  time: 1649456511
+- command: v ~/.zshrc
+  exit_code: 127
+  shell: zsh
+  session_id: w0t0p0:B9C5F49B-16AE-4E69-BA5E-F98061F56A3F
+  cwd: /Users/dom
+  time: 1649456533
+- command: source ~/.zshrc
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:B9C5F49B-16AE-4E69-BA5E-F98061F56A3F
+  cwd: /Users/dom
+  time: 1649456539
+- command: v ~/.zshrc
+  exit_code: 127
+  shell: zsh
+  session_id: w0t0p0:B9C5F49B-16AE-4E69-BA5E-F98061F56A3F
+  cwd: /Users/dom
+  time: 1649456540
+- command: lvim ~/.zshrc
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:B9C5F49B-16AE-4E69-BA5E-F98061F56A3F
+  cwd: /Users/dom
+  time: 1649456588
+- command: source ~/.zshrc
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:B9C5F49B-16AE-4E69-BA5E-F98061F56A3F
+  cwd: /Users/dom
+  time: 1649456614
+- command: lvim ~/.zshrc
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:B9C5F49B-16AE-4E69-BA5E-F98061F56A3F
+  cwd: /Users/dom
+  time: 1649456661
+- command: source ~/.zshrc
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:B9C5F49B-16AE-4E69-BA5E-F98061F56A3F
+  cwd: /Users/dom
+  time: 1649456683
+- command: v ~/.zshrc
+  exit_code: 127
+  shell: zsh
+  session_id: w0t0p0:B9C5F49B-16AE-4E69-BA5E-F98061F56A3F
+  cwd: /Users/dom
+  time: 1649456690
+- command: v ~/.zshrc
+  exit_code: 127
+  shell: zsh
+  session_id: w0t0p0:B9C5F49B-16AE-4E69-BA5E-F98061F56A3F
+  cwd: /Users/dom
+  time: 1649456690
+- command: v ~/.zshrc
+  exit_code: 127
+  shell: zsh
+  session_id: w0t0p0:B9C5F49B-16AE-4E69-BA5E-F98061F56A3F
+  cwd: /Users/dom
+  time: 1649456690
+- command: v ~/.zshrc
+  exit_code: 127
+  shell: zsh
+  session_id: w0t0p0:B9C5F49B-16AE-4E69-BA5E-F98061F56A3F
+  cwd: /Users/dom
+  time: 1649456690
+- command: v ~/.zshrc
+  exit_code: 127
+  shell: zsh
+  session_id: w0t0p0:B9C5F49B-16AE-4E69-BA5E-F98061F56A3F
+  cwd: /Users/dom
+  time: 1649456690
+- command: v ~/.zshrc
+  exit_code: 127
+  shell: zsh
+  session_id: w0t0p0:B9C5F49B-16AE-4E69-BA5E-F98061F56A3F
+  cwd: /Users/dom
+  time: 1649456690
+- command: zsh
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:B9C5F49B-16AE-4E69-BA5E-F98061F56A3F
+  cwd: /Users/dom
+  time: 1649456905
+- command: v
+  exit_code: 127
+  shell: zsh
+  session_id: w0t0p0:B9C5F49B-16AE-4E69-BA5E-F98061F56A3F
+  cwd: /Users/dom
+  time: 1649456910
+- command: exec zsh
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:B9C5F49B-16AE-4E69-BA5E-F98061F56A3F
+  cwd: /Users/dom
+  time: 1649456933
+- command: v
+  exit_code: 127
+  shell: zsh
+  session_id: w0t0p0:B9C5F49B-16AE-4E69-BA5E-F98061F56A3F
+  cwd: /Users/dom
+  time: 1649456937
+- command: lunarvim ~/.zshrcv
+  exit_code: 127
+  shell: zsh
+  session_id: w0t0p0:B9C5F49B-16AE-4E69-BA5E-F98061F56A3F
+  cwd: /Users/dom
+  time: 1649456955
+- command: lvim ~/.zshrc
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:B9C5F49B-16AE-4E69-BA5E-F98061F56A3F
+  cwd: /Users/dom
+  time: 1649456962
+- command: v ~/.zshrc
+  exit_code: 127
+  shell: zsh
+  session_id: w0t0p0:B9C5F49B-16AE-4E69-BA5E-F98061F56A3F
+  cwd: /Users/dom
+  time: 1649457246
+- command: source ~/.zshrc
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:B9C5F49B-16AE-4E69-BA5E-F98061F56A3F
+  cwd: /Users/dom
+  time: 1649457253
+- command: v ~/.zshrc
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:B9C5F49B-16AE-4E69-BA5E-F98061F56A3F
+  cwd: /Users/dom
+  time: 1649457257
+- command: source ~/.zshrc
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:B9C5F49B-16AE-4E69-BA5E-F98061F56A3F
+  cwd: /Users/dom
+  time: 1649457299
+- command: vim ~/.zshrc
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:B9C5F49B-16AE-4E69-BA5E-F98061F56A3F
+  cwd: /Users/dom
+  time: 1649457315
+- command: chezmoi cd
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:D6B8C2B8-BD07-43C7-AEA2-CE4E3D5D37BF
+  cwd: /Users/dom
+  time: 1649457373
+- command: v .gitignore
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:D6B8C2B8-BD07-43C7-AEA2-CE4E3D5D37BF
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649457380
+- command: git add .
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:D6B8C2B8-BD07-43C7-AEA2-CE4E3D5D37BF
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649457391
+- command: git commit -m \"Removed .DS_Store\"
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:D6B8C2B8-BD07-43C7-AEA2-CE4E3D5D37BF
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649457407
+- command: git push
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:D6B8C2B8-BD07-43C7-AEA2-CE4E3D5D37BF
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649457410
+- command: ls
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:D6B8C2B8-BD07-43C7-AEA2-CE4E3D5D37BF
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649457429
+- command: ls -la
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:D6B8C2B8-BD07-43C7-AEA2-CE4E3D5D37BF
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649457432
+- command: rm .gitignore
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:D6B8C2B8-BD07-43C7-AEA2-CE4E3D5D37BF
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649457444
+- command: git add .
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:D6B8C2B8-BD07-43C7-AEA2-CE4E3D5D37BF
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649457453
+- command: git commit -m \"Removed .gitignore\"
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:D6B8C2B8-BD07-43C7-AEA2-CE4E3D5D37BF
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649457461
+- command: git push
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:D6B8C2B8-BD07-43C7-AEA2-CE4E3D5D37BF
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649457464
+- command: rm -rf .DS_Store
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:D6B8C2B8-BD07-43C7-AEA2-CE4E3D5D37BF
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649457482
+- command: ls -la
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:D6B8C2B8-BD07-43C7-AEA2-CE4E3D5D37BF
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649457485
+- command: git add .
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:D6B8C2B8-BD07-43C7-AEA2-CE4E3D5D37BF
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649457489
+- command: git commit -m \"Removed DS_Store\"
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:D6B8C2B8-BD07-43C7-AEA2-CE4E3D5D37BF
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649457501
+- command: git push
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:D6B8C2B8-BD07-43C7-AEA2-CE4E3D5D37BF
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649457505
+- command: v .gitignore
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:D6B8C2B8-BD07-43C7-AEA2-CE4E3D5D37BF
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649457517
+- command: git add .
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:D6B8C2B8-BD07-43C7-AEA2-CE4E3D5D37BF
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649457526
+- command: git commit -m \"Added .DS_Store to .gitignore\"
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:D6B8C2B8-BD07-43C7-AEA2-CE4E3D5D37BF
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649457546
+- command: git push
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:D6B8C2B8-BD07-43C7-AEA2-CE4E3D5D37BF
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649457549
+- command: cd
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:D6B8C2B8-BD07-43C7-AEA2-CE4E3D5D37BF
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649457570
+- command: ls
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:D6B8C2B8-BD07-43C7-AEA2-CE4E3D5D37BF
+  cwd: /Users/dom
+  time: 1649457571
+- command: ls -la
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:D6B8C2B8-BD07-43C7-AEA2-CE4E3D5D37BF
+  cwd: /Users/dom
+  time: 1649457573
+- command: chezmoi update
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:D6B8C2B8-BD07-43C7-AEA2-CE4E3D5D37BF
+  cwd: /Users/dom
+  time: 1649457610
+- command: chezmoi add ~/.config
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:D6B8C2B8-BD07-43C7-AEA2-CE4E3D5D37BF
+  cwd: /Users/dom
+  time: 1649457673
+- command: chezmoi add ~/.config
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:D6B8C2B8-BD07-43C7-AEA2-CE4E3D5D37BF
+  cwd: /Users/dom
+  time: 1649457673
+- command: chezmoi add ~/.config
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:D6B8C2B8-BD07-43C7-AEA2-CE4E3D5D37BF
+  cwd: /Users/dom
+  time: 1649457673
+- command: chezmoi add ~/.config
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:D6B8C2B8-BD07-43C7-AEA2-CE4E3D5D37BF
+  cwd: /Users/dom
+  time: 1649457673
+- command: chezmoi cd
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:D6B8C2B8-BD07-43C7-AEA2-CE4E3D5D37BF
+  cwd: /Users/dom
+  time: 1649457965
+- command: ls
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:D6B8C2B8-BD07-43C7-AEA2-CE4E3D5D37BF
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649457966
+- command: ls -la
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:D6B8C2B8-BD07-43C7-AEA2-CE4E3D5D37BF
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649457972
+- command: cd
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:D6B8C2B8-BD07-43C7-AEA2-CE4E3D5D37BF
+  cwd: /Users/dom/.local/share/chezmoi
+  time: 1649457976
