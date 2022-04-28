@@ -31,6 +31,8 @@ I am using [iTerm2](https://iterm2.com/) as my primary terminal because of its c
 
 [Alfred 4](https://www.alfredapp.com/) was one of the best purchases I made for my Mac. Alfred is a spotlight replacement that extends far beyond the capabilities of spotlight. Alfred allows for "workflows" which are sequences of commands that can be executed including launching applications, running code or scripts, opening a specific file/directory in a specific application, etc.
 
+![plot](./Alfred_Theme/Alfred.png)
+
 ## Fig
 
 [Fig](https://github.com/withfig/fig) is one of my most used terminal applications that I use every single day. Fig will autocomplete and suggest file paths as you type them in the terminal. Frequently used paths will be suggested and all of them can be easily inserted with `tab`. Fig also lists all available flags for a command which can be extremely helpful in some cases. 
