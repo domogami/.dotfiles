@@ -17,3 +17,15 @@ source /opt/homebrew/opt/powerlevel10k/powerlevel10k.zsh-theme
 # Fig post block. Keep at the bottom of this file.
 eval "$(fig init zsh post)"
 
+alias v=lvim
+alias vim=lvim
+alias dev="cd ~/Documents/GitHub/ && ls"
+alias r=ranger
+alias ls=exa
+
+export EDITOR=lvim
+export VISUAL=lvim
+
+eval "$(starship init zsh)"
+
+neofetch

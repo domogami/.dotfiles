@@ -1,0 +1,65 @@
+{
+  "alfredtheme" : {
+    "result" : {
+      "textSpacing" : 5,
+      "subtext" : {
+        "size" : 12,
+        "colorSelected" : "#ABB2BFFF",
+        "font" : "Hack NF",
+        "color" : "#848DB7FF"
+      },
+      "shortcut" : {
+        "size" : 14,
+        "colorSelected" : "#94BEFFFF",
+        "font" : "Hack NF",
+        "color" : "#38FFBAFF"
+      },
+      "backgroundSelected" : "#E06375E8",
+      "text" : {
+        "size" : 13,
+        "colorSelected" : "#EEEFF6FF",
+        "font" : "Hack NF",
+        "color" : "#A4ABCAFF"
+      },
+      "iconPaddingHorizontal" : 10,
+      "roundness" : 10,
+      "paddingVertical" : 6,
+      "iconSize" : 40
+    },
+    "search" : {
+      "backgroundSelected" : "#B3D7FFFF",
+      "paddingHorizontal" : 8,
+      "spacing" : 8,
+      "text" : {
+        "size" : 24,
+        "colorSelected" : "#000000FF",
+        "font" : "Hack NF",
+        "color" : "#EDEEF6FF"
+      },
+      "background" : "#0E101200",
+      "roundness" : 64,
+      "paddingVertical" : 9
+    },
+    "window" : {
+      "color" : "#282C344A",
+      "paddingHorizontal" : 14,
+      "width" : 559,
+      "borderPadding" : 0,
+      "borderColor" : "#0000007F",
+      "blur" : 0,
+      "roundness" : 22,
+      "paddingVertical" : 0
+    },
+    "credit" : "Dom",
+    "visualEffectMode" : 2,
+    "separator" : {
+      "color" : "#CBCBCBF3",
+      "thickness" : 0
+    },
+    "scrollbar" : {
+      "color" : "#E06C75FF",
+      "thickness" : 2
+    },
+    "name" : "OneDark Alfred Theme"
+  }
+}
