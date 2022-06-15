@@ -1,0 +1,23 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.bashrc:
+    ~/.zshrc:
+    ~/.zsh_themes:
+    ~/.vimrc:
+    ~/.oh-my-zsh: 
+    ~/.iterm2: 
+    ~/.config:
+    ~/.fig:
+    ~/.yabairc:
+    ~/.skhdrc:
+    ~/.gitignore_global:
+    ~/.gitconfig:
+    ~/.ssh:
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]

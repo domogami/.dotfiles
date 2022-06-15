@@ -1,937 +1,0 @@
-
-The default interactive shell is now zsh.
-To update your account to use zsh, please run `chsh -s /bin/zsh`.
-For more details, please visit https://support.apple.com/kb/HT208050.
-set +m +b +o history
-
-[?1034hbash-3.2$ set +m +b +o history
-bash-3.2$ 
-bash-3.2$ unset HISTFILE
-bash-3.2$ 
-bash-3.2$ export PATH='/usr/local/bin:/usr/sbin:/usr/bin:/opt/homebrew/bin:/bin: /sbin'
-bash-3.2$ 
-bash-3.2$ export HOME=/Users/dom
-bash-3.2$ 
-bash-3.2$ 
-bash-3.2$ { ( defaults read com.mschrage.fig access_token ) 1> /var/folders/pq/y 2b49gjs29g6vb52b9d_yx180000gn/T/11.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d _yx180000gn/T/11.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-univers al _ callback 11 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/11 $? ; } &
-[1] 33657
-bash-3.2$ 
-bash-3.2$ { ( defaults read com.mschrage.fig access_token ) 1> /var/folders/pq/y 2b49gjs29g6vb52b9d_yx180000gn/T/14.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d _yx180000gn/T/14.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-univers al _ callback 14 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/14 $? ; } &
-[2] 33659
-bash-3.2$ 
-bash-3.2$ { ( defaults read com.mschrage.fig access_token ) 1> /var/folders/pq/y 2b49gjs29g6vb52b9d_yx180000gn/T/2.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_ yx180000gn/T/2.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal  _ callback 2 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/2 $? ; } &
-[3] 34974
-bash-3.2$ 
-bash-3.2$ export HOME=/Users/dom
-bash-3.2$ 
-bash-3.2$ 
-bash-3.2$ { ( defaults read com.mschrage.fig access_token ) 1> /var/folders/pq/y 2b49gjs29g6vb52b9d_yx180000gn/T/12.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d _yx180000gn/T/12.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-univers al _ callback 12 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/12 $? ; } &
-[4] 34976
-bash-3.2$ 
-bash-3.2$ 
-The default interactive shell is now zsh.
-To update your account to use zsh, please run `chsh -s /bin/zsh`.
-For more details, please visit https://support.apple.com/kb/HT208050.
-[?1034hbash-3.2$ set +m +b +o history
-
-unset HISTFILE
-
-export PATH='/sbin:/usr/local/bin:/bin:/opt/homebrew/bin:/usr/bin:/usr/sbin'
-
-bash-3.2$ 
-bash-3.2$ unset HISTFILE
-bash-3.2$ 
-bash-3.2$ export PATH='/sbin:/usr/local/bin:/bin:/opt/homebrew/bin:/usr/bin:/usr /sbin'
-
-{ ( defaults read com.mschrage.fig access_token ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/2.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/2.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 2 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/2 $? ; } &
-
-bash-3.2$ 
-bash-3.2$ { ( defaults read com.mschrage.fig access_token ) 1> /var/folders/pq/y 2b49gjs29g6vb52b9d_yx180000gn/T/2.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_ yx180000gn/T/2.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal  _ callback 2 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/2 $? ; } &
-[1] 36394
-bash-3.2$ 
-bash-3.2$ export HOME=/Users/dom
-bash-3.2$ 
-bash-3.2$ 
-bash-3.2$ { ( defaults read com.mschrage.fig access_token ) 1> /var/folders/pq/y 2b49gjs29g6vb52b9d_yx180000gn/T/12.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d _yx180000gn/T/12.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-univers al _ callback 12 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/12 $? ; } &
-[2] 36397
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom && \ls -1ApL | cat ) 1> /var/folders/pq/y2b49gjs29g6 vb52b9d_yx180000gn/T/41.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn /T/41.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callba ck 41 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/41 $? ; } &
-[3] 40018
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/Downloads && \ls -1ApL | cat ) 1> /var/folders/pq/y2 b49gjs29g6vb52b9d_yx180000gn/T/53.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_ yx180000gn/T/53.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universa l _ callback 53 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/53 $? ; } &
-[4] 40263
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom && \ls -1ApL | cat ) 1> /var/folders/pq/y2b49gjs29g6 vb52b9d_yx180000gn/T/73.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn /T/73.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callba ck 73 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/73 $? ; } &
-[5] 41152
-bash-3.2$ 
-bash-3.2$ 
-The default interactive shell is now zsh.
-To update your account to use zsh, please run `chsh -s /bin/zsh`.
-For more details, please visit https://support.apple.com/kb/HT208050.
-set +m +b +o history
-
-unset HISTFILE
-
-export PATH='/usr/local/texlive/2021/bin/universal-darwin:/Users/dom/.spicetify:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/opt/homebrew/bin:/Users/dom/.spicetify:/Users/dom/.fig/bin:/Users/dom/.local/bin'
-
-{ ( defaults read com.mschrage.fig access_token ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/2.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/2.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 2 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/2 $? ; } &
-
-export HOME=/Users/dom
-
-
-[?1034hbash-3.2$ set +m +b +o history
-bash-3.2$ 
-bash-3.2$ unset HISTFILE
-bash-3.2$ 
-bash-3.2$ export PATH='/usr/local/texlive/2021/bin/universal-darwin:/Users/dom/. spicetify:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr /sbin:/sbin:/Library/Apple/usr/bin:/opt/homebrew/bin:/Users/dom/.spicetify:/User s/dom/.fig/bin:/Users/dom/.local/bin'
-bash-3.2$ 
-bash-3.2$ { ( defaults read com.mschrage.fig access_token ) 1> /var/folders/pq/y 2b49gjs29g6vb52b9d_yx180000gn/T/2.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_ yx180000gn/T/2.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal  _ callback 2 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/2 $? ; } &
-[1] 71399
-bash-3.2$ 
-bash-3.2$ export HOME=/Users/dom
-bash-3.2$ 
-bash-3.2$ 
-bash-3.2$ { ( defaults read com.mschrage.fig access_token ) 1> /var/folders/pq/y 2b49gjs29g6vb52b9d_yx180000gn/T/12.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d _yx180000gn/T/12.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-univers al _ callback 12 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/12 $? ; } &
-[2] 71401
-bash-3.2$ 
-bash-3.2$ { ( which fish ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1 61.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/161.stderr; /Appli cations/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 161 /var/folders/ pq/y2b49gjs29g6vb52b9d_yx180000gn/T/161 $? ; } &
-[3] 71867
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom && HBPATH=$(brew --repository); ls -1 $HBPATH/Librar y/Taps/homebrew/homebrew-core/Formula $HBPATH/Library/Taps/homebrew/homebrew-cas k/Casks | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/170.stdout 2 > /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/170.stderr; /Applications/Fig .app/Contents/MacOS/fig-darwin-universal _ callback 170 /var/folders/pq/y2b49gjs 29g6vb52b9d_yx180000gn/T/170 $? ; } &
-[4] 72285
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom && HBPATH=$(brew --repository); ls -1 $HBPATH/Librar y/Taps/homebrew/homebrew-core/Formula $HBPATH/Library/Taps/homebrew/homebrew-cas k/Casks | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/221.stdout 2 > /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/221.stderr; /Applications/Fig .app/Contents/MacOS/fig-darwin-universal _ callback 221 /var/folders/pq/y2b49gjs 29g6vb52b9d_yx180000gn/T/221 $? ; } &
-[5] 75772
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom && HBPATH=$(brew --repository); ls -1 $HBPATH/Librar y/Taps/homebrew/homebrew-core/Formula $HBPATH/Library/Taps/homebrew/homebrew-cas k/Casks | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/243.stdout 2 > /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/243.stderr; /Applications/Fig .app/Contents/MacOS/fig-darwin-universal _ callback 243 /var/folders/pq/y2b49gjs 29g6vb52b9d_yx180000gn/T/243 $? ; } &
-[6] 90904
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom && HBPATH=$(brew --repository); ls -1 $HBPATH/Librar y/Taps/homebrew/homebrew-core/Formula $HBPATH/Library/Taps/homebrew/homebrew-cas k/Casks | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/259.stdout 2 > /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/259.stderr; /Applications/Fig .app/Contents/MacOS/fig-darwin-universal _ callback 259 /var/folders/pq/y2b49gjs 29g6vb52b9d_yx180000gn/T/259 $? ; } &
-[7] 92854
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom && HBPATH=$(brew --repository); ls -1 $HBPATH/Librar y/Taps/homebrew/homebrew-core/Formula $HBPATH/Library/Taps/homebrew/homebrew-cas k/Casks | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/276.stdout 2 > /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/276.stderr; /Applications/Fig .app/Contents/MacOS/fig-darwin-universal _ callback 276 /var/folders/pq/y2b49gjs 29g6vb52b9d_yx180000gn/T/276 $? ; } &
-[8] 93345
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/ler && \ls -1ApL | cat ) 1> /var/folders/pq/y2b49gjs 29g6vb52b9d_yx180000gn/T/283.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180 000gn/T/283.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _  callback 283 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/283 $? ; } &
-[9] 93403
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom && HBPATH=$(brew --repository); ls -1 $HBPATH/Librar y/Taps/homebrew/homebrew-core/Formula $HBPATH/Library/Taps/homebrew/homebrew-cas k/Casks | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/294.stdout 2 > /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/294.stderr; /Applications/Fig .app/Contents/MacOS/fig-darwin-universal _ callback 294 /var/folders/pq/y2b49gjs 29g6vb52b9d_yx180000gn/T/294 $? ; } &
-[10] 93965
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom && HBPATH=$(brew --repository); ls -1 $HBPATH/Librar y/Taps/homebrew/homebrew-core/Formula $HBPATH/Library/Taps/homebrew/homebrew-cas k/Casks | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/334.stdout 2 > /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/334.stderr; /Applications/Fig .app/Contents/MacOS/fig-darwin-universal _ callback 334 /var/folders/pq/y2b49gjs 29g6vb52b9d_yx180000gn/T/334 $? ; } &
-[11] 94728
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom && HBPATH=$(brew --repository); ls -1 $HBPATH/Librar y/Taps/homebrew/homebrew-core/Formula $HBPATH/Library/Taps/homebrew/homebrew-cas k/Casks | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/347.stdout 2 > /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/347.stderr; /Applications/Fig .app/Contents/MacOS/fig-darwin-universal _ callback 347 /var/folders/pq/y2b49gjs 29g6vb52b9d_yx180000gn/T/347 $? ; } &
-[12] 95591
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom && HBPATH=$(brew --repository); ls -1 $HBPATH/Librar y/Taps/homebrew/homebrew-core/Formula $HBPATH/Library/Taps/homebrew/homebrew-cas k/Casks | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/351.stdout 2 > /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/351.stderr; /Applications/Fig .app/Contents/MacOS/fig-darwin-universal _ callback 351 /var/folders/pq/y2b49gjs 29g6vb52b9d_yx180000gn/T/351 $? ; } &
-[13] 95604
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/ler && \ls -1ApL | cat ) 1> /var/folders/pq/y2b49gjs 29g6vb52b9d_yx180000gn/T/358.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180 000gn/T/358.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _  callback 358 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/358 $? ; } &
-[14] 95669
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom && \ls -1ApL | cat ) 1> /var/folders/pq/y2b49gjs29g6 vb52b9d_yx180000gn/T/367.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000g n/T/367.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ call back 367 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/367 $? ; } &
-[15] 2582
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/Documents && \ls -1ApL | cat ) 1> /var/folders/pq/y2 b49gjs29g6vb52b9d_yx180000gn/T/381.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d _yx180000gn/T/381.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-univer sal _ callback 381 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/381 $? ; } & [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K&
-[16] 2754
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/Documents/GitHub && \ls -1ApL | cat ) 1> /var/folder s/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/396.stdout 2> /var/folders/pq/y2b49gjs29g6 vb52b9d_yx180000gn/T/396.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin -universal _ callback 396 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/396 $ ? ; } &
-[17] 2902
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/Documents/GitHub/dominicklee.net && \ls -1ApL | cat  ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/409.stdout 2> /var/folders /pq/y2b49gjs29g6vb52b9d_yx180000gn/T/409.stderr; /Applications/Fig.app/Contents/ MacOS/fig-darwin-universal _ callback 409 /var/folders/pq/y2b49gjs29g6vb52b9d_yx 180000gn/T/409 $? ; } &
-[18] 3149
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom && \ls -1ApL | cat ) 1> /var/folders/pq/y2b49gjs29g6 vb52b9d_yx180000gn/T/431.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000g n/T/431.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ call back 431 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/431 $? ; } &
-[19] 42340
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom && \ls -1ApL | cat ) 1> /var/folders/pq/y2b49gjs29g6 vb52b9d_yx180000gn/T/450.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000g n/T/450.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ call back 450 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/450 $? ; } &
-[20] 42346
-bash-3.2$ 
-bash-3.2$ { ( cd ~ && \ls -1ApL | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_y x180000gn/T/457.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/457.s tderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 457  /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/457 $? ; } &
-[21] 42355
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom && brew services list | sed -e 's/ .*//' | tail -n + 2 | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/495.stdout 2> /var /folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/495.stderr; /Applications/Fig.app/C ontents/MacOS/fig-darwin-universal _ callback 495 /var/folders/pq/y2b49gjs29g6vb 52b9d_yx180000gn/T/495 $? ; } &
-[22] 44427
-bash-3.2$ 
-bash-3.2$ { ( cd ~ && \ls -1ApL | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_y x180000gn/T/514.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/514.s tderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 514  /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/514 $? ; } &
-[23] 52999
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom && HBPATH=$(brew --repository); ls -1 $HBPATH/Librar y/Taps/homebrew/homebrew-core/Formula $HBPATH/Library/Taps/homebrew/homebrew-cas k/Casks | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/525.stdout 2 > /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/525.stderr; /Applications/Fig .app/Contents/MacOS/fig-darwin-universal _ callback 525 /var/folders/pq/y2b49gjs 29g6vb52b9d_yx180000gn/T/525 $? ; } &
-[24] 67708
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom && \ls -1ApL | cat ) 1> /var/folders/pq/y2b49gjs29g6 vb52b9d_yx180000gn/T/560.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000g n/T/560.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ call back 560 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/560 $? ; } &
-[25] 99236
-bash-3.2$ 
-bash-3.2$ { ( cd ~ && \ls -1ApL | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_y x180000gn/T/566.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/566.s tderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 566  /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/566 $? ; } &
-[26] 99331
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom && \ls -1ApL | cat ) 1> /var/folders/pq/y2b49gjs29g6 vb52b9d_yx180000gn/T/583.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000g n/T/583.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ call back 583 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/583 $? ; } &
-[27] 99715
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.dotfiles && \ls -1ApL | cat ) 1> /var/folders/pq/y2 b49gjs29g6vb52b9d_yx180000gn/T/597.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d _yx180000gn/T/597.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-univer sal _ callback 597 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/597 $? ; } & [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K&
-[28] 99952
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.dotfiles && \ls -1ApL | cat ) 1> /var/folders/pq/y2 b49gjs29g6vb52b9d_yx180000gn/T/615.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d _yx180000gn/T/615.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-univer sal _ callback 615 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/615 $? ; } & [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K&
-[29] 330
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.dotfiles && \ls -1ApL | cat ) 1> /var/folders/pq/y2 b49gjs29g6vb52b9d_yx180000gn/T/629.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d _yx180000gn/T/629.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-univer sal _ callback 629 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/629 $? ; } & [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K&
-[30] 703
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom && \ls -1ApL | cat ) 1> /var/folders/pq/y2b49gjs29g6 vb52b9d_yx180000gn/T/652.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000g n/T/652.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ call back 652 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/652 $? ; } &
-[31] 1147
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom && \ls -1ApL | cat ) 1> /var/folders/pq/y2b49gjs29g6 vb52b9d_yx180000gn/T/702.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000g n/T/702.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ call back 702 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/702 $? ; } &
-[32] 8101
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom && HBPATH=$(brew --repository); ls -1 $HBPATH/Librar y/Taps/homebrew/homebrew-core/Formula $HBPATH/Library/Taps/homebrew/homebrew-cas k/Casks | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/720.stdout 2 > /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/720.stderr; /Applications/Fig .app/Contents/MacOS/fig-darwin-universal _ callback 720 /var/folders/pq/y2b49gjs 29g6vb52b9d_yx180000gn/T/720 $? ; } &
-[33] 10290
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom && \ls -1ApL | cat ) 1> /var/folders/pq/y2b49gjs29g6 vb52b9d_yx180000gn/T/745.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000g n/T/745.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ call back 745 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/745 $? ; } &
-[34] 33731
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/Downloads && \ls -1ApL | cat ) 1> /var/folders/pq/y2 b49gjs29g6vb52b9d_yx180000gn/T/759.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d _yx180000gn/T/759.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-univer sal _ callback 759 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/759 $? ; } & [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K&
-[35] 33929
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/Downloads && \ls -1ApL | cat ) 1> /var/folders/pq/y2 b49gjs29g6vb52b9d_yx180000gn/T/773.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d _yx180000gn/T/773.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-univer sal _ callback 773 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/773 $? ; } & [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K&
-[36] 34131
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/Downloads && \ls -1ApL | cat ) 1> /var/folders/pq/y2 b49gjs29g6vb52b9d_yx180000gn/T/778.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d _yx180000gn/T/778.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-univer sal _ callback 778 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/778 $? ; } & [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K&
-[37] 34250
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/Downloads && \ls -1ApL | cat ) 1> /var/folders/pq/y2 b49gjs29g6vb52b9d_yx180000gn/T/791.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d _yx180000gn/T/791.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-univer sal _ callback 791 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/791 $? ; } & [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K&
-[38] 34442
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/Downloads && \ls -1ApL | cat ) 1> /var/folders/pq/y2 b49gjs29g6vb52b9d_yx180000gn/T/809.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d _yx180000gn/T/809.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-univer sal _ callback 809 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/809 $? ; } & [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K&
-[39] 35057
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/Downloads && \ls -1ApL | cat ) 1> /var/folders/pq/y2 b49gjs29g6vb52b9d_yx180000gn/T/814.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d _yx180000gn/T/814.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-univer sal _ callback 814 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/814 $? ; } & [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K&
-[40] 35158
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/Downloads/santana-ally-assignment2 && \ls -1ApL | ca t ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/824.stdout 2> /var/folde rs/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/824.stderr; /Applications/Fig.app/Content s/MacOS/fig-darwin-universal _ callback 824 /var/folders/pq/y2b49gjs29g6vb52b9d_ yx180000gn/T/824 $? ; } &
-[41] 35260
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/Downloads/santana-ally-assignment2 && \ls -1ApL | ca t ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/838.stdout 2> /var/folde rs/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/838.stderr; /Applications/Fig.app/Content s/MacOS/fig-darwin-universal _ callback 838 /var/folders/pq/y2b49gjs29g6vb52b9d_ yx180000gn/T/838 $? ; } &
-[42] 35397
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/Downloads/santana-ally-assignment2 && \ls -1ApL | ca t ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/862.stdout 2> /var/folde rs/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/862.stderr; /Applications/Fig.app/Content s/MacOS/fig-darwin-universal _ callback 862 /var/folders/pq/y2b49gjs29g6vb52b9d_ yx180000gn/T/862 $? ; } &
-[43] 67185
-bash-3.2$ 
-bash-3.2$ { ( defaults read com.mschrage.fig access_token ) 1> /var/folders/pq/y 2b49gjs29g6vb52b9d_yx180000gn/T/2.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_ yx180000gn/T/2.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal  _ callback 2 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/2 $? ; } &
-[44] 51921
-bash-3.2$ 
-bash-3.2$ export HOME=/Users/dom
-bash-3.2$ 
-bash-3.2$ 
-bash-3.2$ { ( defaults read com.mschrage.fig access_token ) 1> /var/folders/pq/y 2b49gjs29g6vb52b9d_yx180000gn/T/12.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d _yx180000gn/T/12.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-univers al _ callback 12 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/12 $? ; } &
-[45] 51923
-bash-3.2$ 
-bash-3.2$ { ( which fish ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1 36.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/136.stderr; /Appli cations/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 136 /var/folders/ pq/y2b49gjs29g6vb52b9d_yx180000gn/T/136 $? ; } &
-[46] 52000
-bash-3.2$ 
-bash-3.2$ { ( defaults read com.mschrage.fig access_token ) 1> /var/folders/pq/y 2b49gjs29g6vb52b9d_yx180000gn/T/2.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_ yx180000gn/T/2.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal  _ callback 2 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/2 $? ; } &
-[47] 22857
-bash-3.2$ 
-bash-3.2$ export HOME=/Users/dom
-bash-3.2$ 
-bash-3.2$ 
-bash-3.2$ { ( defaults read com.mschrage.fig access_token ) 1> /var/folders/pq/y 2b49gjs29g6vb52b9d_yx180000gn/T/12.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d _yx180000gn/T/12.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-univers al _ callback 12 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/12 $? ; } &
-[48] 22859
-bash-3.2$ 
-bash-3.2$ { ( which fish ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1 36.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/136.stderr; /Appli cations/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 136 /var/folders/ pq/y2b49gjs29g6vb52b9d_yx180000gn/T/136 $? ; } &
-[49] 22936
-bash-3.2$ 
-bash-3.2$ { ( defaults read com.mschrage.fig access_token ) 1> /var/folders/pq/y 2b49gjs29g6vb52b9d_yx180000gn/T/2.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_ yx180000gn/T/2.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal  _ callback 2 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/2 $? ; } &
-[50] 69638
-bash-3.2$ 
-bash-3.2$ export HOME=/Users/dom
-bash-3.2$ 
-
-{ ( defaults read com.mschrage.fig access_token ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/12.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/12.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 12 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/12 $? ; } &
-
-bash-3.2$ 
-bash-3.2$ { ( defaults read com.mschrage.fig access_token ) 1> /var/folders/pq/y 2b49gjs29g6vb52b9d_yx180000gn/T/12.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d _yx180000gn/T/12.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-univers al _ callback 12 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/12 $? ; } &
-[51] 69640
-bash-3.2$ 
-bash-3.2$ { ( which fish ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1 36.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/136.stderr; /Appli cations/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 136 /var/folders/ pq/y2b49gjs29g6vb52b9d_yx180000gn/T/136 $? ; } &
-[52] 69724
-bash-3.2$ 
-bash-3.2$ { ( defaults read com.mschrage.fig access_token ) 1> /var/folders/pq/y 2b49gjs29g6vb52b9d_yx180000gn/T/2.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_ yx180000gn/T/2.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal  _ callback 2 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/2 $? ; } &
-[53] 53227
-bash-3.2$ 
-bash-3.2$ export HOME=/Users/dom
-bash-3.2$ 
-bash-3.2$ 
-bash-3.2$ { ( defaults read com.mschrage.fig access_token ) 1> /var/folders/pq/y 2b49gjs29g6vb52b9d_yx180000gn/T/12.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d _yx180000gn/T/12.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-univers al _ callback 12 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/12 $? ; } &
-[54] 53229
-bash-3.2$ 
-bash-3.2$ { ( which fish ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1 35.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/135.stderr; /Appli cations/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 135 /var/folders/ pq/y2b49gjs29g6vb52b9d_yx180000gn/T/135 $? ; } &
-[55] 53296
-bash-3.2$ 
-bash-3.2$ { ( defaults read com.mschrage.fig access_token ) 1> /var/folders/pq/y 2b49gjs29g6vb52b9d_yx180000gn/T/2.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_ yx180000gn/T/2.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal  _ callback 2 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/2 $? ; } &
-[56] 30398
-bash-3.2$ 
-bash-3.2$ export HOME=/Users/dom
-bash-3.2$ 
-bash-3.2$ 
-bash-3.2$ { ( defaults read com.mschrage.fig access_token ) 1> /var/folders/pq/y 2b49gjs29g6vb52b9d_yx180000gn/T/12.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d _yx180000gn/T/12.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-univers al _ callback 12 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/12 $? ; } &
-[57] 30400
-bash-3.2$ 
-bash-3.2$ { ( which fish ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1 35.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/135.stderr; /Appli cations/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 135 /var/folders/ pq/y2b49gjs29g6vb52b9d_yx180000gn/T/135 $? ; } &
-[58] 30467
-bash-3.2$ 
-bash-3.2$ { ( defaults read com.mschrage.fig access_token ) 1> /var/folders/pq/y 2b49gjs29g6vb52b9d_yx180000gn/T/2.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_ yx180000gn/T/2.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal  _ callback 2 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/2 $? ; } &
-[59] 63997
-bash-3.2$ 
-bash-3.2$ export HOME=/Users/dom
-bash-3.2$ 
-bash-3.2$ 
-bash-3.2$ { ( defaults read com.mschrage.fig access_token ) 1> /var/folders/pq/y 2b49gjs29g6vb52b9d_yx180000gn/T/12.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d _yx180000gn/T/12.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-univers al _ callback 12 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/12 $? ; } &
-[60] 63999
-bash-3.2$ 
-bash-3.2$ { ( which fish ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1 35.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/135.stderr; /Appli cations/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 135 /var/folders/ pq/y2b49gjs29g6vb52b9d_yx180000gn/T/135 $? ; } &
-[61] 64066
-bash-3.2$ 
-bash-3.2$ { ( defaults read com.mschrage.fig access_token ) 1> /var/folders/pq/y 2b49gjs29g6vb52b9d_yx180000gn/T/2.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_ yx180000gn/T/2.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal  _ callback 2 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/2 $? ; } &
-[62] 74678
-bash-3.2$ 
-bash-3.2$ export HOME=/Users/dom
-bash-3.2$ 
-bash-3.2$ 
-bash-3.2$ { ( defaults read com.mschrage.fig access_token ) 1> /var/folders/pq/y 2b49gjs29g6vb52b9d_yx180000gn/T/12.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d _yx180000gn/T/12.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-univers al _ callback 12 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/12 $? ; } &
-[63] 74680
-bash-3.2$ 
-bash-3.2$ { ( which fish ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1 35.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/135.stderr; /Appli cations/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 135 /var/folders/ pq/y2b49gjs29g6vb52b9d_yx180000gn/T/135 $? ; } &
-[64] 74767
-bash-3.2$ 
-bash-3.2$ { ( defaults read com.mschrage.fig access_token ) 1> /var/folders/pq/y 2b49gjs29g6vb52b9d_yx180000gn/T/2.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_ yx180000gn/T/2.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal  _ callback 2 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/2 $? ; } &
-[65] 46751
-bash-3.2$ 
-bash-3.2$ export HOME=/Users/dom
-bash-3.2$ 
-bash-3.2$ 
-bash-3.2$ { ( defaults read com.mschrage.fig access_token ) 1> /var/folders/pq/y 2b49gjs29g6vb52b9d_yx180000gn/T/12.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d _yx180000gn/T/12.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-univers al _ callback 12 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/12 $? ; } &
-[66] 46753
-bash-3.2$ 
-bash-3.2$ { ( which fish ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1 35.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/135.stderr; /Appli cations/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 135 /var/folders/ pq/y2b49gjs29g6vb52b9d_yx180000gn/T/135 $? ; } &
-[67] 46820
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom && \ls -1ApL | cat ) 1> /var/folders/pq/y2b49gjs29g6 vb52b9d_yx180000gn/T/141.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000g n/T/141.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ call back 141 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/141 $? ; } &
-[68] 3033
-bash-3.2$ 
-bash-3.2$ { ( defaults read com.mschrage.fig access_token ) 1> /var/folders/pq/y 2b49gjs29g6vb52b9d_yx180000gn/T/2.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_ yx180000gn/T/2.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal  _ callback 2 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/2 $? ; } &
-[69] 62724
-bash-3.2$ 
-bash-3.2$ export HOME=/Users/dom
-bash-3.2$ 
-bash-3.2$ 
-bash-3.2$ { ( defaults read com.mschrage.fig access_token ) 1> /var/folders/pq/y 2b49gjs29g6vb52b9d_yx180000gn/T/12.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d _yx180000gn/T/12.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-univers al _ callback 12 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/12 $? ; } &
-[70] 62726
-bash-3.2$ 
-bash-3.2$ { ( which fish ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1 36.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/136.stderr; /Appli cations/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 136 /var/folders/ pq/y2b49gjs29g6vb52b9d_yx180000gn/T/136 $? ; } &
-[71] 62810
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom && \ls -1ApL | cat ) 1> /var/folders/pq/y2b49gjs29g6 vb52b9d_yx180000gn/T/139.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000g n/T/139.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ call back 139 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/139 $? ; } &
-[72] 36674
-bash-3.2$ 
-bash-3.2$ set +m +b +o history
-
-unset HISTFILE
-
-export PATH='/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Library/Apple/usr/bin:/Users/dom/.spicetify:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/dom/.local/bin:/Users/dom/.fig/bin'
-
-{ ( defaults read com.mschrage.fig access_token ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/2.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/2.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 2 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/2 $? ; } &
-
-export HOME=/Users/dom
-
-
-
-The default interactive shell is now zsh.
-To update your account to use zsh, please run `chsh -s /bin/zsh`.
-For more details, please visit https://support.apple.com/kb/HT208050.
-[?1034hbash-3.2$ set +m +b +o history
-bash-3.2$ 
-bash-3.2$ unset HISTFILE
-bash-3.2$ 
-bash-3.2$ export PATH='/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/ bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Library/Apple/usr/bin:/Users/dom/. spicetify:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/dom/.local/bin:/Users/dom/ .fig/bin'
-bash-3.2$ 
-bash-3.2$ { ( defaults read com.mschrage.fig access_token ) 1> /var/folders/pq/y 2b49gjs29g6vb52b9d_yx180000gn/T/2.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_ yx180000gn/T/2.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal  _ callback 2 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/2 $? ; } &
-[1] 37894
-bash-3.2$ 
-bash-3.2$ export HOME=/Users/dom
-bash-3.2$ 
-bash-3.2$ 
-bash-3.2$ { ( defaults read com.mschrage.fig access_token ) 1> /var/folders/pq/y 2b49gjs29g6vb52b9d_yx180000gn/T/12.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d _yx180000gn/T/12.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-univers al _ callback 12 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/12 $? ; } &
-[2] 37897
-bash-3.2$ 
-bash-3.2$ { ( which fish ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1 36.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/136.stderr; /Appli cations/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 136 /var/folders/ pq/y2b49gjs29g6vb52b9d_yx180000gn/T/136 $? ; } &
-[3] 37984
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && git --no-optional-locks remo te -v | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/154.stdout 2>  /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/154.stderr; /Applications/Fig.a pp/Contents/MacOS/fig-darwin-universal _ callback 154 /var/folders/pq/y2b49gjs29 g6vb52b9d_yx180000gn/T/154 $? ; } &
-[4] 40476
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && git --no-optional-locks remo te -v | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/157.stdout 2>  /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/157.stderr; /Applications/Fig.a pp/Contents/MacOS/fig-darwin-universal _ callback 157 /var/folders/pq/y2b49gjs29 g6vb52b9d_yx180000gn/T/157 $? ; } &
-[5] 40488
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && git --no-optional-locks stat us --short | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/160.stdou t 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/160.stderr; /Applications/ Fig.app/Contents/MacOS/fig-darwin-universal _ callback 160 /var/folders/pq/y2b49 gjs29g6vb52b9d_yx180000gn/T/160 $? ; } &
-[6] 40863
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && \ls -1ApL | cat ) 1> /var/fo lders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/161.stdout 2> /var/folders/pq/y2b49gjs 29g6vb52b9d_yx180000gn/T/161.stderr; /Applications/Fig.app/Contents/MacOS/fig-da rwin-universal _ callback 161 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1 61 $? ; } &
-[7] 40866
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && git --no-optional-locks bran ch --no-color --sort=-committerdate | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b 9d_yx180000gn/T/164.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1 64.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback  164 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/164 $? ; } &
-[8] 40978
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && git --no-optional-locks bran ch --no-color --sort=-committerdate | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b 9d_yx180000gn/T/165.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1 65.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback  165 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/165 $? ; } &
-[9] 40984
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && git --no-optional-locks bran ch --no-color --sort=-committerdate | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b 9d_yx180000gn/T/166.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1 66.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback  166 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/166 $? ; } &
-[10] 40991
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && git --no-optional-locks stat us --short | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/167.stdou t 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/167.stderr; /Applications/ Fig.app/Contents/MacOS/fig-darwin-universal _ callback 167 /var/folders/pq/y2b49 gjs29g6vb52b9d_yx180000gn/T/167 $? ; } &
-[11] 40996
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && \ls -1ApL | cat ) 1> /var/fo lders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/168.stdout 2> /var/folders/pq/y2b49gjs 29g6vb52b9d_yx180000gn/T/168.stderr; /Applications/Fig.app/Contents/MacOS/fig-da rwin-universal _ callback 168 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1 68 $? ; } &
-[12] 40998
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && \ls -1ApL | cat ) 1> /var/fo lders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/173.stdout 2> /var/folders/pq/y2b49gjs 29g6vb52b9d_yx180000gn/T/173.stderr; /Applications/Fig.app/Contents/MacOS/fig-da rwin-universal _ callback 173 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1 73 $? ; } &
-[13] 41178
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && git --no-optional-locks bran ch --no-color --sort=-committerdate | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b 9d_yx180000gn/T/176.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1 76.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback  176 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/176 $? ; } &
-[14] 41245
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && git --no-optional-locks conf ig --get-regexp '^alias.' | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx18000 0gn/T/180.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/180.stderr;  /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 180 /var/f olders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/180 $? ; } &
-[15] 41529
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && git --no-optional-locks conf ig --get-regexp '^alias.' | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx18000 0gn/T/221.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/221.stderr;  /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 221 /var/f olders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/221 $? ; } &
-[16] 41908
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && git --no-optional-locks bran ch --no-color --sort=-committerdate | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b 9d_yx180000gn/T/223.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/2 23.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback  223 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/223 $? ; } &
-[17] 41914
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && git --no-optional-locks conf ig --get-regexp '^alias.' | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx18000 0gn/T/228.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/228.stderr;  /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 228 /var/f olders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/228 $? ; } &
-[18] 42010
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && git --no-optional-locks bran ch --no-color --sort=-committerdate | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b 9d_yx180000gn/T/265.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/2 65.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback  265 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/265 $? ; } &
-[19] 42176
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && git --no-optional-locks conf ig --get-regexp '^alias.' | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx18000 0gn/T/269.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/269.stderr;  /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 269 /var/f olders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/269 $? ; } &
-[20] 42181
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && git --no-optional-locks bran ch --no-color --sort=-committerdate | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b 9d_yx180000gn/T/271.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/2 71.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback  271 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/271 $? ; } &
-[21] 42186
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && git --no-optional-locks stat us --short | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/272.stdou t 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/272.stderr; /Applications/ Fig.app/Contents/MacOS/fig-darwin-universal _ callback 272 /var/folders/pq/y2b49 gjs29g6vb52b9d_yx180000gn/T/272 $? ; } &
-[22] 42191
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && \ls -1ApL | cat ) 1> /var/fo lders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/273.stdout 2> /var/folders/pq/y2b49gjs 29g6vb52b9d_yx180000gn/T/273.stderr; /Applications/Fig.app/Contents/MacOS/fig-da rwin-universal _ callback 273 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/2 73 $? ; } &
-[23] 42195
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && git --no-optional-locks bran ch --no-color --sort=-committerdate | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b 9d_yx180000gn/T/274.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/2 74.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback  274 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/274 $? ; } &
-[24] 42201
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && git --no-optional-locks stat us --short | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/276.stdou t 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/276.stderr; /Applications/ Fig.app/Contents/MacOS/fig-darwin-universal _ callback 276 /var/folders/pq/y2b49 gjs29g6vb52b9d_yx180000gn/T/276 $? ; } &
-[25] 42206
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && \ls -1ApL | cat ) 1> /var/fo lders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/277.stdout 2> /var/folders/pq/y2b49gjs 29g6vb52b9d_yx180000gn/T/277.stderr; /Applications/Fig.app/Contents/MacOS/fig-da rwin-universal _ callback 277 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/2 77 $? ; } &
-[26] 42210
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && git --no-optional-locks bran ch --no-color --sort=-committerdate | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b 9d_yx180000gn/T/279.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/2 79.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback  279 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/279 $? ; } &
-[27] 42216
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && git --no-optional-locks conf ig --get-regexp '^alias.' | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx18000 0gn/T/280.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/280.stderr;  /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 280 /var/f olders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/280 $? ; } &
-[28] 42222
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && git --no-optional-locks conf ig --get-regexp '^alias.' | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx18000 0gn/T/284.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/284.stderr;  /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 284 /var/f olders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/284 $? ; } &
-[29] 42230
-bash-3.2$ 
-bash-3.2$ { ( cd ~/.ssh && \ls -1ApL | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52 b9d_yx180000gn/T/338.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/ 338.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback  338 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/338 $? ; } &
-[30] 45939
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom && \ls -1ApL | cat ) 1> /var/folders/pq/y2b49gjs29g6 vb52b9d_yx180000gn/T/339.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000g n/T/339.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ call back 339 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/339 $? ; } &
-[31] 45957
-bash-3.2$ 
-bash-3.2$ { ( cd ~/.ssh && \ls -1ApL | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52 b9d_yx180000gn/T/342.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/ 342.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback  342 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/342 $? ; } &
-[32] 46016
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom && \ls -1ApL | cat ) 1> /var/folders/pq/y2b49gjs29g6 vb52b9d_yx180000gn/T/344.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000g n/T/344.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ call back 344 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/344 $? ; } &
-[33] 46023
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom && \ls -1ApL | cat ) 1> /var/folders/pq/y2b49gjs29g6 vb52b9d_yx180000gn/T/359.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000g n/T/359.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ call back 359 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/359 $? ; } &
-[34] 46077
-bash-3.2$ 
-bash-3.2$ { ( cd ~ && \ls -1ApL | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_y x180000gn/T/366.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/366.s tderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 366  /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/366 $? ; } &
-[35] 46085
-bash-3.2$ 
-bash-3.2$ { ( cd ~/.ssh && \ls -1ApL | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52 b9d_yx180000gn/T/380.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/ 380.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback  380 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/380 $? ; } &
-[36] 46107
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom && \ls -1ApL | cat ) 1> /var/folders/pq/y2b49gjs29g6 vb52b9d_yx180000gn/T/394.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000g n/T/394.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ call back 394 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/394 $? ; } &
-[37] 46372
-bash-3.2$ 
-bash-3.2$ { ( cd ~ && \ls -1ApL | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_y x180000gn/T/400.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/400.s tderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 400  /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/400 $? ; } &
-[38] 46416
-bash-3.2$ 
-bash-3.2$ { ( cd ~/.ssh && \ls -1ApL | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52 b9d_yx180000gn/T/414.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/ 414.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback  414 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/414 $? ; } &
-[39] 46427
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom && gh alias list | cat ) 1> /var/folders/pq/y2b49gjs 29g6vb52b9d_yx180000gn/T/425.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180 000gn/T/425.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _  callback 425 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/425 $? ; } &
-[40] 47031
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom && \ls -1ApL | cat ) 1> /var/folders/pq/y2b49gjs29g6 vb52b9d_yx180000gn/T/438.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000g n/T/438.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ call back 438 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/438 $? ; } &
-[41] 47091
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom && git --no-optional-locks config --get-regexp '^ali as.' | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/456.stdout 2> / var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/456.stderr; /Applications/Fig.ap p/Contents/MacOS/fig-darwin-universal _ callback 456 /var/folders/pq/y2b49gjs29g 6vb52b9d_yx180000gn/T/456 $? ; } &
-[42] 47096
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom && git config --get alias.auth | cat ) 1> /var/folde rs/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/464.stdout 2> /var/folders/pq/y2b49gjs29g 6vb52b9d_yx180000gn/T/464.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwi n-universal _ callback 464 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/464  $? ; } &
-[43] 47107
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom && git config --get alias.auth | cat ) 1> /var/folde rs/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/468.stdout 2> /var/folders/pq/y2b49gjs29g 6vb52b9d_yx180000gn/T/468.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwi n-universal _ callback 468 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/468  $? ; } &
-[44] 47118
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom && git config --get alias.auth | cat ) 1> /var/folde rs/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/469.stdout 2> /var/folders/pq/y2b49gjs29g 6vb52b9d_yx180000gn/T/469.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwi n-universal _ callback 469 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/469  $? ; } &
-[45] 47123
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom && git --no-optional-locks config --get-regexp '^ali as.' | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/470.stdout 2> / var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/470.stderr; /Applications/Fig.ap p/Contents/MacOS/fig-darwin-universal _ callback 470 /var/folders/pq/y2b49gjs29g 6vb52b9d_yx180000gn/T/470 $? ; } &
-[46] 47128
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom && HBPATH=$(brew --repository); ls -1 $HBPATH/Librar y/Taps/homebrew/homebrew-core/Formula $HBPATH/Library/Taps/homebrew/homebrew-cas k/Casks | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/524.stdout 2 > /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/524.stderr; /Applications/Fig .app/Contents/MacOS/fig-darwin-universal _ callback 524 /var/folders/pq/y2b49gjs 29g6vb52b9d_yx180000gn/T/524 $? ; } &
-[47] 47431
-bash-3.2$ 
-bash-3.2$ { ( cd ~/.ssh && \ls -1ApL | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52 b9d_yx180000gn/T/527.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/ 527.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback  527 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/527 $? ; } &
-[48] 50797
-bash-3.2$ 
-bash-3.2$ { ( cd ~/.ssh && \ls -1ApL | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52 b9d_yx180000gn/T/539.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/ 539.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback  539 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/539 $? ; } &
-[49] 50988
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && git --no-optional-locks bran ch --no-color --sort=-committerdate | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b 9d_yx180000gn/T/555.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/5 55.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback  555 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/555 $? ; } &
-[50] 51850
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom && brew outdated -q | cat ) 1> /var/folders/pq/y2b49 gjs29g6vb52b9d_yx180000gn/T/788.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx 180000gn/T/788.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal  _ callback 788 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/788 $? ; } &
-[51] 60844
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom && \ls -1ApL | cat ) 1> /var/folders/pq/y2b49gjs29g6 vb52b9d_yx180000gn/T/820.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000g n/T/820.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ call back 820 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/820 $? ; } &
-[52] 61224
-bash-3.2$ 
-bash-3.2$ { ( defaults read com.mschrage.fig access_token ) 1> /var/folders/pq/y 2b49gjs29g6vb52b9d_yx180000gn/T/2.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_ yx180000gn/T/2.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal  _ callback 2 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/2 $? ; } &
-[53] 73351
-bash-3.2$ 
-bash-3.2$ export HOME=/Users/dom
-bash-3.2$ 
-bash-3.2$ 
-bash-3.2$ { ( defaults read com.mschrage.fig access_token ) 1> /var/folders/pq/y 2b49gjs29g6vb52b9d_yx180000gn/T/12.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d _yx180000gn/T/12.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-univers al _ callback 12 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/12 $? ; } &
-[54] 73353
-bash-3.2$ 
-bash-3.2$ { ( which fish ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1 54.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/154.stderr; /Appli cations/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 154 /var/folders/ pq/y2b49gjs29g6vb52b9d_yx180000gn/T/154 $? ; } &
-[55] 73441
-bash-3.2$ 
-bash-3.2$ set +m +b +o history
-
-unset HISTFILE
-
-
-The default interactive shell is now zsh.
-To update your account to use zsh, please run `chsh -s /bin/zsh`.
-For more details, please visit https://support.apple.com/kb/HT208050.
-export PATH='/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Library/Apple/usr/bin:/Users/dom/.spicetify:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/dom/.local/bin:/Users/dom/.fig/bin'
-
-export HOME=/Users/dom
-
-
-[?1034hbash-3.2$ set +m +b +o history
-bash-3.2$ 
-bash-3.2$ unset HISTFILE
-bash-3.2$ 
-bash-3.2$ export PATH='/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/ bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Library/Apple/usr/bin:/Users/dom/. spicetify:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/dom/.local/bin:/Users/dom/ .fig/bin'
-bash-3.2$ 
-bash-3.2$ export HOME=/Users/dom
-bash-3.2$ 
-bash-3.2$ 
-bash-3.2$ { ( defaults read com.mschrage.fig access_token ) 1> /var/folders/pq/y 2b49gjs29g6vb52b9d_yx180000gn/T/11.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d _yx180000gn/T/11.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-univers al _ callback 11 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/11 $? ; } &
-[1] 1200
-bash-3.2$ 
-bash-3.2$ { ( defaults read com.mschrage.fig access_token ) 1> /var/folders/pq/y 2b49gjs29g6vb52b9d_yx180000gn/T/14.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d _yx180000gn/T/14.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-univers al _ callback 14 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/14 $? ; } &
-[2] 1202
-bash-3.2$ 
-bash-3.2$ set +m +b +o history
-
-unset HISTFILE
-
-export PATH='/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Library/Apple/usr/bin:/Users/dom/.spicetify:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/dom/.local/bin:/Users/dom/.fig/bin'
-
-{ ( defaults read com.mschrage.fig access_token ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/2.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/2.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 2 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/2 $? ; } &
-
-export HOME=/Users/dom
-
-
-{ ( defaults read com.mschrage.fig access_token ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/12.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/12.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 12 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/12 $? ; } &
-
-
-The default interactive shell is now zsh.
-To update your account to use zsh, please run `chsh -s /bin/zsh`.
-For more details, please visit https://support.apple.com/kb/HT208050.
-[?1034hbash-3.2$ set +m +b +o history
-bash-3.2$ 
-bash-3.2$ unset HISTFILE
-bash-3.2$ 
-bash-3.2$ export PATH='/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/ bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Library/Apple/usr/bin:/Users/dom/. spicetify:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/dom/.local/bin:/Users/dom/ .fig/bin'
-bash-3.2$ 
-bash-3.2$ { ( defaults read com.mschrage.fig access_token ) 1> /var/folders/pq/y 2b49gjs29g6vb52b9d_yx180000gn/T/2.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_ yx180000gn/T/2.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal  _ callback 2 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/2 $? ; } &
-[1] 1270
-bash-3.2$ 
-bash-3.2$ export HOME=/Users/dom
-bash-3.2$ 
-bash-3.2$ 
-bash-3.2$ { ( defaults read com.mschrage.fig access_token ) 1> /var/folders/pq/y 2b49gjs29g6vb52b9d_yx180000gn/T/12.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d _yx180000gn/T/12.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-univers al _ callback 12 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/12 $? ; } &
-[2] 1272
-bash-3.2$ 
-bash-3.2$ { ( which fish ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/5 2.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/52.stderr; /Applica tions/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 52 /var/folders/pq/ y2b49gjs29g6vb52b9d_yx180000gn/T/52 $? ; } &
-[3] 1521
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && git --no-optional-locks conf ig --get-regexp '^alias.' | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx18000 0gn/T/71.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/71.stderr; / Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 71 /var/fold ers/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/71 $? ; } &
-[4] 7999
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && git --no-optional-locks bran ch --no-color --sort=-committerdate | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b 9d_yx180000gn/T/96.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/96 .stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 96  /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/96 $? ; } &
-[5] 13814
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && git --no-optional-locks conf ig --get-regexp '^alias.' | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx18000 0gn/T/100.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/100.stderr;  /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 100 /var/f olders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/100 $? ; } &
-[6] 13870
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && git --no-optional-locks stat us --short | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/119.stdou t 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/119.stderr; /Applications/ Fig.app/Contents/MacOS/fig-darwin-universal _ callback 119 /var/folders/pq/y2b49 gjs29g6vb52b9d_yx180000gn/T/119 $? ; } &
-[7] 14375
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && \ls -1ApL | cat ) 1> /var/fo lders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/120.stdout 2> /var/folders/pq/y2b49gjs 29g6vb52b9d_yx180000gn/T/120.stderr; /Applications/Fig.app/Contents/MacOS/fig-da rwin-universal _ callback 120 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1 20 $? ; } &
-[8] 14377
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && git --no-optional-locks conf ig --get-regexp '^alias.' | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx18000 0gn/T/125.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/125.stderr;  /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 125 /var/f olders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/125 $? ; } &
-[9] 14420
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && \ls -1ApL | cat ) 1> /var/fo lders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/135.stdout 2> /var/folders/pq/y2b49gjs 29g6vb52b9d_yx180000gn/T/135.stderr; /Applications/Fig.app/Contents/MacOS/fig-da rwin-universal _ callback 135 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1 35 $? ; } &
-[10] 14599
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && \ls -1ApL | cat ) 1> /var/fo lders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/147.stdout 2> /var/folders/pq/y2b49gjs 29g6vb52b9d_yx180000gn/T/147.stderr; /Applications/Fig.app/Contents/MacOS/fig-da rwin-universal _ callback 147 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1 47 $? ; } &
-[11] 14884
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && \ls -1ApL | cat ) 1> /var/fo lders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/152.stdout 2> /var/folders/pq/y2b49gjs 29g6vb52b9d_yx180000gn/T/152.stderr; /Applications/Fig.app/Contents/MacOS/fig-da rwin-universal _ callback 152 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1 52 $? ; } &
-[12] 15061
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && git --no-optional-locks conf ig --get-regexp '^alias.' | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx18000 0gn/T/155.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/155.stderr;  /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 155 /var/f olders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/155 $? ; } &
-[13] 15086
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && git --no-optional-locks stat us --short | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/162.stdou t 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/162.stderr; /Applications/ Fig.app/Contents/MacOS/fig-darwin-universal _ callback 162 /var/folders/pq/y2b49 gjs29g6vb52b9d_yx180000gn/T/162 $? ; } &
-[14] 15218
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && \ls -1ApL | cat ) 1> /var/fo lders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/163.stdout 2> /var/folders/pq/y2b49gjs 29g6vb52b9d_yx180000gn/T/163.stderr; /Applications/Fig.app/Contents/MacOS/fig-da rwin-universal _ callback 163 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1 63 $? ; } &
-[15] 15225
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && git --no-optional-locks stat us --short | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/175.stdou t 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/175.stderr; /Applications/ Fig.app/Contents/MacOS/fig-darwin-universal _ callback 175 /var/folders/pq/y2b49 gjs29g6vb52b9d_yx180000gn/T/175 $? ; } &
-[16] 15464
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && \ls -1ApL | cat ) 1> /var/fo lders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/176.stdout 2> /var/folders/pq/y2b49gjs 29g6vb52b9d_yx180000gn/T/176.stderr; /Applications/Fig.app/Contents/MacOS/fig-da rwin-universal _ callback 176 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1 76 $? ; } &
-[17] 15468
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && \ls -1ApL | cat ) 1> /var/fo lders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/180.stdout 2> /var/folders/pq/y2b49gjs 29g6vb52b9d_yx180000gn/T/180.stderr; /Applications/Fig.app/Contents/MacOS/fig-da rwin-universal _ callback 180 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1 80 $? ; } &
-[18] 15476
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && git --no-optional-locks conf ig --get-regexp '^alias.' | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx18000 0gn/T/184.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/184.stderr;  /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 184 /var/f olders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/184 $? ; } &
-[19] 15607
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && git --no-optional-locks remo te -v | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/191.stdout 2>  /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/191.stderr; /Applications/Fig.a pp/Contents/MacOS/fig-darwin-universal _ callback 191 /var/folders/pq/y2b49gjs29 g6vb52b9d_yx180000gn/T/191 $? ; } &
-[20] 15764
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && git --no-optional-locks remo te -v | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/197.stdout 2>  /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/197.stderr; /Applications/Fig.a pp/Contents/MacOS/fig-darwin-universal _ callback 197 /var/folders/pq/y2b49gjs29 g6vb52b9d_yx180000gn/T/197 $? ; } &
-[21] 15854
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && git --no-optional-locks bran ch --no-color --sort=-committerdate | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b 9d_yx180000gn/T/207.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/2 07.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback  207 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/207 $? ; } &
-[22] 15995
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && git --no-optional-locks conf ig --get-regexp '^alias.' | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx18000 0gn/T/225.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/225.stderr;  /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 225 /var/f olders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/225 $? ; } &
-[23] 16534
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && \ls -1ApL | cat ) 1> /var/fo lders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/240.stdout 2> /var/folders/pq/y2b49gjs 29g6vb52b9d_yx180000gn/T/240.stderr; /Applications/Fig.app/Contents/MacOS/fig-da rwin-universal _ callback 240 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/2 40 $? ; } &
-[24] 16890
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && git --no-optional-locks conf ig --get-regexp '^alias.' | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx18000 0gn/T/245.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/245.stderr;  /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 245 /var/f olders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/245 $? ; } &
-[25] 20891
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && git --no-optional-locks remo te -v | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/256.stdout 2>  /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/256.stderr; /Applications/Fig.a pp/Contents/MacOS/fig-darwin-universal _ callback 256 /var/folders/pq/y2b49gjs29 g6vb52b9d_yx180000gn/T/256 $? ; } &
-[26] 21060
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && git --no-optional-locks bran ch --no-color --sort=-committerdate | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b 9d_yx180000gn/T/262.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/2 62.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback  262 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/262 $? ; } &
-[27] 21149
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && git --no-optional-locks conf ig --get-regexp '^alias.' | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx18000 0gn/T/275.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/275.stderr;  /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 275 /var/f olders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/275 $? ; } &
-[28] 26210
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && git --no-optional-locks remo te -v | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/280.stdout 2>  /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/280.stderr; /Applications/Fig.a pp/Contents/MacOS/fig-darwin-universal _ callback 280 /var/folders/pq/y2b49gjs29 g6vb52b9d_yx180000gn/T/280 $? ; } &
-[29] 26317
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && git --no-optional-locks conf ig --get-regexp '^alias.' | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx18000 0gn/T/294.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/294.stderr;  /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 294 /var/f olders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/294 $? ; } &
-[30] 34690
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && git --no-optional-locks log  --oneline | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/303.stdout  2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/303.stderr; /Applications/F ig.app/Contents/MacOS/fig-darwin-universal _ callback 303 /var/folders/pq/y2b49g js29g6vb52b9d_yx180000gn/T/303 $? ; } &
-[31] 34815
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && git --no-optional-locks stat us --short | sed -ne '/M /p' -e '/A /p' | cat ) 1> /var/folders/pq/y2b49gjs29g6v b52b9d_yx180000gn/T/304.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn /T/304.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callb ack 304 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/304 $? ; } &
-[32] 34819
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && git --no-optional-locks bran ch --no-color --sort=-committerdate | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b 9d_yx180000gn/T/340.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/3 40.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback  340 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/340 $? ; } &
-[33] 59858
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && git --no-optional-locks conf ig --get-regexp '^alias.' | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx18000 0gn/T/348.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/348.stderr;  /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 348 /var/f olders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/348 $? ; } &
-[34] 60914
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && git --no-optional-locks conf ig --get-regexp '^alias.' | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx18000 0gn/T/367.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/367.stderr;  /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 367 /var/f olders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/367 $? ; } &
-[35] 65256
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && git --no-optional-locks conf ig --get-regexp '^alias.' | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx18000 0gn/T/381.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/381.stderr;  /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 381 /var/f olders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/381 $? ; } &
-[36] 65640
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && git --no-optional-locks remo te -v | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/383.stdout 2>  /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/383.stderr; /Applications/Fig.a pp/Contents/MacOS/fig-darwin-universal _ callback 383 /var/folders/pq/y2b49gjs29 g6vb52b9d_yx180000gn/T/383 $? ; } &
-[37] 65648
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom && \ls -1ApL | cat ) 1> /var/folders/pq/y2b49gjs29g6 vb52b9d_yx180000gn/T/449.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000g n/T/449.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ call back 449 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/449 $? ; } &
-[38] 85596
-bash-3.2$ 
-bash-3.2$ { ( cd ~ && \ls -1ApL | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_y x180000gn/T/458.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/458.s tderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 458  /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/458 $? ; } &
-[39] 85602
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom && \ls -1ApL | cat ) 1> /var/folders/pq/y2b49gjs29g6 vb52b9d_yx180000gn/T/475.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000g n/T/475.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ call back 475 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/475 $? ; } &
-[40] 85698
-bash-3.2$ 
-bash-3.2$ { ( cd ~ && \ls -1ApL | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_y x180000gn/T/581.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/581.s tderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 581  /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/581 $? ; } &
-[41] 86898
-bash-3.2$ 
-bash-3.2$ { ( cd ~ && \ls -1ApL | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_y x180000gn/T/582.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/582.s tderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 582  /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/582 $? ; } &
-[42] 87140
-bash-3.2$ 
-bash-3.2$ { ( cd ~ && \ls -1ApL | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_y x180000gn/T/587.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/587.s tderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 587  /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/587 $? ; } &
-[43] 87413
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom && \ls -1ApL | cat ) 1> /var/folders/pq/y2b49gjs29g6 vb52b9d_yx180000gn/T/594.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000g n/T/594.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ call back 594 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/594 $? ; } &
-[44] 87509
-bash-3.2$ 
-bash-3.2$ { ( cd ~ && \ls -1ApL | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_y x180000gn/T/603.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/603.s tderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 603  /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/603 $? ; } &
-[45] 87515
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom && \ls -1ApL | cat ) 1> /var/folders/pq/y2b49gjs29g6 vb52b9d_yx180000gn/T/620.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000g n/T/620.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ call back 620 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/620 $? ; } &
-[46] 87530
-bash-3.2$ 
-bash-3.2$ { ( cd ~ && \ls -1ApL | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_y x180000gn/T/622.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/622.s tderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 622  /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/622 $? ; } &
-[47] 87541
-bash-3.2$ 
-bash-3.2$ { ( cd ~ && \ls -1ApL | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_y x180000gn/T/631.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/631.s tderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 631  /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/631 $? ; } &
-[48] 88059
-bash-3.2$ 
-bash-3.2$ { ( cd ~ && \ls -1ApL | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_y x180000gn/T/638.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/638.s tderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 638  /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/638 $? ; } &
-[49] 88064
-bash-3.2$ 
-bash-3.2$ { ( cd ~ && \ls -1ApL | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_y x180000gn/T/641.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/641.s tderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 641  /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/641 $? ; } &
-[50] 88070
-bash-3.2$ 
-bash-3.2$ { ( cd / && \ls -1ApL | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_y x180000gn/T/650.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/650.s tderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 650  /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/650 $? ; } &
-[51] 88850
-bash-3.2$ 
-bash-3.2$ { ( cd /Users && \ls -1ApL | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52 b9d_yx180000gn/T/653.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/ 653.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback  653 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/653 $? ; } &
-[52] 88855
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom && \ls -1ApL | cat ) 1> /var/folders/pq/y2b49gjs29g6 vb52b9d_yx180000gn/T/654.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000g n/T/654.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ call back 654 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/654 $? ; } &
-[53] 88860
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local && \ls -1ApL | cat ) 1> /var/folders/pq/y2b49 gjs29g6vb52b9d_yx180000gn/T/658.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx 180000gn/T/658.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal  _ callback 658 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/658 $? ; } &
-[54] 88865
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/bin && \ls -1ApL | cat ) 1> /var/folders/pq/y 2b49gjs29g6vb52b9d_yx180000gn/T/661.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9 d_yx180000gn/T/661.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-unive rsal _ callback 661 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/661 $? ; }  &
-[55] 88870
-bash-3.2$ 
-bash-3.2$ { ( cd ~ && \ls -1ApL | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_y x180000gn/T/669.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/669.s tderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 669  /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/669 $? ; } &
-[56] 88997
-bash-3.2$ 
-bash-3.2$ { ( cd ~ && \ls -1ApL | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_y x180000gn/T/674.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/674.s tderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 674  /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/674 $? ; } &
-[57] 89006
-bash-3.2$ 
-bash-3.2$ { ( cd ~ && \ls -1ApL | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_y x180000gn/T/679.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/679.s tderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 679  /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/679 $? ; } &
-[58] 89011
-bash-3.2$ 
-bash-3.2$ { ( cd ~ && \ls -1ApL | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_y x180000gn/T/688.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/688.s tderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 688  /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/688 $? ; } &
-[59] 89296
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom && \ls -1ApL | cat ) 1> /var/folders/pq/y2b49gjs29g6 vb52b9d_yx180000gn/T/690.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000g n/T/690.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ call back 690 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/690 $? ; } &
-[60] 89356
-bash-3.2$ 
-bash-3.2$ { ( cd ~ && \ls -1ApL | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_y x180000gn/T/692.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/692.s tderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 692  /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/692 $? ; } &
-[61] 89368
-bash-3.2$ 
-bash-3.2$ { ( cd ~ && \ls -1ApL | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_y x180000gn/T/697.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/697.s tderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 697  /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/697 $? ; } &
-[62] 89375
-bash-3.2$ 
-bash-3.2$ { ( cd ~ && \ls -1ApL | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_y x180000gn/T/702.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/702.s tderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 702  /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/702 $? ; } &
-[63] 89380
-bash-3.2$ 
-bash-3.2$ { ( cd ~ && \ls -1ApL | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_y x180000gn/T/707.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/707.s tderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 707  /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/707 $? ; } &
-[64] 89386
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom && \ls -1ApL | cat ) 1> /var/folders/pq/y2b49gjs29g6 vb52b9d_yx180000gn/T/822.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000g n/T/822.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ call back 822 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/822 $? ; } &
-[65] 95153
-bash-3.2$ 
-bash-3.2$ { ( cd ~ && \ls -1ApL | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_y x180000gn/T/832.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/832.s tderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 832  /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/832 $? ; } &
-[66] 95176
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom && \ls -1ApL | cat ) 1> /var/folders/pq/y2b49gjs29g6 vb52b9d_yx180000gn/T/841.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000g n/T/841.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ call back 841 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/841 $? ; } &
-[67] 95681
-bash-3.2$ 
-bash-3.2$ { ( cd ~ && \ls -1ApL | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_y x180000gn/T/852.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/852.s tderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 852  /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/852 $? ; } &
-[68] 95691
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom && \ls -1ApL | cat ) 1> /var/folders/pq/y2b49gjs29g6 vb52b9d_yx180000gn/T/867.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000g n/T/867.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ call back 867 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/867 $? ; } &
-[69] 95804
-bash-3.2$ 
-bash-3.2$ { ( cd ~ && \ls -1ApL | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_y x180000gn/T/873.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/873.s tderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 873  /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/873 $? ; } &
-[70] 95862
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && git --no-optional-locks conf ig --get-regexp '^alias.' | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx18000 0gn/T/934.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/934.stderr;  /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 934 /var/f olders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/934 $? ; } &
-[71] 96842
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && git --no-optional-locks stat us --short | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/953.stdou t 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/953.stderr; /Applications/ Fig.app/Contents/MacOS/fig-darwin-universal _ callback 953 /var/folders/pq/y2b49 gjs29g6vb52b9d_yx180000gn/T/953 $? ; } &
-[72] 96937
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && \ls -1ApL | cat ) 1> /var/fo lders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/954.stdout 2> /var/folders/pq/y2b49gjs 29g6vb52b9d_yx180000gn/T/954.stderr; /Applications/Fig.app/Contents/MacOS/fig-da rwin-universal _ callback 954 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/9 54 $? ; } &
-[73] 96940
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && git --no-optional-locks conf ig --get-regexp '^alias.' | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx18000 0gn/T/969.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/969.stderr;  /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 969 /var/f olders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/969 $? ; } &
-[74] 96951
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && \ls -1ApL | cat ) 1> /var/fo lders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/982.stdout 2> /var/folders/pq/y2b49gjs 29g6vb52b9d_yx180000gn/T/982.stderr; /Applications/Fig.app/Contents/MacOS/fig-da rwin-universal _ callback 982 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/9 82 $? ; } &
-[75] 96962
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && \ls -1ApL | cat ) 1> /var/fo lders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/995.stdout 2> /var/folders/pq/y2b49gjs 29g6vb52b9d_yx180000gn/T/995.stderr; /Applications/Fig.app/Contents/MacOS/fig-da rwin-universal _ callback 995 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/9 95 $? ; } &
-[76] 97085
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && git --no-optional-locks conf ig --get-regexp '^alias.' | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx18000 0gn/T/1000.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1000.stder r; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 1000 /va r/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1000 $? ; } &
-[77] 97101
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && \ls -1ApL | cat ) 1> /var/fo lders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1015.stdout 2> /var/folders/pq/y2b49gj s29g6vb52b9d_yx180000gn/T/1015.stderr; /Applications/Fig.app/Contents/MacOS/fig- darwin-universal _ callback 1015 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/ T/1015 $? ; } &
-[78] 97329
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && \ls -1ApL | cat ) 1> /var/fo lders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1020.stdout 2> /var/folders/pq/y2b49gj s29g6vb52b9d_yx180000gn/T/1020.stderr; /Applications/Fig.app/Contents/MacOS/fig- darwin-universal _ callback 1020 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/ T/1020 $? ; } &
-[79] 97396
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && \ls -1ApL | cat ) 1> /var/fo lders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1036.stdout 2> /var/folders/pq/y2b49gj s29g6vb52b9d_yx180000gn/T/1036.stderr; /Applications/Fig.app/Contents/MacOS/fig- darwin-universal _ callback 1036 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/ T/1036 $? ; } &
-[80] 97456
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && \ls -1ApL | cat ) 1> /var/fo lders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1045.stdout 2> /var/folders/pq/y2b49gj s29g6vb52b9d_yx180000gn/T/1045.stderr; /Applications/Fig.app/Contents/MacOS/fig- darwin-universal _ callback 1045 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/ T/1045 $? ; } &
-[81] 97461
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && git --no-optional-locks conf ig --get-regexp '^alias.' | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx18000 0gn/T/1061.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1061.stder r; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 1061 /va r/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1061 $? ; } &
-[82] 97577
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && \ls -1ApL | cat ) 1> /var/fo lders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1069.stdout 2> /var/folders/pq/y2b49gj s29g6vb52b9d_yx180000gn/T/1069.stderr; /Applications/Fig.app/Contents/MacOS/fig- darwin-universal _ callback 1069 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/ T/1069 $? ; } &
-[83] 97583
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && \ls -1ApL | cat ) 1> /var/fo lders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1080.stdout 2> /var/folders/pq/y2b49gj s29g6vb52b9d_yx180000gn/T/1080.stderr; /Applications/Fig.app/Contents/MacOS/fig- darwin-universal _ callback 1080 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/ T/1080 $? ; } &
-[84] 97648
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && git --no-optional-locks conf ig --get-regexp '^alias.' | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx18000 0gn/T/1084.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1084.stder r; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 1084 /va r/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1084 $? ; } &
-[85] 97654
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && git --no-optional-locks stat us --short | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1100.stdo ut 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1100.stderr; /Application s/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 1100 /var/folders/pq/y2 b49gjs29g6vb52b9d_yx180000gn/T/1100 $? ; } &
-[86] 97659
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && \ls -1ApL | cat ) 1> /var/fo lders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1101.stdout 2> /var/folders/pq/y2b49gj s29g6vb52b9d_yx180000gn/T/1101.stderr; /Applications/Fig.app/Contents/MacOS/fig- darwin-universal _ callback 1101 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/ T/1101 $? ; } &
-[87] 97663
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && git --no-optional-locks conf ig --get-regexp '^alias.' | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx18000 0gn/T/1117.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1117.stder r; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 1117 /va r/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1117 $? ; } &
-[88] 97674
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && \ls -1ApL | cat ) 1> /var/fo lders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1125.stdout 2> /var/folders/pq/y2b49gj s29g6vb52b9d_yx180000gn/T/1125.stderr; /Applications/Fig.app/Contents/MacOS/fig- darwin-universal _ callback 1125 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/ T/1125 $? ; } &
-[89] 97727
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && \ls -1ApL | cat ) 1> /var/fo lders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1137.stdout 2> /var/folders/pq/y2b49gj s29g6vb52b9d_yx180000gn/T/1137.stderr; /Applications/Fig.app/Contents/MacOS/fig- darwin-universal _ callback 1137 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/ T/1137 $? ; } &
-[90] 97797
-bash-3.2$ 
-bash-3.2$ { ( defaults read com.mschrage.fig access_token ) 1> /var/folders/pq/y 2b49gjs29g6vb52b9d_yx180000gn/T/2.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_ yx180000gn/T/2.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal  _ callback 2 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/2 $? ; } &
-[91] 97852
-bash-3.2$ 
-bash-3.2$ export HOME=/Users/dom
-bash-3.2$ 
-bash-3.2$ 
-bash-3.2$ { ( defaults read com.mschrage.fig access_token ) 1> /var/folders/pq/y 2b49gjs29g6vb52b9d_yx180000gn/T/12.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d _yx180000gn/T/12.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-univers al _ callback 12 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/12 $? ; } &
-[92] 97854
-bash-3.2$ 
-bash-3.2$ { ( which fish ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1 47.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/147.stderr; /Appli cations/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 147 /var/folders/ pq/y2b49gjs29g6vb52b9d_yx180000gn/T/147 $? ; } &
-[93] 97943
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && \ls -1ApL | cat ) 1> /var/fo lders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/150.stdout 2> /var/folders/pq/y2b49gjs 29g6vb52b9d_yx180000gn/T/150.stderr; /Applications/Fig.app/Contents/MacOS/fig-da rwin-universal _ callback 150 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1 50 $? ; } &
-[94] 97999
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && \ls -1ApL | cat ) 1> /var/fo lders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/155.stdout 2> /var/folders/pq/y2b49gjs 29g6vb52b9d_yx180000gn/T/155.stderr; /Applications/Fig.app/Contents/MacOS/fig-da rwin-universal _ callback 155 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1 55 $? ; } &
-[95] 98016
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && \ls -1ApL | cat ) 1> /var/fo lders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/166.stdout 2> /var/folders/pq/y2b49gjs 29g6vb52b9d_yx180000gn/T/166.stderr; /Applications/Fig.app/Contents/MacOS/fig-da rwin-universal _ callback 166 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1 66 $? ; } &
-[96] 98026
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && \ls -1ApL | cat ) 1> /var/fo lders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/183.stdout 2> /var/folders/pq/y2b49gjs 29g6vb52b9d_yx180000gn/T/183.stderr; /Applications/Fig.app/Contents/MacOS/fig-da rwin-universal _ callback 183 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1 83 $? ; } &
-[97] 98147
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && git --no-optional-locks conf ig --get-regexp '^alias.' | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx18000 0gn/T/197.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/197.stderr;  /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 197 /var/f olders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/197 $? ; } &
-[98] 98209
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && git --no-optional-locks stat us --short | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/204.stdou t 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/204.stderr; /Applications/ Fig.app/Contents/MacOS/fig-darwin-universal _ callback 204 /var/folders/pq/y2b49 gjs29g6vb52b9d_yx180000gn/T/204 $? ; } &
-[99] 98229
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && \ls -1ApL | cat ) 1> /var/fo lders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/205.stdout 2> /var/folders/pq/y2b49gjs 29g6vb52b9d_yx180000gn/T/205.stderr; /Applications/Fig.app/Contents/MacOS/fig-da rwin-universal _ callback 205 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/2 05 $? ; } &
-[100] 98233
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && git --no-optional-locks conf ig --get-regexp '^alias.' | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx18000 0gn/T/220.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/220.stderr;  /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 220 /var/f olders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/220 $? ; } &
-[101] 98269
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && \ls -1ApL | cat ) 1> /var/fo lders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/233.stdout 2> /var/folders/pq/y2b49gjs 29g6vb52b9d_yx180000gn/T/233.stderr; /Applications/Fig.app/Contents/MacOS/fig-da rwin-universal _ callback 233 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/2 33 $? ; } &
-[102] 98307
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && \ls -1ApL | cat ) 1> /var/fo lders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/246.stdout 2> /var/folders/pq/y2b49gjs 29g6vb52b9d_yx180000gn/T/246.stderr; /Applications/Fig.app/Contents/MacOS/fig-da rwin-universal _ callback 246 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/2 46 $? ; } &
-[103] 98419
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && git --no-optional-locks conf ig --get-regexp '^alias.' | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx18000 0gn/T/251.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/251.stderr;  /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 251 /var/f olders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/251 $? ; } &
-[104] 98433
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && git --no-optional-locks conf ig --get-regexp '^alias.' | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx18000 0gn/T/308.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/308.stderr;  /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 308 /var/f olders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/308 $? ; } &
-[105] 98688
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && git --no-optional-locks stat us --short | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/315.stdou t 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/315.stderr; /Applications/ Fig.app/Contents/MacOS/fig-darwin-universal _ callback 315 /var/folders/pq/y2b49 gjs29g6vb52b9d_yx180000gn/T/315 $? ; } &
-[106] 98693
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && \ls -1ApL | cat ) 1> /var/fo lders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/316.stdout 2> /var/folders/pq/y2b49gjs 29g6vb52b9d_yx180000gn/T/316.stderr; /Applications/Fig.app/Contents/MacOS/fig-da rwin-universal _ callback 316 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/3 16 $? ; } &
-[107] 98697
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && git --no-optional-locks conf ig --get-regexp '^alias.' | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx18000 0gn/T/335.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/335.stderr;  /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 335 /var/f olders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/335 $? ; } &
-[108] 98710
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && \ls -1ApL | cat ) 1> /var/fo lders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/343.stdout 2> /var/folders/pq/y2b49gjs 29g6vb52b9d_yx180000gn/T/343.stderr; /Applications/Fig.app/Contents/MacOS/fig-da rwin-universal _ callback 343 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/3 43 $? ; } &
-[109] 98715
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && \ls -1ApL | cat ) 1> /var/fo lders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/362.stdout 2> /var/folders/pq/y2b49gjs 29g6vb52b9d_yx180000gn/T/362.stderr; /Applications/Fig.app/Contents/MacOS/fig-da rwin-universal _ callback 362 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/3 62 $? ; } &
-[110] 98943
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && git --no-optional-locks conf ig --get-regexp '^alias.' | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx18000 0gn/T/368.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/368.stderr;  /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ callback 368 /var/f olders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/368 $? ; } &
-[111] 98950
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && \ls -1ApL | cat ) 1> /var/fo lders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/383.stdout 2> /var/folders/pq/y2b49gjs 29g6vb52b9d_yx180000gn/T/383.stderr; /Applications/Fig.app/Contents/MacOS/fig-da rwin-universal _ callback 383 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/3 83 $? ; } &
-[112] 99199
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom && \ls -1ApL | cat ) 1> /var/folders/pq/y2b49gjs29g6 vb52b9d_yx180000gn/T/388.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000g n/T/388.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ call back 388 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/388 $? ; } &
-[113] 99252
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom && \ls -1ApL | cat ) 1> /var/folders/pq/y2b49gjs29g6 vb52b9d_yx180000gn/T/393.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000g n/T/393.stderr; /Applications/Fig.app/Contents/MacOS/fig-darwin-universal _ call back 393 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/393 $? ; } &
-[114] 99258
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && \ls -1ApL | cat ) 1> /var/fo lders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/475.stdout 2> /var/folders/pq/y2b49gjs 29g6vb52b9d_yx180000gn/T/475.stderr; /Applications/Fig.app/Contents/MacOS/fig-da rwin-universal _ callback 475 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/4 75 $? ; } &
-[115] 4325
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && \ls -1ApL | cat ) 1> /var/fo lders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/480.stdout 2> /var/folders/pq/y2b49gjs 29g6vb52b9d_yx180000gn/T/480.stderr; /Applications/Fig.app/Contents/MacOS/fig-da rwin-universal _ callback 480 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/4 80 $? ; } &
-[116] 4383
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/.local/share/chezmoi && \ls -1ApL | cat ) 1> /var/fo lders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/494.stdout 2> /var/folders/pq/y2b49gjs 29g6vb52b9d_yx180000gn/T/494.stderr; /Applications/Fig.app/Contents/MacOS/fig-da rwin-universal _ callback 494 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/4 94 $? ; } &
-[117] 4454
-bash-3.2$ 
-bash-3.2$ 

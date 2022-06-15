@@ -1,0 +1,2 @@
+May 13 01:15:26 host=smtp.gmail.com tls=on auth=on user=domogami@gmail.com from=domogami@gmail.com recipients=domogami@gmail.com mailsize=369 smtpstatus=250 smtpmsg='250 2.0.0 OK  1652429726 jp10-20020a17090ae44a00b001dbf2aac185sm1065727pjb.1 - gsmtp' exitcode=EX_OK
+May 13 01:27:31 host=smtp.gmail.com tls=on auth=on user=domogami@gmail.com from=domogami@gmail.com recipients=domogami@gmail.com mailsize=612 smtpstatus=250 smtpmsg='250 2.0.0 OK  1652430450 b5-20020a1709027e0500b0015ea3a491a1sm1208314plm.191 - gsmtp' exitcode=EX_OK
