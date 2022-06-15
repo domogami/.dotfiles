@@ -9017,4 +9017,25 @@ bash-3.2$
 bash-3.2$ { ( cd /Users/dom/.dotfiles/ && \ls -1ApL | cat ) 1> /var/folders/pq/y 2b49gjs29g6vb52b9d_yx180000gn/T/1533.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b 9d_yx180000gn/T/1533.stderr; '/Applications/Fig.app/Contents/MacOS/fig-darwin-un iversal' _ callback 1533 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1533 $ ? ; } &
 [125] 88947
 bash-3.2$ 
+bash-3.2$ { ( cd /Users/dom/.dotfiles/ && \ls -1ApL | cat ) 1> /var/folders/pq/y 2b49gjs29g6vb52b9d_yx180000gn/T/1548.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b 9d_yx180000gn/T/1548.stderr; '/Applications/Fig.app/Contents/MacOS/fig-darwin-un iversal' _ callback 1548 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1548 $ ? ; } &
+[126] 89043
+bash-3.2$ 
+bash-3.2$ { ( cd /Users/dom/.dotfiles && git --no-optional-locks config --get-re gexp '^alias.' | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1554. stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1554.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 1554 /var/folders /pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1554 $? ; } &
+[127] 89058
+bash-3.2$ 
+bash-3.2$ { ( cd /Users/dom/.dotfiles && git --no-optional-locks config --get-re gexp '^alias.' | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1570. stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1570.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 1570 /var/folders /pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1570 $? ; } &
+[128] 89343
+bash-3.2$ 
+bash-3.2$ { ( cd /Users/dom/.dotfiles/ && \ls -1ApL | cat ) 1> /var/folders/pq/y 2b49gjs29g6vb52b9d_yx180000gn/T/1584.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b 9d_yx180000gn/T/1584.stderr; '/Applications/Fig.app/Contents/MacOS/fig-darwin-un iversal' _ callback 1584 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1584 $ ? ; } &
+[129] 89348
+bash-3.2$ 
+bash-3.2$ { ( cd /Users/dom/.dotfiles && compgen -c | grep git- | cut -c5- | sor t -u | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1591.stdout 2>  /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1591.stderr; '/Applications/Fig .app/Contents/MacOS/fig-darwin-universal' _ callback 1591 /var/folders/pq/y2b49g js29g6vb52b9d_yx180000gn/T/1591 $? ; } &
+[130] 89358
+bash-3.2$ 
+bash-3.2$ { ( cd /Users/dom/.dotfiles && git --no-optional-locks config --get-re gexp '^alias.' | cat ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1616. stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1616.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 1616 /var/folders /pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1616 $? ; } &
+[131] 89898
+bash-3.2$ 
+bash-3.2$ { ( cd /Users/dom/.dotfiles/ && \ls -1ApL | cat ) 1> /var/folders/pq/y 2b49gjs29g6vb52b9d_yx180000gn/T/1640.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b 9d_yx180000gn/T/1640.stderr; '/Applications/Fig.app/Contents/MacOS/fig-darwin-un iversal' _ callback 1640 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1640 $ ? ; } &
+[132] 96873
+bash-3.2$ 
 bash-3.2$ 

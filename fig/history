@@ -26969,3 +26969,123 @@
   session_id: w0t0p0:843A97E1-B944-44F3-B611-743AA773C8D4
   cwd: /Users/dom/.dotfiles
   time: 1655330974
+- command: git add .
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:843A97E1-B944-44F3-B611-743AA773C8D4
+  cwd: /Users/dom/.dotfiles
+  time: 1655330990
+- command: git add .
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:843A97E1-B944-44F3-B611-743AA773C8D4
+  cwd: /Users/dom/.dotfiles
+  time: 1655330990
+- command: ls
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:843A97E1-B944-44F3-B611-743AA773C8D4
+  cwd: /Users/dom/.dotfiles
+  time: 1655330991
+- command: ls
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:843A97E1-B944-44F3-B611-743AA773C8D4
+  cwd: /Users/dom/.dotfiles
+  time: 1655330991
+- command: git status
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:843A97E1-B944-44F3-B611-743AA773C8D4
+  cwd: /Users/dom/.dotfiles
+  time: 1655330996
+- command: git status
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:843A97E1-B944-44F3-B611-743AA773C8D4
+  cwd: /Users/dom/.dotfiles
+  time: 1655330996
+- command: git commit -m \"🤖 Using dotbot now! Thanks @randallwc\"
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:843A97E1-B944-44F3-B611-743AA773C8D4
+  cwd: /Users/dom/.dotfiles
+  time: 1655331050
+- command: git commit -m \"🤖 Using dotbot now! Thanks @randallwc\"
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:843A97E1-B944-44F3-B611-743AA773C8D4
+  cwd: /Users/dom/.dotfiles
+  time: 1655331050
+- command: git push
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:843A97E1-B944-44F3-B611-743AA773C8D4
+  cwd: /Users/dom/.dotfiles
+  time: 1655331054
+- command: git push
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:843A97E1-B944-44F3-B611-743AA773C8D4
+  cwd: /Users/dom/.dotfiles
+  time: 1655331054
+- command: ls
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:843A97E1-B944-44F3-B611-743AA773C8D4
+  cwd: /Users/dom/.dotfiles
+  time: 1655331657
+- command: ls
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:843A97E1-B944-44F3-B611-743AA773C8D4
+  cwd: /Users/dom/.dotfiles
+  time: 1655331657
+- command: v .
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:843A97E1-B944-44F3-B611-743AA773C8D4
+  cwd: /Users/dom/.dotfiles
+  time: 1655331659
+- command: v .
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:843A97E1-B944-44F3-B611-743AA773C8D4
+  cwd: /Users/dom/.dotfiles
+  time: 1655331659
+- command: r
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:D0EE3F2D-A34B-43BF-AB6F-FEE01C76C16D
+  cwd: /Users/dom
+  time: 1655330617
+- command: r
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:D0EE3F2D-A34B-43BF-AB6F-FEE01C76C16D
+  cwd: /Users/dom
+  time: 1655330617
+- command: r
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:D0EE3F2D-A34B-43BF-AB6F-FEE01C76C16D
+  cwd: /Users/dom
+  time: 1655330617
+- command: r
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:D0EE3F2D-A34B-43BF-AB6F-FEE01C76C16D
+  cwd: /Users/dom
+  time: 1655330617
+- command: r
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:843A97E1-B944-44F3-B611-743AA773C8D4
+  cwd: /Users/dom/.dotfiles
+  time: 1655331711
+- command: r
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:843A97E1-B944-44F3-B611-743AA773C8D4
+  cwd: /Users/dom/.dotfiles
+  time: 1655331711
