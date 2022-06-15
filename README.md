@@ -12,12 +12,13 @@ To install my dotfiles all you need is the command line. Chezmoi will do everyth
 ---
 
 ## Chezmoi
-I am using [Chezmoi](https://www.chezmoi.io/) to manage my dotfiles because it is free and cross platform. To get started install chezmoi using
-
+I am now using Dotbot instead of [Chezmoi](https://www.chezmoi.io/) to manage my dotfiles because dotbot makes it easier to edit your dotfiles in your homedirectory instead of in the chezmoi directory. I found it far more convenient to use with a single yaml config file. Thanks [@randallwc](https://github.com/randallwc)!
 ```bash
-$ sh -c "$(curl -fsLS chezmoi.io/get)" -- init --apply domogami
+$ git clone https://github.com/domogami/.dotfiles.git
+$ cd .dotfiles
+$ ./install
 ```
-This command will establish symbolic links between your home directory and the chezmoi directory containing the dotfiles. Check to ensure that the dotfiles have been created successfully in your home directory.
+This command will establish symbolic links between your home directory and the `.dotfiles` directory
 
 # Software I Use
 

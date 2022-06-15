@@ -27089,3 +27089,27 @@
   session_id: w0t0p0:843A97E1-B944-44F3-B611-743AA773C8D4
   cwd: /Users/dom/.dotfiles
   time: 1655331711
+- command: lazygit
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:843A97E1-B944-44F3-B611-743AA773C8D4
+  cwd: /Users/dom/.dotfiles
+  time: 1655331840
+- command: lazygit
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:843A97E1-B944-44F3-B611-743AA773C8D4
+  cwd: /Users/dom/.dotfiles
+  time: 1655331840
+- command: v .
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:843A97E1-B944-44F3-B611-743AA773C8D4
+  cwd: /Users/dom/.dotfiles
+  time: 1655331936
+- command: v .
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:843A97E1-B944-44F3-B611-743AA773C8D4
+  cwd: /Users/dom/.dotfiles
+  time: 1655331936
