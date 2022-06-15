@@ -11,7 +11,7 @@ To install my dotfiles all you need is the command line. Chezmoi will do everyth
 
 ---
 
-## Chezmoi
+## [Dotbot](https://github.com/anishathalye/dotbot)
 I am now using Dotbot instead of [Chezmoi](https://www.chezmoi.io/) to manage my dotfiles because dotbot makes it easier to edit your dotfiles in your homedirectory instead of in the chezmoi directory. I found it far more convenient to use with a single yaml config file. Thanks [@randallwc](https://github.com/randallwc)!
 ```bash
 $ git clone https://github.com/domogami/.dotfiles.git
