@@ -9038,4 +9038,31 @@ bash-3.2$
 bash-3.2$ { ( cd /Users/dom/.dotfiles/ && \ls -1ApL | cat ) 1> /var/folders/pq/y 2b49gjs29g6vb52b9d_yx180000gn/T/1640.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b 9d_yx180000gn/T/1640.stderr; '/Applications/Fig.app/Contents/MacOS/fig-darwin-un iversal' _ callback 1640 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1640 $ ? ; } &
 [132] 96873
 bash-3.2$ 
+bash-3.2$ { ( cd /Users/dom/ && \ls -1ApL | cat ) 1> /var/folders/pq/y2b49gjs29g 6vb52b9d_yx180000gn/T/1689.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx18000 0gn/T/1689.stderr; '/Applications/Fig.app/Contents/MacOS/fig-darwin-universal' _  callback 1689 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1689 $? ; } &
+[133] 10765
+bash-3.2$ 
+bash-3.2$ { ( cd /Users/dom/.dotfiles/ && \ls -1ApL | cat ) 1> /var/folders/pq/y 2b49gjs29g6vb52b9d_yx180000gn/T/1710.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b 9d_yx180000gn/T/1710.stderr; '/Applications/Fig.app/Contents/MacOS/fig-darwin-un iversal' _ callback 1710 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1710 $ ? ; } &
+[134] 10774
+bash-3.2$ 
+bash-3.2$ { ( cd /Users/dom/.dotfiles/ && \ls -1ApL | cat ) 1> /var/folders/pq/y 2b49gjs29g6vb52b9d_yx180000gn/T/1724.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b 9d_yx180000gn/T/1724.stderr; '/Applications/Fig.app/Contents/MacOS/fig-darwin-un iversal' _ callback 1724 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1724 $ ? ; } &
+[135] 10850
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/dom
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/2 03.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/203.stderr; '/Appl ications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 203 /var/folder s/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/203 $? ; } &
+[1] 13824
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/dom
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/2 01.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/201.stderr; '/Appl ications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 201 /var/folder s/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/201 $? ; } &
+[1] 14234
+bash-3.2$ 
+bash-3.2$ { ( cd /Users/dom/ && \ls -1ApL | cat ) 1> /var/folders/pq/y2b49gjs29g 6vb52b9d_yx180000gn/T/218.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000 gn/T/218.stderr; '/Applications/Fig.app/Contents/MacOS/fig-darwin-universal' _ c allback 218 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/218 $? ; } &
+[2] 61651
+bash-3.2$ 
+bash-3.2$ { ( cd /Users/dom/.dotfiles/ && \ls -1ApL | cat ) 1> /var/folders/pq/y 2b49gjs29g6vb52b9d_yx180000gn/T/234.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9 d_yx180000gn/T/234.stderr; '/Applications/Fig.app/Contents/MacOS/fig-darwin-univ ersal' _ callback 234 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/234 $? ;  } &
+[3] 61662
+bash-3.2$ 
 bash-3.2$ 
