@@ -1,2 +1,6 @@
 .DS_Store
 config/spotify-tui
+fig/logs/daemon.log
+*.log
+*.log
+fig/logs/daemon.log
