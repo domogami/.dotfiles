@@ -33893,3 +33893,531 @@
   session_id: w0t0p0:BA8EA4F5-9B6C-4476-BAD9-A02FCCCCE5BC
   cwd: /Users/dom
   time: 1657073792
+- command: ./yabai
+  exit_code: 130
+  shell: zsh
+  session_id: w0t0p0:59EDDD3D-F516-4949-8980-7A7418543E1F
+  cwd: /Users/dom/Downloads/yabai-round-border/bin
+  time: 1657073572
+- command: ./yabai
+  exit_code: 130
+  shell: zsh
+  session_id: w0t0p0:59EDDD3D-F516-4949-8980-7A7418543E1F
+  cwd: /Users/dom/Downloads/yabai-round-border/bin
+  time: 1657073572
+- command: ./yabai
+  exit_code: 130
+  shell: zsh
+  session_id: w0t0p0:59EDDD3D-F516-4949-8980-7A7418543E1F
+  cwd: /Users/dom/Downloads/yabai-round-border/bin
+  time: 1657073572
+- command: brew services stop yabai
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:59EDDD3D-F516-4949-8980-7A7418543E1F
+  cwd: /Users/dom/Downloads/yabai-round-border/bin
+  time: 1657078474
+- command: ./yabai
+  exit_code: 130
+  shell: zsh
+  session_id: w0t0p0:59EDDD3D-F516-4949-8980-7A7418543E1F
+  cwd: /Users/dom/Downloads/yabai-round-border/bin
+  time: 1657078477
+- command: cd Downloads/yabai-doms-fork/
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:B067757E-5077-437C-A6DE-157185394B7E
+  cwd: /Users/dom
+  time: 1657081108
+- command: v .
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:B067757E-5077-437C-A6DE-157185394B7E
+  cwd: /Users/dom/Downloads/yabai-doms-fork
+  time: 1657081110
+- command: v .
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:B067757E-5077-437C-A6DE-157185394B7E
+  cwd: /Users/dom/Downloads/yabai-doms-fork
+  time: 1657081110
+- command: cd Downloads/yabai-doms-fork/
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:169F6218-6DF8-4020-B5D5-A63AB23BC058
+  cwd: /Users/dom
+  time: 1657082631
+- command: ./yabai
+  exit_code: 130
+  shell: zsh
+  session_id: w0t0p0:59EDDD3D-F516-4949-8980-7A7418543E1F
+  cwd: /Users/dom/Downloads/yabai-round-border/bin
+  time: 1657079056
+- command: make
+  exit_code: 2
+  shell: zsh
+  session_id: w0t0p0:169F6218-6DF8-4020-B5D5-A63AB23BC058
+  cwd: /Users/dom/Downloads/yabai-doms-fork
+  time: 1657082632
+- command: v .
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:169F6218-6DF8-4020-B5D5-A63AB23BC058
+  cwd: /Users/dom/Downloads/yabai-doms-fork
+  time: 1657082652
+- command: make
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:169F6218-6DF8-4020-B5D5-A63AB23BC058
+  cwd: /Users/dom/Downloads/yabai-doms-fork
+  time: 1657082679
+- command: cd bin/
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:169F6218-6DF8-4020-B5D5-A63AB23BC058
+  cwd: /Users/dom/Downloads/yabai-doms-fork
+  time: 1657082683
+- command: sudo ./yabai --install-sa
+  exit_code: 1
+  shell: zsh
+  session_id: w0t0p0:169F6218-6DF8-4020-B5D5-A63AB23BC058
+  cwd: /Users/dom/Downloads/yabai-doms-fork/bin
+  time: 1657082699
+- command: ./yabai
+  exit_code: 130
+  shell: zsh
+  session_id: w0t0p0:169F6218-6DF8-4020-B5D5-A63AB23BC058
+  cwd: /Users/dom/Downloads/yabai-doms-fork/bin
+  time: 1657082711
+- command: ./yabai
+  exit_code: 130
+  shell: zsh
+  session_id: w0t0p0:169F6218-6DF8-4020-B5D5-A63AB23BC058
+  cwd: /Users/dom/Downloads/yabai-doms-fork/bin
+  time: 1657082743
+- command: sudo ./yabai --install-sa
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:169F6218-6DF8-4020-B5D5-A63AB23BC058
+  cwd: /Users/dom/Downloads/yabai-doms-fork/bin
+  time: 1657082764
+- command: v .
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:B067757E-5077-437C-A6DE-157185394B7E
+  cwd: /Users/dom/Downloads/yabai-doms-fork
+  time: 1657081110
+- command: v .
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:B067757E-5077-437C-A6DE-157185394B7E
+  cwd: /Users/dom/Downloads/yabai-doms-fork
+  time: 1657081110
+- command: v .
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:B067757E-5077-437C-A6DE-157185394B7E
+  cwd: /Users/dom/Downloads/yabai-doms-fork
+  time: 1657081110
+- command: v .
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:B067757E-5077-437C-A6DE-157185394B7E
+  cwd: /Users/dom/Downloads/yabai-doms-fork
+  time: 1657081110
+- command: ./yabai
+  exit_code: 134
+  shell: zsh
+  session_id: w0t0p0:169F6218-6DF8-4020-B5D5-A63AB23BC058
+  cwd: /Users/dom/Downloads/yabai-doms-fork/bin
+  time: 1657082770
+- command: cd ..
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:169F6218-6DF8-4020-B5D5-A63AB23BC058
+  cwd: /Users/dom/Downloads/yabai-doms-fork/bin
+  time: 1657082804
+- command: cd .
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:169F6218-6DF8-4020-B5D5-A63AB23BC058
+  cwd: /Users/dom/Downloads/yabai-doms-fork
+  time: 1657082808
+- command: cd ..
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:169F6218-6DF8-4020-B5D5-A63AB23BC058
+  cwd: /Users/dom/Downloads/yabai-doms-fork
+  time: 1657082812
+- command: cd yabai-round-border/bin/
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:169F6218-6DF8-4020-B5D5-A63AB23BC058
+  cwd: /Users/dom/Downloads
+  time: 1657082822
+- command: v .
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:B067757E-5077-437C-A6DE-157185394B7E
+  cwd: /Users/dom/Downloads/yabai-doms-fork
+  time: 1657081110
+- command: v .
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:B067757E-5077-437C-A6DE-157185394B7E
+  cwd: /Users/dom/Downloads/yabai-doms-fork
+  time: 1657081110
+- command: v .
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:B067757E-5077-437C-A6DE-157185394B7E
+  cwd: /Users/dom/Downloads/yabai-doms-fork
+  time: 1657081110
+- command: v .
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:B067757E-5077-437C-A6DE-157185394B7E
+  cwd: /Users/dom/Downloads/yabai-doms-fork
+  time: 1657081110
+- command: v .
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:B067757E-5077-437C-A6DE-157185394B7E
+  cwd: /Users/dom/Downloads/yabai-doms-fork
+  time: 1657081110
+- command: v .
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:B067757E-5077-437C-A6DE-157185394B7E
+  cwd: /Users/dom/Downloads/yabai-doms-fork
+  time: 1657081110
+- command: v .
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:B067757E-5077-437C-A6DE-157185394B7E
+  cwd: /Users/dom/Downloads/yabai-doms-fork
+  time: 1657081110
+- command: ./yabai
+  exit_code: 130
+  shell: zsh
+  session_id: w0t0p0:169F6218-6DF8-4020-B5D5-A63AB23BC058
+  cwd: /Users/dom/Downloads/yabai-round-border/bin
+  time: 1657082825
+- command: sudo ./yabai --install-sa
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:169F6218-6DF8-4020-B5D5-A63AB23BC058
+  cwd: /Users/dom/Downloads/yabai-round-border/bin
+  time: 1657082910
+- command: ./yabai
+  exit_code: 130
+  shell: zsh
+  session_id: w0t0p0:169F6218-6DF8-4020-B5D5-A63AB23BC058
+  cwd: /Users/dom/Downloads/yabai-round-border/bin
+  time: 1657082912
+- command: brew services start yabai
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:169F6218-6DF8-4020-B5D5-A63AB23BC058
+  cwd: /Users/dom/Downloads/yabai-round-border/bin
+  time: 1657083083
+- command: brew services start yabai
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:169F6218-6DF8-4020-B5D5-A63AB23BC058
+  cwd: /Users/dom/Downloads/yabai-round-border/bin
+  time: 1657083083
+- command: brew services start yabai
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:169F6218-6DF8-4020-B5D5-A63AB23BC058
+  cwd: /Users/dom/Downloads/yabai-round-border/bin
+  time: 1657083083
+- command: brew services start yabai
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:169F6218-6DF8-4020-B5D5-A63AB23BC058
+  cwd: /Users/dom/Downloads/yabai-round-border/bin
+  time: 1657083083
+- command: brew services start yabai
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:169F6218-6DF8-4020-B5D5-A63AB23BC058
+  cwd: /Users/dom/Downloads/yabai-round-border/bin
+  time: 1657083083
+- command: brew services start yabai
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:169F6218-6DF8-4020-B5D5-A63AB23BC058
+  cwd: /Users/dom/Downloads/yabai-round-border/bin
+  time: 1657083083
+- command: brew services start yabai
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:169F6218-6DF8-4020-B5D5-A63AB23BC058
+  cwd: /Users/dom/Downloads/yabai-round-border/bin
+  time: 1657083083
+- command: brew services start yabai
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:169F6218-6DF8-4020-B5D5-A63AB23BC058
+  cwd: /Users/dom/Downloads/yabai-round-border/bin
+  time: 1657083083
+- command: yabai --install-sa
+  exit_code: 1
+  shell: zsh
+  session_id: w0t0p0:169F6218-6DF8-4020-B5D5-A63AB23BC058
+  cwd: /Users/dom/Downloads/yabai-round-border/bin
+  time: 1657083097
+- command: sudo yabai --install-sa
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:169F6218-6DF8-4020-B5D5-A63AB23BC058
+  cwd: /Users/dom/Downloads/yabai-round-border/bin
+  time: 1657083103
+- command: brew services restart yabai
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:169F6218-6DF8-4020-B5D5-A63AB23BC058
+  cwd: /Users/dom/Downloads/yabai-round-border/bin
+  time: 1657083109
+- command: brew services restart yabai
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:169F6218-6DF8-4020-B5D5-A63AB23BC058
+  cwd: /Users/dom/Downloads/yabai-round-border/bin
+  time: 1657083109
+- command: brew services restart yabai
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:169F6218-6DF8-4020-B5D5-A63AB23BC058
+  cwd: /Users/dom/Downloads/yabai-round-border/bin
+  time: 1657083109
+- command: brew services restart yabai
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:169F6218-6DF8-4020-B5D5-A63AB23BC058
+  cwd: /Users/dom/Downloads/yabai-round-border/bin
+  time: 1657083109
+- command: brew services restart yabai
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:169F6218-6DF8-4020-B5D5-A63AB23BC058
+  cwd: /Users/dom/Downloads/yabai-round-border/bin
+  time: 1657083109
+- command: brew services restart yabai
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:169F6218-6DF8-4020-B5D5-A63AB23BC058
+  cwd: /Users/dom/Downloads/yabai-round-border/bin
+  time: 1657083109
+- command: brew services restart yabai
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:169F6218-6DF8-4020-B5D5-A63AB23BC058
+  cwd: /Users/dom/Downloads/yabai-round-border/bin
+  time: 1657083109
+- command: brew services restart yabai
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:169F6218-6DF8-4020-B5D5-A63AB23BC058
+  cwd: /Users/dom/Downloads/yabai-round-border/bin
+  time: 1657083109
+- command: brew services restart yabai
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:169F6218-6DF8-4020-B5D5-A63AB23BC058
+  cwd: /Users/dom/Downloads/yabai-round-border/bin
+  time: 1657083109
+- command: yabai -m config window_border_radius 12
+  exit_code: 1
+  shell: zsh
+  session_id: w0t0p0:169F6218-6DF8-4020-B5D5-A63AB23BC058
+  cwd: /Users/dom/Downloads/yabai-round-border/bin
+  time: 1657083149
+- command: webdev
+  exit_code: 130
+  shell: zsh
+  session_id: w0t0p0:59EDDD3D-F516-4949-8980-7A7418543E1F
+  cwd: /Users/dom/Downloads/yabai-round-border/bin
+  time: 1657092595
+- command: web
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:59EDDD3D-F516-4949-8980-7A7418543E1F
+  cwd: /Users/dom/Documents/GitHub/dominicklee.net
+  time: 1657092598
+- command: web
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:59EDDD3D-F516-4949-8980-7A7418543E1F
+  cwd: /Users/dom/Documents/GitHub/dominicklee.net
+  time: 1657092598
+- command: yabai -m config window_border_radius 12
+  exit_code: 1
+  shell: zsh
+  session_id: w0t0p0:169F6218-6DF8-4020-B5D5-A63AB23BC058
+  cwd: /Users/dom/Downloads/yabai-round-border/bin
+  time: 1657083149
+- command: yabai -m config window_border_radius 12
+  exit_code: 1
+  shell: zsh
+  session_id: w0t0p0:169F6218-6DF8-4020-B5D5-A63AB23BC058
+  cwd: /Users/dom/Downloads/yabai-round-border/bin
+  time: 1657083149
+- command: yabai -m config window_border_radius 12
+  exit_code: 1
+  shell: zsh
+  session_id: w0t0p0:169F6218-6DF8-4020-B5D5-A63AB23BC058
+  cwd: /Users/dom/Downloads/yabai-round-border/bin
+  time: 1657083149
+- command: yabai -m config window_border_radius 12
+  exit_code: 1
+  shell: zsh
+  session_id: w0t0p0:169F6218-6DF8-4020-B5D5-A63AB23BC058
+  cwd: /Users/dom/Downloads/yabai-round-border/bin
+  time: 1657083149
+- command: yabai -m config window_border_radius 12
+  exit_code: 1
+  shell: zsh
+  session_id: w0t0p0:169F6218-6DF8-4020-B5D5-A63AB23BC058
+  cwd: /Users/dom/Downloads/yabai-round-border/bin
+  time: 1657083149
+- command: yabai -m config window_border_radius 12
+  exit_code: 1
+  shell: zsh
+  session_id: w0t0p0:169F6218-6DF8-4020-B5D5-A63AB23BC058
+  cwd: /Users/dom/Downloads/yabai-round-border/bin
+  time: 1657083149
+- command: yabai -m config window_border_radius 12
+  exit_code: 1
+  shell: zsh
+  session_id: w0t0p0:169F6218-6DF8-4020-B5D5-A63AB23BC058
+  cwd: /Users/dom/Downloads/yabai-round-border/bin
+  time: 1657083149
+- command: yabai -m config window_border_radius 12
+  exit_code: 1
+  shell: zsh
+  session_id: w0t0p0:169F6218-6DF8-4020-B5D5-A63AB23BC058
+  cwd: /Users/dom/Downloads/yabai-round-border/bin
+  time: 1657083149
+- command: yabai -m config window_border_radius 12
+  exit_code: 1
+  shell: zsh
+  session_id: w0t0p0:169F6218-6DF8-4020-B5D5-A63AB23BC058
+  cwd: /Users/dom/Downloads/yabai-round-border/bin
+  time: 1657083149
+- command: yabai -m config window_border_radius 12
+  exit_code: 1
+  shell: zsh
+  session_id: w0t0p0:169F6218-6DF8-4020-B5D5-A63AB23BC058
+  cwd: /Users/dom/Downloads/yabai-round-border/bin
+  time: 1657083149
+- command: yabai -m config window_border_radius 12
+  exit_code: 1
+  shell: zsh
+  session_id: w0t0p0:169F6218-6DF8-4020-B5D5-A63AB23BC058
+  cwd: /Users/dom/Downloads/yabai-round-border/bin
+  time: 1657083149
+- command: which nvim
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:169F6218-6DF8-4020-B5D5-A63AB23BC058
+  cwd: /Users/dom/Downloads/yabai-round-border/bin
+  time: 1657172980
+- command: which nvim
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:169F6218-6DF8-4020-B5D5-A63AB23BC058
+  cwd: /Users/dom/Downloads/yabai-round-border/bin
+  time: 1657172980
+- command: which nvim
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:169F6218-6DF8-4020-B5D5-A63AB23BC058
+  cwd: /Users/dom/Downloads/yabai-round-border/bin
+  time: 1657172980
+- command: which nvim
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:169F6218-6DF8-4020-B5D5-A63AB23BC058
+  cwd: /Users/dom/Downloads/yabai-round-border/bin
+  time: 1657172980
+- command: which nvim
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:169F6218-6DF8-4020-B5D5-A63AB23BC058
+  cwd: /Users/dom/Downloads/yabai-round-border/bin
+  time: 1657172980
+- command: which nvim
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:169F6218-6DF8-4020-B5D5-A63AB23BC058
+  cwd: /Users/dom/Downloads/yabai-round-border/bin
+  time: 1657172980
+- command: web
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:59EDDD3D-F516-4949-8980-7A7418543E1F
+  cwd: /Users/dom/Documents/GitHub/dominicklee.net
+  time: 1657092598
+- command: web
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:59EDDD3D-F516-4949-8980-7A7418543E1F
+  cwd: /Users/dom/Documents/GitHub/dominicklee.net
+  time: 1657092598
+- command: web
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:59EDDD3D-F516-4949-8980-7A7418543E1F
+  cwd: /Users/dom/Documents/GitHub/dominicklee.net
+  time: 1657092598
+- command: web
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:59EDDD3D-F516-4949-8980-7A7418543E1F
+  cwd: /Users/dom/Documents/GitHub/dominicklee.net
+  time: 1657092598
+- command: web
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:59EDDD3D-F516-4949-8980-7A7418543E1F
+  cwd: /Users/dom/Documents/GitHub/dominicklee.net
+  time: 1657092598
+- command: web
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:59EDDD3D-F516-4949-8980-7A7418543E1F
+  cwd: /Users/dom/Documents/GitHub/dominicklee.net
+  time: 1657092598
+- command: web
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:59EDDD3D-F516-4949-8980-7A7418543E1F
+  cwd: /Users/dom/Documents/GitHub/dominicklee.net
+  time: 1657092598
+- command: web
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:59EDDD3D-F516-4949-8980-7A7418543E1F
+  cwd: /Users/dom/Documents/GitHub/dominicklee.net
+  time: 1657092598
+- command: web
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:59EDDD3D-F516-4949-8980-7A7418543E1F
+  cwd: /Users/dom/Documents/GitHub/dominicklee.net
+  time: 1657092598
+- command: web
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:59EDDD3D-F516-4949-8980-7A7418543E1F
+  cwd: /Users/dom/Documents/GitHub/dominicklee.net
+  time: 1657092598
+- command: web
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:59EDDD3D-F516-4949-8980-7A7418543E1F
+  cwd: /Users/dom/Documents/GitHub/dominicklee.net
+  time: 1657092598

@@ -1,12 +1,3 @@
-set +m +b +o history
-
-unset HISTFILE
-
-export PATH='/Users/dom/.cargo/bin:/opt/local/bin:/opt/local/sbin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Library/Apple/usr/bin:/Users/dom/.spicetify:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/dom/.fig/bin:/Users/dom/.local/bin'
-
-export HOME=/Users/dom
-
-
 
 The default interactive shell is now zsh.
 To update your account to use zsh, please run `chsh -s /bin/zsh`.
@@ -20,28 +11,7 @@ bash-3.2$
 bash-3.2$ export HOME=/Users/dom
 bash-3.2$ 
 bash-3.2$ 
-bash-3.2$ { ( which fish ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1 98.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/198.stderr; '/Appl ications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 198 /var/folder s/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/198 $? ; } &
-[1] 1645
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/ && \ls -1ApL | cat ) 1> /var/folders/pq/y2b49gjs29g 6vb52b9d_yx180000gn/T/205.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000 gn/T/205.stderr; '/Applications/Fig.app/Contents/MacOS/fig-darwin-universal' _ c allback 205 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/205 $? ; } &
-[2] 1883
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/Downloads/ && \ls -1ApL | cat ) 1> /var/folders/pq/y 2b49gjs29g6vb52b9d_yx180000gn/T/218.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9 d_yx180000gn/T/218.stderr; '/Applications/Fig.app/Contents/MacOS/fig-darwin-univ ersal' _ callback 218 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/218 $? ;  } &
-[3] 1889
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/Downloads/ && \ls -1ApL | cat ) 1> /var/folders/pq/y 2b49gjs29g6vb52b9d_yx180000gn/T/233.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9 d_yx180000gn/T/233.stderr; '/Applications/Fig.app/Contents/MacOS/fig-darwin-univ ersal' _ callback 233 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/233 $? ;  } &
-[4] 1955
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/Downloads/yabai-round-border/ && \ls -1ApL | cat ) 1 > /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/240.stdout 2> /var/folders/pq /y2b49gjs29g6vb52b9d_yx180000gn/T/240.stderr; '/Applications/Fig.app/Contents/Ma cOS/fig-darwin-universal' _ callback 240 /var/folders/pq/y2b49gjs29g6vb52b9d_yx1 80000gn/T/240 $? ; } &
-[5] 1961
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/Downloads/yabai-round-border/ && \ls -1ApL | cat ) 1 > /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/258.stdout 2> /var/folders/pq /y2b49gjs29g6vb52b9d_yx180000gn/T/258.stderr; '/Applications/Fig.app/Contents/Ma cOS/fig-darwin-universal' _ callback 258 /var/folders/pq/y2b49gjs29g6vb52b9d_yx1 80000gn/T/258 $? ; } &
-[6] 1987
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/Downloads/yabai-round-border/bin/ && \ls -1ApL | cat  ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/267.stdout 2> /var/folder s/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/267.stderr; '/Applications/Fig.app/Content s/MacOS/fig-darwin-universal' _ callback 267 /var/folders/pq/y2b49gjs29g6vb52b9d _yx180000gn/T/267 $? ; } &
-[7] 1993
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/Downloads/yabai-round-border/bin/./ && \ls -1ApL | c at ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/284.stdout 2> /var/fold ers/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/284.stderr; '/Applications/Fig.app/Conte nts/MacOS/fig-darwin-universal' _ callback 284 /var/folders/pq/y2b49gjs29g6vb52b 9d_yx180000gn/T/284 $? ; } &
-[8] 2011
+bash-3.2$ { ( which fish ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1 97.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/197.stderr; '/Appl ications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 197 /var/folder s/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/197 $? ; } &
+[1] 1713
 bash-3.2$ 
 bash-3.2$ 

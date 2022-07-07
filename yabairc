@@ -83,3 +83,4 @@ yabai -m config top_padding                  20
 yabai -m config top_padding                  46
 yabai -m config top_padding                  20
 yabai -m config top_padding                  46
+yabai -m config top_padding                  20
