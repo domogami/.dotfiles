@@ -13,8 +13,8 @@ ZSH_THEME="bubblified"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 # [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 alias tmux=tmux -CC
-alias v="neovide --multigrid"
-alias vim="neovide --multigrid"
+alias v="neovide --multigrid --frame none"
+alias vim="neovide --multigrid --frame none"
 # Dev shortcuts 
 alias dev="cd ~/Documents/GitHub/ && ls"
 alias web="cd ~/Documents/GitHub/dominicklee.net && v ."
