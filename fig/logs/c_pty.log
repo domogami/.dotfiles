@@ -1,13 +1,16 @@
-
-The default interactive shell is now zsh.
-To update your account to use zsh, please run `chsh -s /bin/zsh`.
-For more details, please visit https://support.apple.com/kb/HT208050.
 set +m +b +o history
 
 unset HISTFILE
 
 export PATH='/Users/dom/.cargo/bin:/opt/local/bin:/opt/local/sbin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Library/Apple/usr/bin:/Users/dom/.spicetify:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/dom/.fig/bin:/Users/dom/.local/bin'
 
+export HOME=/Users/dom
+
+
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
 [?1034hbash-3.2$ set +m +b +o history
 bash-3.2$ 
 bash-3.2$ unset HISTFILE
@@ -18,72 +21,9 @@ bash-3.2$ export HOME=/Users/dom
 bash-3.2$ 
 bash-3.2$ 
 bash-3.2$ { ( fig --version ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/ T/78.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/78.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 78 /var/folder s/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/78 $? ; } &
-[1] 61474
+[1] 1611
 bash-3.2$ 
-bash-3.2$ { ( which fish ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/8 6.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/86.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 86 /var/folders/p q/y2b49gjs29g6vb52b9d_yx180000gn/T/86 $? ; } &
-[2] 61559
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/Documents/GitHub/Eric-Site-2.0 && until [[ -f packag e.json ]] || [[ $PWD = '/' ]]; do cd ..; done; cat package.json | cat ) 1> /var/ folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/968.stdout 2> /var/folders/pq/y2b49g js29g6vb52b9d_yx180000gn/T/968.stderr; '/Applications/Fig.app/Contents/MacOS/fig -darwin-universal' _ callback 968 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn /T/968 $? ; } &
-[3] 79461
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/Documents/GitHub/Eric-Site-2.0 && until [[ -f packag e.json ]] || [[ $PWD = '/' ]]; do cd ..; done; cat package.json | cat ) 1> /var/ folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/972.stdout 2> /var/folders/pq/y2b49g js29g6vb52b9d_yx180000gn/T/972.stderr; '/Applications/Fig.app/Contents/MacOS/fig -darwin-universal' _ callback 972 /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn /T/972 $? ; } &
-[4] 79511
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/Documents/GitHub/Eric-Site-2.0 && until [[ -f packag e.json ]] || [[ $PWD = '/' ]]; do cd ..; done; cat package.json | cat ) 1> /var/ folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1099.stdout 2> /var/folders/pq/y2b49 gjs29g6vb52b9d_yx180000gn/T/1099.stderr; '/Applications/Fig.app/Contents/MacOS/f ig-darwin-universal' _ callback 1099 /var/folders/pq/y2b49gjs29g6vb52b9d_yx18000 0gn/T/1099 $? ; } &
-[5] 83722
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/Documents/GitHub/Eric-Site-2.0 && until [[ -f packag e.json ]] || [[ $PWD = '/' ]]; do cd ..; done; cat package.json | cat ) 1> /var/ folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1664.stdout 2> /var/folders/pq/y2b49 gjs29g6vb52b9d_yx180000gn/T/1664.stderr; '/Applications/Fig.app/Contents/MacOS/f ig-darwin-universal' _ callback 1664 /var/folders/pq/y2b49gjs29g6vb52b9d_yx18000 0gn/T/1664 $? ; } &
-[6] 91305
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/Documents/GitHub/Eric-Site-2.0 && until [[ -f packag e.json ]] || [[ $PWD = '/' ]]; do cd ..; done; cat package.json | cat ) 1> /var/ folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/1668.stdout 2> /var/folders/pq/y2b49 gjs29g6vb52b9d_yx180000gn/T/1668.stderr; '/Applications/Fig.app/Contents/MacOS/f ig-darwin-universal' _ callback 1668 /var/folders/pq/y2b49gjs29g6vb52b9d_yx18000 0gn/T/1668 $? ; } &
-[7] 91330
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/Documents/GitHub/Eric-Site-2.0 && until [[ -f packag e.json ]] || [[ $PWD = '/' ]]; do cd ..; done; cat package.json | cat ) 1> /var/ folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/2401.stdout 2> /var/folders/pq/y2b49 gjs29g6vb52b9d_yx180000gn/T/2401.stderr; '/Applications/Fig.app/Contents/MacOS/f ig-darwin-universal' _ callback 2401 /var/folders/pq/y2b49gjs29g6vb52b9d_yx18000 0gn/T/2401 $? ; } &
-[8] 5384
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/Documents/GitHub/Eric-Site-2.0 && until [[ -f packag e.json ]] || [[ $PWD = '/' ]]; do cd ..; done; cat package.json | cat ) 1> /var/ folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/2420.stdout 2> /var/folders/pq/y2b49 gjs29g6vb52b9d_yx180000gn/T/2420.stderr; '/Applications/Fig.app/Contents/MacOS/f ig-darwin-universal' _ callback 2420 /var/folders/pq/y2b49gjs29g6vb52b9d_yx18000 0gn/T/2420 $? ; } &
-[9] 5445
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/Documents/GitHub/Eric-Site-2.0 && until [[ -f packag e.json ]] || [[ $PWD = '/' ]]; do cd ..; done; cat package.json | cat ) 1> /var/ folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/2833.stdout 2> /var/folders/pq/y2b49 gjs29g6vb52b9d_yx180000gn/T/2833.stderr; '/Applications/Fig.app/Contents/MacOS/f ig-darwin-universal' _ callback 2833 /var/folders/pq/y2b49gjs29g6vb52b9d_yx18000 0gn/T/2833 $? ; } &
-[10] 15332
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/Documents/GitHub/Eric-Site-2.0 && until [[ -f packag e.json ]] || [[ $PWD = '/' ]]; do cd ..; done; cat package.json | cat ) 1> /var/ folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/2837.stdout 2> /var/folders/pq/y2b49 gjs29g6vb52b9d_yx180000gn/T/2837.stderr; '/Applications/Fig.app/Contents/MacOS/f ig-darwin-universal' _ callback 2837 /var/folders/pq/y2b49gjs29g6vb52b9d_yx18000 0gn/T/2837 $? ; } &
-[11] 15357
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/Documents/GitHub/Eric-Site-2.0 && until [[ -f packag e.json ]] || [[ $PWD = '/' ]]; do cd ..; done; cat package.json | cat ) 1> /var/ folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/2841.stdout 2> /var/folders/pq/y2b49 gjs29g6vb52b9d_yx180000gn/T/2841.stderr; '/Applications/Fig.app/Contents/MacOS/f ig-darwin-universal' _ callback 2841 /var/folders/pq/y2b49gjs29g6vb52b9d_yx18000 0gn/T/2841 $? ; } &
-[12] 15497
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/Documents/GitHub/Eric-Site-2.0 && until [[ -f packag e.json ]] || [[ $PWD = '/' ]]; do cd ..; done; cat package.json | cat ) 1> /var/ folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/3978.stdout 2> /var/folders/pq/y2b49 gjs29g6vb52b9d_yx180000gn/T/3978.stderr; '/Applications/Fig.app/Contents/MacOS/f ig-darwin-universal' _ callback 3978 /var/folders/pq/y2b49gjs29g6vb52b9d_yx18000 0gn/T/3978 $? ; } &
-[13] 42787
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/Documents/GitHub/Eric-Site-2.0 && until [[ -f packag e.json ]] || [[ $PWD = '/' ]]; do cd ..; done; cat package.json | cat ) 1> /var/ folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/3981.stdout 2> /var/folders/pq/y2b49 gjs29g6vb52b9d_yx180000gn/T/3981.stderr; '/Applications/Fig.app/Contents/MacOS/f ig-darwin-universal' _ callback 3981 /var/folders/pq/y2b49gjs29g6vb52b9d_yx18000 0gn/T/3981 $? ; } &
-[14] 42812
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/Documents/GitHub/Eric-Site-2.0 && until [[ -f packag e.json ]] || [[ $PWD = '/' ]]; do cd ..; done; cat package.json | cat ) 1> /var/ folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/4213.stdout 2> /var/folders/pq/y2b49 gjs29g6vb52b9d_yx180000gn/T/4213.stderr; '/Applications/Fig.app/Contents/MacOS/f ig-darwin-universal' _ callback 4213 /var/folders/pq/y2b49gjs29g6vb52b9d_yx18000 0gn/T/4213 $? ; } &
-[15] 46955
-bash-3.2$ 
-bash-3.2$ export HOME=/Users/dom
-bash-3.2$ 
-bash-3.2$ 
-bash-3.2$ { ( fig --version ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/ T/78.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/78.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 78 /var/folder s/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/78 $? ; } &
-[1] 96348
-bash-3.2$ 
-bash-3.2$ { ( which fish ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/8 6.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/86.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 86 /var/folders/p q/y2b49gjs29g6vb52b9d_yx180000gn/T/86 $? ; } &
-[2] 96432
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/Documents/GitHub/Eric-Site-2.0 && until [[ -f packag e.json ]] || [[ $PWD = '/' ]]; do cd ..; done; cat package.json | cat ) 1> /var/ folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/3963.stdout 2> /var/folders/pq/y2b49 gjs29g6vb52b9d_yx180000gn/T/3963.stderr; '/Applications/Fig.app/Contents/MacOS/f ig-darwin-universal' _ callback 3963 /var/folders/pq/y2b49gjs29g6vb52b9d_yx18000 0gn/T/3963 $? ; } &
-[3] 27584
-bash-3.2$ 
-bash-3.2$ { ( cd /Users/dom/Documents/GitHub/Eric-Site-2.0 && until [[ -f packag e.json ]] || [[ $PWD = '/' ]]; do cd ..; done; cat package.json | cat ) 1> /var/ folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/3967.stdout 2> /var/folders/pq/y2b49 gjs29g6vb52b9d_yx180000gn/T/3967.stderr; '/Applications/Fig.app/Contents/MacOS/f ig-darwin-universal' _ callback 3967 /var/folders/pq/y2b49gjs29g6vb52b9d_yx18000 0gn/T/3967 $? ; } &
-[4] 27679
-bash-3.2$ 
-bash-3.2$ export HOME=/Users/dom
-bash-3.2$ 
-bash-3.2$ 
-bash-3.2$ { ( fig --version ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/ T/78.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/78.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 78 /var/folder s/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/78 $? ; } &
-[1] 14647
-bash-3.2$ 
-bash-3.2$ { ( which fish ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/8 6.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/86.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 86 /var/folders/p q/y2b49gjs29g6vb52b9d_yx180000gn/T/86 $? ; } &
-[2] 14749
+bash-3.2$ { ( which fish ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/9 2.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/92.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 92 /var/folders/p q/y2b49gjs29g6vb52b9d_yx180000gn/T/92 $? ; } &
+[2] 1834
 bash-3.2$ 
 bash-3.2$ 

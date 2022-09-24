@@ -52169,3 +52169,1035 @@
   session_id: w0t1p0:6B99D332-81BD-4E27-9A86-502CD3217862
   cwd: /Users/dom/.dotfiles
   time: 1662488002
+- command: r
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:6B99D332-81BD-4E27-9A86-502CD3217862
+  cwd: /Users/dom/.dotfiles
+  time: 1662488131
+- command: lazygit
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:6B99D332-81BD-4E27-9A86-502CD3217862
+  cwd: /Users/dom/.dotfiles
+  time: 1662488675
+- command: Updating Fig to latest version...
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:758AD957-4357-4C7D-BDA4-4E04EE07CBA5
+  cwd: /Users/dom
+  time: 1662766844
+- command: cd Downloads/yabai-master\\ 2/
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:758AD957-4357-4C7D-BDA4-4E04EE07CBA5
+  cwd: /Users/dom
+  time: 1662766854
+- command: make
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:758AD957-4357-4C7D-BDA4-4E04EE07CBA5
+  cwd: /Users/dom/Downloads/yabai-master 2
+  time: 1662766855
+- command: brew services stop yabai
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:758AD957-4357-4C7D-BDA4-4E04EE07CBA5
+  cwd: /Users/dom/Downloads/yabai-master 2
+  time: 1662766864
+- command: cd bin
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:758AD957-4357-4C7D-BDA4-4E04EE07CBA5
+  cwd: /Users/dom/Downloads/yabai-master 2
+  time: 1662766868
+- command: ./yabai
+  exit_code: 130
+  shell: zsh
+  session_id: w0t0p0:758AD957-4357-4C7D-BDA4-4E04EE07CBA5
+  cwd: /Users/dom/Downloads/yabai-master 2/bin
+  time: 1662766869
+- command: brew services start yabai
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:758AD957-4357-4C7D-BDA4-4E04EE07CBA5
+  cwd: /Users/dom/Downloads/yabai-master 2/bin
+  time: 1662766880
+- command: brew uninstall yabai
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:758AD957-4357-4C7D-BDA4-4E04EE07CBA5
+  cwd: /Users/dom/Downloads/yabai-master 2/bin
+  time: 1662882414
+- command: r
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:6B99D332-81BD-4E27-9A86-502CD3217862
+  cwd: /Users/dom/.dotfiles
+  time: 1662505524
+- command: brew services install yabai
+  exit_code: 1
+  shell: zsh
+  session_id: w0t1p0:6B99D332-81BD-4E27-9A86-502CD3217862
+  cwd: /Users/dom/.dotfiles
+  time: 1662882484
+- command: brew install yabai
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:6B99D332-81BD-4E27-9A86-502CD3217862
+  cwd: /Users/dom/.dotfiles
+  time: 1662882488
+- command: source ~/.yabairc
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:6B99D332-81BD-4E27-9A86-502CD3217862
+  cwd: /Users/dom/.dotfiles
+  time: 1662882673
+- command: sudo yabai --install-sa
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:6B99D332-81BD-4E27-9A86-502CD3217862
+  cwd: /Users/dom/.dotfiles
+  time: 1662882685
+- command: yabai
+  exit_code: 130
+  shell: zsh
+  session_id: w0t1p0:6B99D332-81BD-4E27-9A86-502CD3217862
+  cwd: /Users/dom/.dotfiles
+  time: 1662882695
+- command: brew services stop yabai
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:6B99D332-81BD-4E27-9A86-502CD3217862
+  cwd: /Users/dom/.dotfiles
+  time: 1662882740
+- command: brew services start yabai
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:91678EA7-13CD-45CC-BCBD-F63B91BB6EF5
+  cwd: /Users/dom
+  time: 1662882779
+- command: sudo yabai --install-sa
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:91678EA7-13CD-45CC-BCBD-F63B91BB6EF5
+  cwd: /Users/dom
+  time: 1662882877
+- command: brew uninstall yabai
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:91678EA7-13CD-45CC-BCBD-F63B91BB6EF5
+  cwd: /Users/dom
+  time: 1662883028
+- command: cd Downloads/
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:91678EA7-13CD-45CC-BCBD-F63B91BB6EF5
+  cwd: /Users/dom
+  time: 1662883047
+- command: cd yabai-master\\ 2/
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:91678EA7-13CD-45CC-BCBD-F63B91BB6EF5
+  cwd: /Users/dom/Downloads
+  time: 1662883051
+- command: make
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:91678EA7-13CD-45CC-BCBD-F63B91BB6EF5
+  cwd: /Users/dom/Downloads/yabai-master 2
+  time: 1662883052
+- command: cd ~/.local/bin/
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:91678EA7-13CD-45CC-BCBD-F63B91BB6EF5
+  cwd: /Users/dom/Downloads/yabai-master 2
+  time: 1662883079
+- command: ls
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:91678EA7-13CD-45CC-BCBD-F63B91BB6EF5
+  cwd: /Users/dom/.local/bin
+  time: 1662883080
+- command: source ~/.yabairc
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:91678EA7-13CD-45CC-BCBD-F63B91BB6EF5
+  cwd: /Users/dom/.local/bin
+  time: 1662883125
+- command: source ~/.zshrc
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:91678EA7-13CD-45CC-BCBD-F63B91BB6EF5
+  cwd: /Users/dom/.local/bin
+  time: 1662883131
+- command: which yabai
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:8990340E-48E2-411E-B832-8B2231F2CB2C
+  cwd: /Users/dom
+  time: 1662883141
+- command: sudo yabai --install-sa
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:8990340E-48E2-411E-B832-8B2231F2CB2C
+  cwd: /Users/dom
+  time: 1662883148
+- command: yabai
+  exit_code: 130
+  shell: zsh
+  session_id: w0t0p0:8990340E-48E2-411E-B832-8B2231F2CB2C
+  cwd: /Users/dom
+  time: 1662883156
+- command: v .yabairc
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:8990340E-48E2-411E-B832-8B2231F2CB2C
+  cwd: /Users/dom
+  time: 1662883217
+- command: v .skhdrc
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:8990340E-48E2-411E-B832-8B2231F2CB2C
+  cwd: /Users/dom
+  time: 1662883248
+- command: obsidian
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:4AE43CBF-B3BB-4F00-AD8B-3599EDE6B7AC
+  cwd: /Users/dom
+  time: 1663449639
+- command: r
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:4AE43CBF-B3BB-4F00-AD8B-3599EDE6B7AC
+  cwd: /Users/dom/Documents/GitHub/obsidian-site/quartz
+  time: 1663449721
+- command: yabai
+  exit_code: 130
+  shell: zsh
+  session_id: w0t0p0:8990340E-48E2-411E-B832-8B2231F2CB2C
+  cwd: /Users/dom
+  time: 1662883286
+- command: cd Downloads/
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:5F036ED9-B813-4966-8FA8-3CA3325358B2
+  cwd: /Users/dom
+  time: 1663567613
+- command: ls
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:5F036ED9-B813-4966-8FA8-3CA3325358B2
+  cwd: /Users/dom/Downloads
+  time: 1663567613
+- command: cd yabai-master\\ 3/
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:5F036ED9-B813-4966-8FA8-3CA3325358B2
+  cwd: /Users/dom/Downloads
+  time: 1663567647
+- command: ls
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:5F036ED9-B813-4966-8FA8-3CA3325358B2
+  cwd: /Users/dom/Downloads/yabai-master 3
+  time: 1663567647
+- command: make
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:5F036ED9-B813-4966-8FA8-3CA3325358B2
+  cwd: /Users/dom/Downloads/yabai-master 3
+  time: 1663567648
+- command: yabai
+  exit_code: 130
+  shell: zsh
+  session_id: w0t0p0:8990340E-48E2-411E-B832-8B2231F2CB2C
+  cwd: /Users/dom
+  time: 1663566795
+- command: yabai
+  exit_code: 130
+  shell: zsh
+  session_id: w0t0p0:8990340E-48E2-411E-B832-8B2231F2CB2C
+  cwd: /Users/dom
+  time: 1663567884
+- command: source ~/.zshrc
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:8990340E-48E2-411E-B832-8B2231F2CB2C
+  cwd: /Users/dom
+  time: 1663567950
+- command: sudo yabai --install-sa
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:8990340E-48E2-411E-B832-8B2231F2CB2C
+  cwd: /Users/dom
+  time: 1663567958
+- command: yabai
+  exit_code: 130
+  shell: zsh
+  session_id: w0t0p0:8990340E-48E2-411E-B832-8B2231F2CB2C
+  cwd: /Users/dom
+  time: 1663567966
+- command: yabai -m config window_animation_duration 0.1
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:8990340E-48E2-411E-B832-8B2231F2CB2C
+  cwd: /Users/dom
+  time: 1663568005
+- command: yabai
+  exit_code: 130
+  shell: zsh
+  session_id: w0t0p0:8990340E-48E2-411E-B832-8B2231F2CB2C
+  cwd: /Users/dom
+  time: 1663568009
+- command: yabai
+  exit_code: 130
+  shell: zsh
+  session_id: w0t0p0:8990340E-48E2-411E-B832-8B2231F2CB2C
+  cwd: /Users/dom
+  time: 1663568036
+- command: r
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:8990340E-48E2-411E-B832-8B2231F2CB2C
+  cwd: /Users/dom
+  time: 1663568057
+- command: ybai
+  exit_code: 127
+  shell: zsh
+  session_id: w0t0p0:47B24890-31A0-49C4-A2B2-33FECE4EC689
+  cwd: /Users/dom
+  time: 1663568115
+- command: cd Downloads/
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:80F41380-2BEA-4195-A5B2-D9C2E5151168
+  cwd: /Users/dom
+  time: 1663806859
+- command: ls
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:80F41380-2BEA-4195-A5B2-D9C2E5151168
+  cwd: /Users/dom/Downloads
+  time: 1663806860
+- command: cd yabai-master 4
+  exit_code: 1
+  shell: zsh
+  session_id: w0t0p0:80F41380-2BEA-4195-A5B2-D9C2E5151168
+  cwd: /Users/dom/Downloads
+  time: 1663806876
+- command: cd yabai-master\\ 4
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:80F41380-2BEA-4195-A5B2-D9C2E5151168
+  cwd: /Users/dom/Downloads
+  time: 1663806891
+- command: ls
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:80F41380-2BEA-4195-A5B2-D9C2E5151168
+  cwd: /Users/dom/Downloads/yabai-master 4
+  time: 1663806893
+- command: make
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:80F41380-2BEA-4195-A5B2-D9C2E5151168
+  cwd: /Users/dom/Downloads/yabai-master 4
+  time: 1663806894
+- command: source ~/.zshrc
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:80F41380-2BEA-4195-A5B2-D9C2E5151168
+  cwd: /Users/dom/Downloads/yabai-master 4
+  time: 1663806948
+- command: yabai
+  exit_code: 1
+  shell: zsh
+  session_id: w0t0p0:80F41380-2BEA-4195-A5B2-D9C2E5151168
+  cwd: /Users/dom/Downloads/yabai-master 4
+  time: 1663806951
+- command: yabai --load-sa
+  exit_code: 1
+  shell: zsh
+  session_id: w0t0p0:80F41380-2BEA-4195-A5B2-D9C2E5151168
+  cwd: /Users/dom/Downloads/yabai-master 4
+  time: 1663806958
+- command: sudo yabai --load-sa
+  exit_code: 1
+  shell: zsh
+  session_id: w0t0p0:80F41380-2BEA-4195-A5B2-D9C2E5151168
+  cwd: /Users/dom/Downloads/yabai-master 4
+  time: 1663806965
+- command: sudo yabai --install-sa
+  exit_code: 1
+  shell: zsh
+  session_id: w0t0p0:80F41380-2BEA-4195-A5B2-D9C2E5151168
+  cwd: /Users/dom/Downloads/yabai-master 4
+  time: 1663806991
+- command: yabai
+  exit_code: 130
+  shell: zsh
+  session_id: w0t0p0:47B24890-31A0-49C4-A2B2-33FECE4EC689
+  cwd: /Users/dom
+  time: 1663568117
+- command: sudo yabai --install-sa
+  exit_code: 1
+  shell: zsh
+  session_id: w0t0p0:80F41380-2BEA-4195-A5B2-D9C2E5151168
+  cwd: /Users/dom/Downloads/yabai-master 4
+  time: 1663807104
+- command: sudo yabai --load-sa
+  exit_code: 1
+  shell: zsh
+  session_id: w0t0p0:80F41380-2BEA-4195-A5B2-D9C2E5151168
+  cwd: /Users/dom/Downloads/yabai-master 4
+  time: 1663807107
+- command: rm /tmp/yabai_$USER.lock                      \n rm /tmp/yabai_$USER.socket                                               rm /tmp/yabai-sa_$USER.socket
+  exit_code: 1
+  shell: zsh
+  session_id: w0t0p0:80F41380-2BEA-4195-A5B2-D9C2E5151168
+  cwd: /Users/dom/Downloads/yabai-master 4
+  time: 1663807144
+- command: rm -rf /usr/local/var/log/yabai
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:80F41380-2BEA-4195-A5B2-D9C2E5151168
+  cwd: /Users/dom/Downloads/yabai-master 4
+  time: 1663807160
+- command: sudo yabai --uninstall-sa
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:80F41380-2BEA-4195-A5B2-D9C2E5151168
+  cwd: /Users/dom/Downloads/yabai-master 4
+  time: 1663807166
+- command: source ~/.zshrc
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:80F41380-2BEA-4195-A5B2-D9C2E5151168
+  cwd: /Users/dom/Downloads/yabai-master 4
+  time: 1663807176
+- command: yabai
+  exit_code: 130
+  shell: zsh
+  session_id: w0t0p0:7D0B3AB4-F82C-4B75-8BFB-57ADBA1AF68D
+  cwd: /Users/dom
+  time: 1663807182
+- command: yabai --load-sa
+  exit_code: 1
+  shell: zsh
+  session_id: w0t0p0:7D0B3AB4-F82C-4B75-8BFB-57ADBA1AF68D
+  cwd: /Users/dom
+  time: 1663807206
+- command: sudo yabai --load-sa
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:7D0B3AB4-F82C-4B75-8BFB-57ADBA1AF68D
+  cwd: /Users/dom
+  time: 1663807210
+- command: yabai
+  exit_code: 130
+  shell: zsh
+  session_id: w0t0p0:7D0B3AB4-F82C-4B75-8BFB-57ADBA1AF68D
+  cwd: /Users/dom
+  time: 1663807212
+- command: yabai
+  exit_code: 130
+  shell: zsh
+  session_id: w0t0p0:7D0B3AB4-F82C-4B75-8BFB-57ADBA1AF68D
+  cwd: /Users/dom
+  time: 1663807256
+- command: r
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:AE3FC4FE-58CF-4BC9-BAA1-113FFC988D98
+  cwd: /Users/dom
+  time: 1663807259
+- command: clear
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:AE3FC4FE-58CF-4BC9-BAA1-113FFC988D98
+  cwd: /Users/dom
+  time: 1663807334
+- command: obsidian
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:AE3FC4FE-58CF-4BC9-BAA1-113FFC988D98
+  cwd: /Users/dom
+  time: 1663807404
+- command: ls
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:AE3FC4FE-58CF-4BC9-BAA1-113FFC988D98
+  cwd: /Users/dom/Documents/GitHub/obsidian-site/quartz
+  time: 1663807406
+- command: r
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:AE3FC4FE-58CF-4BC9-BAA1-113FFC988D98
+  cwd: /Users/dom/Documents/GitHub/obsidian-site/quartz
+  time: 1663807407
+- command: ls
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:AE3FC4FE-58CF-4BC9-BAA1-113FFC988D98
+  cwd: /Users/dom/Documents/GitHub/obsidian-site/quartz
+  time: 1663807568
+- command: ./compile.sh
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:AE3FC4FE-58CF-4BC9-BAA1-113FFC988D98
+  cwd: /Users/dom/Documents/GitHub/obsidian-site/quartz
+  time: 1663807576
+- command: which go
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:AE3FC4FE-58CF-4BC9-BAA1-113FFC988D98
+  cwd: /Users/dom/Documents/GitHub/obsidian-site/quartz
+  time: 1663807601
+- command: r
+  exit_code: 0
+  shell: zsh
+  session_id: w0t2p0:E97A9050-142B-4A75-87D0-AA937CE0A5C3
+  cwd: /Users/dom
+  time: 1663807619
+- command: go
+  exit_code: 2
+  shell: zsh
+  session_id: w0t2p0:E97A9050-142B-4A75-87D0-AA937CE0A5C3
+  cwd: /Users/dom
+  time: 1663807711
+- command: ./compile.sh
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:AE3FC4FE-58CF-4BC9-BAA1-113FFC988D98
+  cwd: /Users/dom/Documents/GitHub/obsidian-site/quartz
+  time: 1663807719
+- command: source ~/.zshrc
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:AE3FC4FE-58CF-4BC9-BAA1-113FFC988D98
+  cwd: /Users/dom/Documents/GitHub/obsidian-site/quartz
+  time: 1663807725
+- command: ./compile.sh
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:AE3FC4FE-58CF-4BC9-BAA1-113FFC988D98
+  cwd: /Users/dom/Documents/GitHub/obsidian-site/quartz
+  time: 1663807730
+- command: r
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:AE3FC4FE-58CF-4BC9-BAA1-113FFC988D98
+  cwd: /Users/dom/Documents/GitHub/obsidian-site/quartz
+  time: 1663807734
+- command: which go
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:AE3FC4FE-58CF-4BC9-BAA1-113FFC988D98
+  cwd: /Users/dom/Documents/GitHub/obsidian-site/quartz
+  time: 1663807755
+- command: v .zshrc
+  exit_code: 0
+  shell: zsh
+  session_id: w0t2p0:B735F868-13BC-4FD4-8076-204544B03119
+  cwd: /Users/dom
+  time: 1663807766
+- command: source ~/.zshrc
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:AE3FC4FE-58CF-4BC9-BAA1-113FFC988D98
+  cwd: /Users/dom/Documents/GitHub/obsidian-site/quartz
+  time: 1663807794
+- command: ./compile.sh
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:AE3FC4FE-58CF-4BC9-BAA1-113FFC988D98
+  cwd: /Users/dom/Documents/GitHub/obsidian-site/quartz
+  time: 1663807796
+- command: brew uninstall go
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:AE3FC4FE-58CF-4BC9-BAA1-113FFC988D98
+  cwd: /Users/dom/Documents/GitHub/obsidian-site/quartz
+  time: 1663873199
+- command: brew install go
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:AE3FC4FE-58CF-4BC9-BAA1-113FFC988D98
+  cwd: /Users/dom/Documents/GitHub/obsidian-site/quartz
+  time: 1663873205
+- command: go
+  exit_code: 2
+  shell: zsh
+  session_id: w0t1p0:AE3FC4FE-58CF-4BC9-BAA1-113FFC988D98
+  cwd: /Users/dom/Documents/GitHub/obsidian-site/quartz
+  time: 1663873304
+- command: which go
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:AE3FC4FE-58CF-4BC9-BAA1-113FFC988D98
+  cwd: /Users/dom/Documents/GitHub/obsidian-site/quartz
+  time: 1663873307
+- command: ./compile.sh
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:AE3FC4FE-58CF-4BC9-BAA1-113FFC988D98
+  cwd: /Users/dom/Documents/GitHub/obsidian-site/quartz
+  time: 1663873312
+- command: source ~/.zshrc
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:AE3FC4FE-58CF-4BC9-BAA1-113FFC988D98
+  cwd: /Users/dom/Documents/GitHub/obsidian-site/quartz
+  time: 1663873362
+- command: ./compile.sh
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:AE3FC4FE-58CF-4BC9-BAA1-113FFC988D98
+  cwd: /Users/dom/Documents/GitHub/obsidian-site/quartz
+  time: 1663873365
+- command: hugo
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:AE3FC4FE-58CF-4BC9-BAA1-113FFC988D98
+  cwd: /Users/dom/Documents/GitHub/obsidian-site/quartz
+  time: 1663873373
+- command: v .
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:AE3FC4FE-58CF-4BC9-BAA1-113FFC988D98
+  cwd: /Users/dom/Documents/GitHub/obsidian-site/quartz
+  time: 1663873383
+- command: serve
+  exit_code: 127
+  shell: zsh
+  session_id: w0t1p0:AE3FC4FE-58CF-4BC9-BAA1-113FFC988D98
+  cwd: /Users/dom/Documents/GitHub/obsidian-site/quartz
+  time: 1663873487
+- command: ./serve.sh
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:AE3FC4FE-58CF-4BC9-BAA1-113FFC988D98
+  cwd: /Users/dom/Documents/GitHub/obsidian-site/quartz
+  time: 1663873490
+- command: | EN                                                 -------------------+-----                                                 Pages            | 39                                                   Paginator pages  |  0                                                   Non-page files   |  3                                                   Static files     |  1                                                   Processed images |  0                                                   Aliases          |  7                                                   Sitemaps         |  1                                                   Cleaned          |  0                                                                                                                         Built in 64 ms                                                          Watching for changes in /Users/dom/Documents/GitHub/obsidian-site/quartz/{assets,content,data,layouts,static}                                   Watching for config changes in /Users/dom/Documents/GitHub/obsidian-site/quartz/config.toml                                                     Environment: \"development\"                                              Serving pages from memory                                               Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)                                                                      Press Ctrl+C to stop
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:AE3FC4FE-58CF-4BC9-BAA1-113FFC988D98
+  cwd: /Users/dom/Documents/GitHub/obsidian-site/quartz
+  time: 1663873520
+- command: ./compile.sh
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:AE3FC4FE-58CF-4BC9-BAA1-113FFC988D98
+  cwd: /Users/dom/Documents/GitHub/obsidian-site/quartz
+  time: 1663873522
+- command: Change detected, rebuilding site.                                       2022-09-22 12:05:23.233 -0700                                           Source changed \"/Users/dom/Documents/GitHub/obsidian-site/quartz/content/Obsidian/Notes/School/103B.md\": WRITE                                  Total in 55 ms
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:AE3FC4FE-58CF-4BC9-BAA1-113FFC988D98
+  cwd: /Users/dom/Documents/GitHub/obsidian-site/quartz
+  time: 1663873568
+- command: ./compile.sh
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:AE3FC4FE-58CF-4BC9-BAA1-113FFC988D98
+  cwd: /Users/dom/Documents/GitHub/obsidian-site/quartz
+  time: 1663873571
+- command: Total in 48 ms                               \n ./s
+  exit_code: 127
+  shell: zsh
+  session_id: w0t1p0:AE3FC4FE-58CF-4BC9-BAA1-113FFC988D98
+  cwd: /Users/dom/Documents/GitHub/obsidian-site/quartz
+  time: 1663873583
+- command: ./serve.sh
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:AE3FC4FE-58CF-4BC9-BAA1-113FFC988D98
+  cwd: /Users/dom/Documents/GitHub/obsidian-site/quartz
+  time: 1663873585
+- command: | EN                                                 -------------------+-----                                                 Pages            | 39                                                   Paginator pages  |  0                                                   Non-page files   |  3                                                   Static files     |  1                                                   Processed images |  0                                                   Aliases          |  7                                                   Sitemaps         |  1                                                   Cleaned          |  0                                                                                                                         Built in 65 ms                                                          Watching for changes in /Users/dom/Documents/GitHub/obsidian-site/quartz/{assets,content,data,layouts,static}                                   Watching for config changes in /Users/dom/Documents/GitHub/obsidian-site/quartz/config.toml                                                     Environment: \"development\"                                              Serving pages from memory                                               Web Server is available at http://localhost:58812/ (bind address 127.0.0.1)                                                                     Press Ctrl+C to stop
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:AE3FC4FE-58CF-4BC9-BAA1-113FFC988D98
+  cwd: /Users/dom/Documents/GitHub/obsidian-site/quartz
+  time: 1663873614
+- command: r
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:057D6D13-6676-48DC-807C-060DB7E14BEA
+  cwd: /Users/dom
+  time: 1663891384
+- command: ls
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:057D6D13-6676-48DC-807C-060DB7E14BEA
+  cwd: /Users/dom
+  time: 1663899594
+- command: obsidian
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:057D6D13-6676-48DC-807C-060DB7E14BEA
+  cwd: /Users/dom
+  time: 1663899598
+- command: ./compile.sh
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:057D6D13-6676-48DC-807C-060DB7E14BEA
+  cwd: /Users/dom/Documents/GitHub/obsidian-site/quartz
+  time: 1663899601
+- command: ./watch.sh
+  exit_code: 130
+  shell: zsh
+  session_id: w0t0p0:057D6D13-6676-48DC-807C-060DB7E14BEA
+  cwd: /Users/dom/Documents/GitHub/obsidian-site/quartz
+  time: 1663899606
+- command: ./compile.sh
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:057D6D13-6676-48DC-807C-060DB7E14BEA
+  cwd: /Users/dom/Documents/GitHub/obsidian-site/quartz
+  time: 1663899673
+- command: ./compile.sh
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:057D6D13-6676-48DC-807C-060DB7E14BEA
+  cwd: /Users/dom/Documents/GitHub/obsidian-site/quartz
+  time: 1663899807
+- command: ./watch.sh
+  exit_code: 130
+  shell: zsh
+  session_id: w0t0p0:057D6D13-6676-48DC-807C-060DB7E14BEA
+  cwd: /Users/dom/Documents/GitHub/obsidian-site/quartz
+  time: 1663899815
+- command: ./compile.sh
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:057D6D13-6676-48DC-807C-060DB7E14BEA
+  cwd: /Users/dom/Documents/GitHub/obsidian-site/quartz
+  time: 1663899821
+- command: ./serve.sh
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:057D6D13-6676-48DC-807C-060DB7E14BEA
+  cwd: /Users/dom/Documents/GitHub/obsidian-site/quartz
+  time: 1663899832
+- command: ./serve.sh
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:057D6D13-6676-48DC-807C-060DB7E14BEA
+  cwd: /Users/dom/Documents/GitHub/obsidian-site/quartz
+  time: 1663900064
+- command: ./compile.sh
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:057D6D13-6676-48DC-807C-060DB7E14BEA
+  cwd: /Users/dom/Documents/GitHub/obsidian-site/quartz
+  time: 1663900069
+- command: ./compile.sh
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:057D6D13-6676-48DC-807C-060DB7E14BEA
+  cwd: /Users/dom/Documents/GitHub/obsidian-site/quartz
+  time: 1663900206
+- command: Total in 50 ms                               \n ./serve.sh
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:057D6D13-6676-48DC-807C-060DB7E14BEA
+  cwd: /Users/dom/Documents/GitHub/obsidian-site/quartz
+  time: 1663900210
+- command: ./compile.sh
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:057D6D13-6676-48DC-807C-060DB7E14BEA
+  cwd: /Users/dom/Documents/GitHub/obsidian-site/quartz
+  time: 1663900234
+- command: Change detected, rebuilding site.                                       2022-09-22 19:30:35.208 -0700                                           Source changed \"/Users/dom/Documents/GitHub/obsidian-site/quartz/content/Obsidian/Notes/School/103B.md\": WRITE                                  Total in 48 ms                                                                                                                                  Change detected, rebuilding site.                                       2022-09-22 19:30:35.256 -0700                                           Source changed \"/Users/dom/Documents/GitHub/obsidian-site/quartz/content/Obsidian/Notes/School/103B.md\": WRITE                                  Total in 62 ms                                                                                                                                  Change detected, rebuilding site.                                       2022-09-22 19:30:35.319 -0700                                           Source changed \"/Users/dom/Documents/GitHub/obsidian-site/quartz/content/Obsidian/Notes/School/103B.md\": WRITE                                  Total in 50 ms
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:057D6D13-6676-48DC-807C-060DB7E14BEA
+  cwd: /Users/dom/Documents/GitHub/obsidian-site/quartz
+  time: 1663900248
+- command: ./serve.sh
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:057D6D13-6676-48DC-807C-060DB7E14BEA
+  cwd: /Users/dom/Documents/GitHub/obsidian-site/quartz
+  time: 1663900251
+- command: r
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:057D6D13-6676-48DC-807C-060DB7E14BEA
+  cwd: /Users/dom/Documents/GitHub/obsidian-site/quartz
+  time: 1663900352
+- command: ./serve.sh
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:057D6D13-6676-48DC-807C-060DB7E14BEA
+  cwd: /Users/dom/Documents/GitHub/obsidian-site/quartz
+  time: 1663900384
+- command: Change detected, rebuilding site.                                       2022-09-22 19:32:55.360 -0700                                           Total in 45 ms                                                                                                                                  Change detected, rebuilding site.                                       2022-09-22 19:32:55.540 -0700                                           Total in 47 ms                                                                                                                                  Change detected, rebuilding site.                                       2022-09-22 19:32:58.859 -0700                                           Total in 55 ms                                                                                                                                  Change detected, rebuilding site.                                       2022-09-22 19:32:59.039 -0700                                           Total in 42 ms
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:AE3FC4FE-58CF-4BC9-BAA1-113FFC988D98
+  cwd: /Users/dom/Documents/GitHub/obsidian-site/quartz
+  time: 1663900548
+- command: ls
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:AE3FC4FE-58CF-4BC9-BAA1-113FFC988D98
+  cwd: /Users/dom/Documents/GitHub/obsidian-site/quartz
+  time: 1663900549
+- command: cd ~/Downloads/
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:AE3FC4FE-58CF-4BC9-BAA1-113FFC988D98
+  cwd: /Users/dom/Documents/GitHub/obsidian-site/quartz
+  time: 1663900555
+- command: git clone git@github.com:domogami/domogami.github.io.git
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:AE3FC4FE-58CF-4BC9-BAA1-113FFC988D98
+  cwd: /Users/dom/Downloads
+  time: 1663900561
+- command: cd ~/Downloads/
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:057D6D13-6676-48DC-807C-060DB7E14BEA
+  cwd: /Users/dom/Documents/GitHub/obsidian-site/quartz
+  time: 1663900761
+- command: cd domogami.github.io/
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:057D6D13-6676-48DC-807C-060DB7E14BEA
+  cwd: /Users/dom/Downloads
+  time: 1663900765
+- command: git commit -am \"🌈▲ Changed color scheme and updated posts\"
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:057D6D13-6676-48DC-807C-060DB7E14BEA
+  cwd: /Users/dom/Downloads/domogami.github.io
+  time: 1663900831
+- command: git push origin master
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:057D6D13-6676-48DC-807C-060DB7E14BEA
+  cwd: /Users/dom/Downloads/domogami.github.io
+  time: 1663900840
+- command: git commit -a
+  exit_code: 1
+  shell: zsh
+  session_id: w0t0p0:057D6D13-6676-48DC-807C-060DB7E14BEA
+  cwd: /Users/dom/Downloads/domogami.github.io
+  time: 1663900894
+- command: git commit -am \"📝 added readme\"
+  exit_code: 1
+  shell: zsh
+  session_id: w0t0p0:057D6D13-6676-48DC-807C-060DB7E14BEA
+  cwd: /Users/dom/Downloads/domogami.github.io
+  time: 1663900915
+- command: git add .
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:057D6D13-6676-48DC-807C-060DB7E14BEA
+  cwd: /Users/dom/Downloads/domogami.github.io
+  time: 1663900923
+- command: git commit -am \"📝 added readme\"
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:057D6D13-6676-48DC-807C-060DB7E14BEA
+  cwd: /Users/dom/Downloads/domogami.github.io
+  time: 1663900929
+- command: git push
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:057D6D13-6676-48DC-807C-060DB7E14BEA
+  cwd: /Users/dom/Downloads/domogami.github.io
+  time: 1663900933
+- command: open
+  exit_code: 1
+  shell: zsh
+  session_id: w0t0p0:057D6D13-6676-48DC-807C-060DB7E14BEA
+  cwd: /Users/dom/Downloads/domogami.github.io
+  time: 1663900985
+- command: open .
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:057D6D13-6676-48DC-807C-060DB7E14BEA
+  cwd: /Users/dom/Downloads/domogami.github.io
+  time: 1663900987
+- command: cd ~/Downloads/yabai-master\\ 5
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:057D6D13-6676-48DC-807C-060DB7E14BEA
+  cwd: /Users/dom/Downloads/domogami.github.io
+  time: 1663902264
+- command: make
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:057D6D13-6676-48DC-807C-060DB7E14BEA
+  cwd: /Users/dom/Downloads/yabai-master 5
+  time: 1663902266
+- command: yabai
+  exit_code: 130
+  shell: zsh
+  session_id: w0t0p0:7D0B3AB4-F82C-4B75-8BFB-57ADBA1AF68D
+  cwd: /Users/dom
+  time: 1663807306
+- command: yabai
+  exit_code: 130
+  shell: zsh
+  session_id: w0t0p0:7D0B3AB4-F82C-4B75-8BFB-57ADBA1AF68D
+  cwd: /Users/dom
+  time: 1663902357
+- command: yabai
+  exit_code: 130
+  shell: zsh
+  session_id: w0t0p0:7D0B3AB4-F82C-4B75-8BFB-57ADBA1AF68D
+  cwd: /Users/dom
+  time: 1663902602
+- command: yabai
+  exit_code: 130
+  shell: zsh
+  session_id: w0t0p0:7D0B3AB4-F82C-4B75-8BFB-57ADBA1AF68D
+  cwd: /Users/dom
+  time: 1663902639
+- command: r
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:AE3FC4FE-58CF-4BC9-BAA1-113FFC988D98
+  cwd: /Users/dom/Downloads
+  time: 1663902379
+- command: cd Downloads/
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:E32449C0-8A28-4594-93A7-96B4948C114A
+  cwd: /Users/dom
+  time: 1663998817
+- command: ls
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:E32449C0-8A28-4594-93A7-96B4948C114A
+  cwd: /Users/dom/Downloads
+  time: 1663998818
+- command: open .
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:E32449C0-8A28-4594-93A7-96B4948C114A
+  cwd: /Users/dom/Downloads
+  time: 1663998823
+- command: cd yabai-master\\ 6/
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:E32449C0-8A28-4594-93A7-96B4948C114A
+  cwd: /Users/dom/Downloads
+  time: 1663998844
+- command: make
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:E32449C0-8A28-4594-93A7-96B4948C114A
+  cwd: /Users/dom/Downloads/yabai-master 6
+  time: 1663998845
+- command: cp ./bin/yabai /usr/local/bin
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:E32449C0-8A28-4594-93A7-96B4948C114A
+  cwd: /Users/dom/Downloads/yabai-master 6
+  time: 1663998891
+- command: r
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:E32449C0-8A28-4594-93A7-96B4948C114A
+  cwd: /Users/dom/Downloads/yabai-master 6
+  time: 1663998897
+- command: sudo ranger
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:E32449C0-8A28-4594-93A7-96B4948C114A
+  cwd: /Users/dom/Downloads/yabai-master 6
+  time: 1663998932
+- command: soruce ~/.zshrc
+  exit_code: 127
+  shell: zsh
+  session_id: w0t0p0:E32449C0-8A28-4594-93A7-96B4948C114A
+  cwd: /Users/dom/Downloads/yabai-master 6
+  time: 1663999189
+- command: source ~/.zshrc
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:E32449C0-8A28-4594-93A7-96B4948C114A
+  cwd: /Users/dom/Downloads/yabai-master 6
+  time: 1663999197
+- command: yabai
+  exit_code: 130
+  shell: zsh
+  session_id: w0t0p0:7D0B3AB4-F82C-4B75-8BFB-57ADBA1AF68D
+  cwd: /Users/dom
+  time: 1663902664
+- command: yabai
+  exit_code: 130
+  shell: zsh
+  session_id: w0t0p0:7D0B3AB4-F82C-4B75-8BFB-57ADBA1AF68D
+  cwd: /Users/dom
+  time: 1663999211
+- command: yabai --load-sa
+  exit_code: 1
+  shell: zsh
+  session_id: w0t0p0:7D0B3AB4-F82C-4B75-8BFB-57ADBA1AF68D
+  cwd: /Users/dom
+  time: 1663999224
+- command: sudo yabai --load-sa
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:7D0B3AB4-F82C-4B75-8BFB-57ADBA1AF68D
+  cwd: /Users/dom
+  time: 1663999227
+- command: sudo yabai --load-sa
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:7D0B3AB4-F82C-4B75-8BFB-57ADBA1AF68D
+  cwd: /Users/dom
+  time: 1664006843
+- command: r
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:DE447C3B-D4D5-45EA-B557-EBD6E5FD9B75
+  cwd: /Users/dom
+  time: 1664007087
+- command: yabai
+  exit_code: 130
+  shell: zsh
+  session_id: w0t0p0:7D0B3AB4-F82C-4B75-8BFB-57ADBA1AF68D
+  cwd: /Users/dom
+  time: 1664006851
+- command: r
+  exit_code: 0
+  shell: zsh
+  session_id: w0t0p0:556EAD72-3B33-4207-8A16-B617CE65952A
+  cwd: /Users/dom
+  time: 1664007212
+- command: yabai
+  exit_code: 130
+  shell: zsh
+  session_id: w0t0p0:7D0B3AB4-F82C-4B75-8BFB-57ADBA1AF68D
+  cwd: /Users/dom
+  time: 1664007178
+- command: r
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:C5F48D2D-EC93-4335-B883-B214479386BD
+  cwd: /Users/dom
+  time: 1664049973
+- command: cd .dotfiles/
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:C5F48D2D-EC93-4335-B883-B214479386BD
+  cwd: /Users/dom
+  time: 1664050017
+- command: ls
+  exit_code: 0
+  shell: zsh
+  session_id: w0t1p0:C5F48D2D-EC93-4335-B883-B214479386BD
+  cwd: /Users/dom/.dotfiles
+  time: 1664050017

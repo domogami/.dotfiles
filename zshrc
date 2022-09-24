@@ -1,5 +1,5 @@
 # Fig pre block. Keep at the top of this file.
-[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && . "$HOME/.fig/shell/zshrc.pre.zsh"
+[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -44,7 +44,7 @@ export PATH=$PATH:/Users/dom/.spicetify
 export PATH=$PATH:/Users/dom/.cargo/bin
 export PATH=$PATH:/Users/dom/go
 export GOPATH=/Users/$USER/go 
-export GOROOT=/opt/homebrew/Cellar/go/1.18.4/libexec/
+export GOROOT=/opt/homebrew/bin/go
 export PATH=$PATH:$GOROOT/bin
 export PATH=$PATH:$GOPATH/bin
 # fpath+="$HOME/.zsh/zen"
@@ -55,4 +55,4 @@ export PATH=$PATH:$GOPATH/bin
 source ~/.iterm2_shell_integration.zsh
 
 # Fig post block. Keep at the bottom of this file.
-[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && . "$HOME/.fig/shell/zshrc.post.zsh"
+[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
