@@ -96,6 +96,8 @@ DOTFILES_INSTALL_BREW=0 ./install
 - My site is [Dom's Digital Garden 🪴](https://domogami.github.io/).
 - Publish pipeline repo: [domogami.github.io](https://github.com/domogami/domogami.github.io).
 - Raycast publish commands are tracked in this repo: `config/raycast/quartz-build.sh` and `config/raycast/quartz-publish.sh`.
+- Dotfiles publish command is tracked here: `config/raycast/dotfiles-publish.sh` (search `publish dotfiles` in Raycast).
+- Dotfiles publish command always runs `scripts/dotfiles_health_check.zsh --strict` before commit/push.
 - Install/link those Raycast commands with `scripts/install_raycast_commands.zsh`.
 
 ### AI Workflow

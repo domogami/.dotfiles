@@ -10,24 +10,28 @@ SOURCE_DIR="$REPO_DIR/config/raycast"
 # Override this path by exporting RAYCAST_COMMANDS_DIR before running.
 TARGET_DIR="${RAYCAST_COMMANDS_DIR:-$HOME/Documents/Raycast Script Commands/dom.dotfiles}"
 
-BUILD_SRC="$SOURCE_DIR/quartz-build.sh"
-PUBLISH_SRC="$SOURCE_DIR/quartz-publish.sh"
-BUILD_DST="$TARGET_DIR/quartz-build.sh"
-PUBLISH_DST="$TARGET_DIR/quartz-publish.sh"
-
-[[ -f "$BUILD_SRC" ]] || { echo "error: missing $BUILD_SRC" >&2; exit 1; }
-[[ -f "$PUBLISH_SRC" ]] || { echo "error: missing $PUBLISH_SRC" >&2; exit 1; }
-
 mkdir -p "$TARGET_DIR"
+linked_count=0
 
-ln -sfn "$BUILD_SRC" "$BUILD_DST"
-ln -sfn "$PUBLISH_SRC" "$PUBLISH_DST"
+for script_path in "$SOURCE_DIR"/*.sh; do
+  [[ -e "$script_path" ]] || continue
+  script_name="$(basename "$script_path")"
+  target_path="$TARGET_DIR/$script_name"
 
-chmod +x "$BUILD_SRC" "$PUBLISH_SRC"
+  chmod +x "$script_path"
+  ln -sfn "$script_path" "$target_path"
 
-echo "[raycast] Linked script commands:"
-echo "  $BUILD_DST -> $BUILD_SRC"
-echo "  $PUBLISH_DST -> $PUBLISH_SRC"
+  echo "[raycast] Linked: $target_path -> $script_path"
+  linked_count=$((linked_count + 1))
+done
+
+if [[ "$linked_count" -eq 0 ]]; then
+  echo "error: no raycast scripts found in $SOURCE_DIR" >&2
+  exit 1
+fi
+
+echo
+echo "[raycast] Linked $linked_count script command(s)."
 echo
 echo "[raycast] In Raycast:"
 echo "  1) Open Settings -> Extensions -> Script Commands"
