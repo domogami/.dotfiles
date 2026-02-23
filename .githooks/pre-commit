@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+if ! git rev-parse --is-inside-work-tree >/dev/null 2>&1; then
+  exit 0
+fi
+
+if [[ -z "$(git diff --cached --name-only --diff-filter=ACMR)" ]]; then
+  exit 0
+fi
+
+if ! command -v gitleaks >/dev/null 2>&1; then
+  echo "[gitleaks] command not found; skipping secret scan."
+  echo "[gitleaks] install with: brew install gitleaks"
+  exit 0
+fi
+
+echo "[gitleaks] scanning staged changes..."
+help_text="$(gitleaks --help 2>&1 || true)"
+
+if printf '%s' "$help_text" | grep -qE '(^|[[:space:]])git([[:space:]]|$)'; then
+  gitleaks git --staged
+elif printf '%s' "$help_text" | grep -qE '(^|[[:space:]])protect([[:space:]]|$)'; then
+  gitleaks protect --staged
+else
+  gitleaks detect --source . --log-opts="--cached"
+fi

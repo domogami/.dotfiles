@@ -32,12 +32,37 @@ The installer config lives in `install.config.yaml`.
 ./install --with-brew
 ```
 
+- Preview only (no writes):
+
+```bash
+./install --dry-run --without-brew
+./install --dry-run --with-brew
+```
+
+- Verify repo/install health only (no writes):
+
+```bash
+./install --verify
+```
+
 - Non-interactive env flag (CI/script-friendly):
 
 ```bash
 DOTFILES_INSTALL_BREW=1 ./install
 DOTFILES_INSTALL_BREW=0 ./install
 ```
+
+### Validation and Safety
+
+- Run health checks directly:
+
+```bash
+./scripts/dotfiles_health_check.zsh
+./scripts/dotfiles_health_check.zsh --strict
+```
+
+- Pre-commit secret scanning uses `gitleaks` via `.githooks/pre-commit`.
+- `./install` configures `core.hooksPath=.githooks` automatically.
 
 ## Current Stack
 

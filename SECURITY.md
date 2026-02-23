@@ -31,7 +31,7 @@ Because credentials were previously tracked, rotate them before any push.
 If your private key lived under this repo path, rotate it:
 
 ```bash
-ssh-keygen -t ed25519 -C "you@example.com" -f ~/.ssh/id_ed25519_github
+ssh-keygen -t ed25519 -C "domogami@gmail.com" -f ~/.ssh/id_ed25519_github
 ssh-add ~/.ssh/id_ed25519_github
 cat ~/.ssh/id_ed25519_github.pub
 ```
@@ -60,3 +60,14 @@ Run before each push:
 git status --short
 git diff --cached --name-only | rg -i "(hosts\\.yml|id_ed25519|id_rsa|token|secret|password|credentials|\\.pem$|\\.key$)" || true
 ```
+
+## Pre-Commit Secret Scanning (gitleaks)
+
+This repo ships a pre-commit hook at `.githooks/pre-commit`.
+
+1. Install scanner:
+   - `brew install gitleaks`
+2. Ensure hooks are enabled:
+   - `./install` (automatically sets `core.hooksPath=.githooks`)
+   - or manually: `git config core.hooksPath .githooks`
+3. Commit normally; staged changes are scanned for secrets before commit completes.

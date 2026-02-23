@@ -6,6 +6,8 @@ CONFIG="install.config.yaml"
 DOTBOT_DIR="dotbot"
 DOTBOT_BIN="bin/dotbot"
 BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+HEALTH_CHECK_SCRIPT="${BASEDIR}/scripts/dotfiles_health_check.zsh"
+HOOKS_DIR="${BASEDIR}/.githooks"
 
 if [[ -t 1 ]]; then
   C_RESET=$'\033[0m'
@@ -13,12 +15,14 @@ if [[ -t 1 ]]; then
   C_BLUE=$'\033[34m'
   C_GREEN=$'\033[32m'
   C_YELLOW=$'\033[33m'
+  C_RED=$'\033[31m'
 else
   C_RESET=""
   C_BOLD=""
   C_BLUE=""
   C_GREEN=""
   C_YELLOW=""
+  C_RED=""
 fi
 
 print_banner() {
@@ -38,14 +42,20 @@ print_note() {
   printf '%s[note]%s %s\n' "$C_YELLOW" "$C_RESET" "$1"
 }
 
+print_err() {
+  printf '%s[err]%s  %s\n' "$C_RED" "$C_RESET" "$1" >&2
+}
+
 usage() {
   cat <<'EOF'
 Usage:
-  ./install [--with-brew | --without-brew] [dotbot args...]
+  ./install [--with-brew | --without-brew] [--dry-run] [--verify] [dotbot args...]
 
 Options:
   --with-brew      Install/apply packages from Brewfile during setup.
   --without-brew   Skip Homebrew package installation (default in non-interactive mode).
+  --dry-run        Preview actions without making any changes.
+  --verify         Run health checks only (no install changes).
   -h, --help       Show this help text.
 
 Environment:
@@ -71,8 +81,40 @@ normalize_brew_mode() {
   esac
 }
 
+run_cmd() {
+  if [[ "$DRY_RUN" == "1" ]]; then
+    print_note "[dry-run] $*"
+  else
+    "$@"
+  fi
+}
+
+configure_git_hooks() {
+  if [[ ! -d "$HOOKS_DIR" ]]; then
+    print_note "Hooks directory not found at ${HOOKS_DIR}; skipping hook setup"
+    return 0
+  fi
+
+  print_step "Configuring local Git hooks"
+  run_cmd git -C "$BASEDIR" config core.hooksPath ".githooks"
+  print_ok "Git hooks path configured (.githooks)"
+}
+
+run_verify_mode() {
+  print_step "Running repository verification checks"
+  if [[ ! -x "$HEALTH_CHECK_SCRIPT" ]]; then
+    print_err "Health check script is missing or not executable: $HEALTH_CHECK_SCRIPT"
+    exit 1
+  fi
+
+  "$HEALTH_CHECK_SCRIPT"
+  print_ok "Verification passed"
+}
+
 BREW_MODE=""
 BREW_MODE_SET_BY_FLAG=0
+DRY_RUN=0
+VERIFY_ONLY=0
 DOTBOT_ARGS=()
 
 while [[ $# -gt 0 ]]; do
@@ -85,6 +127,14 @@ while [[ $# -gt 0 ]]; do
     --without-brew)
       BREW_MODE="0"
       BREW_MODE_SET_BY_FLAG=1
+      shift
+      ;;
+    --dry-run)
+      DRY_RUN=1
+      shift
+      ;;
+    --verify)
+      VERIFY_ONLY=1
       shift
       ;;
     -h|--help)
@@ -127,6 +177,10 @@ export DOTFILES_INSTALL_BREW="${BREW_MODE:-0}"
 print_banner
 print_step "Install root: ${BASEDIR}"
 
+if [[ "$DRY_RUN" == "1" ]]; then
+  print_note "Dry-run mode enabled (no changes will be applied)"
+fi
+
 if [[ "$DOTFILES_INSTALL_BREW" == "1" ]]; then
   print_note "Brew package install: enabled"
 else
@@ -135,11 +189,33 @@ fi
 
 cd "${BASEDIR}"
 
+if [[ "$VERIFY_ONLY" == "1" ]]; then
+  run_verify_mode
+  exit 0
+fi
+
+configure_git_hooks
+
 print_step "Syncing Dotbot submodule"
-git -C "${DOTBOT_DIR}" submodule sync --quiet --recursive
-git submodule update --init --recursive "${DOTBOT_DIR}"
+run_cmd git -C "${DOTBOT_DIR}" submodule sync --quiet --recursive
+run_cmd git submodule update --init --recursive "${DOTBOT_DIR}"
 print_ok "Dotbot submodule ready"
 
+if [[ "$DRY_RUN" == "1" ]] && [[ "$DOTFILES_INSTALL_BREW" == "1" ]] && command -v brew >/dev/null 2>&1 && [[ -f "${BASEDIR}/Brewfile" ]]; then
+  print_step "Checking Brewfile (dry-run)"
+  if brew bundle check --file="${BASEDIR}/Brewfile" --no-upgrade >/dev/null 2>&1; then
+    print_ok "Brewfile currently satisfied"
+  else
+    print_note "Brewfile has missing packages; a real install would apply them"
+  fi
+fi
+
 print_step "Running Dotbot"
-"${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${CONFIG}" "${DOTBOT_ARGS[@]}"
+run_cmd "${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${CONFIG}" "${DOTBOT_ARGS[@]}"
+
+if [[ "$DRY_RUN" == "1" ]]; then
+  print_ok "Dry-run complete"
+  exit 0
+fi
+
 print_ok "Dotfiles install complete"
