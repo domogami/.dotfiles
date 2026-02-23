@@ -1,1 +1,1 @@
-test -x ~/.local/bin/fig; and eval (~/.local/bin/fig init fish pre --rcfile 00_fig_pre | string split0)
+test -x ~/.local/bin/kiro-cli; and eval (~/.local/bin/kiro-cli init fish pre --rcfile 00_fig_pre | string split0)

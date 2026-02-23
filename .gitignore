@@ -4,3 +4,21 @@ fig/logs/daemon.log
 *.log
 *.log
 fig/logs/daemon.log
+
+# Security-sensitive local state
+config/gh/hosts.yml
+config/msmtp/config
+fig/tools/iterm-api-credentials
+ssh/id_*
+ssh/*.pub
+ssh/known_hosts
+ssh/known_hosts.old
+
+# Machine-local auth/session files
+config/spotify-tui/.spotify_token_cache.json
+
+# Deprecated Fig app data
+fig/
+
+# Local roadmap notes (intentionally untracked)
+future-plan.md

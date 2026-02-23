@@ -1,6 +1,7 @@
 - defaults:
     link:
       relink: true
+      create: true
 
 - clean: ['~']
 
@@ -12,15 +13,11 @@
     ~/.oh-my-zsh: 
     ~/.iterm2: 
     ~/.config:
-    ~/.fig:
-    ~/.yabairc:
-    ~/.skhdrc:
     ~/.gitignore_global:
     ~/.gitconfig:
-    ~/.ssh:
+    ~/.ssh/config: ssh/config
 
 - shell:
-  - [git submodule update --init --recursive, Installing submodules]
   -
     command: ./scripts/setup_homebrew.zsh
     stdin: true

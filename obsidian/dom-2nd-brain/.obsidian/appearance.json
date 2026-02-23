@@ -1,0 +1,14 @@
+{
+  "cssTheme": "AnuPpuccin",
+  "interfaceFontFamily": "Source Sans 3,MonaspiceNe Nerd Font,MonaspiceNe Nerd Font Propo",
+  "textFontFamily": "Source Sans 3,MonaspiceNe Nerd Font",
+  "monospaceFontFamily": "MonaspiceNe Nerd Font Mono",
+  "baseFontSizeAction": true,
+  "translucency": false,
+  "enabledCssSnippets": [
+    "extended-colorschemes",
+    "floating-status-bar"
+  ],
+  "accentColor": "#98c379",
+  "baseFontSize": 20
+}

@@ -1,0 +1,7 @@
+github.com:
+  user: YOUR_GITHUB_USERNAME
+  oauth_token: GITHUB_TOKEN_STORED_BY_GH_CLI
+  git_protocol: ssh
+  users:
+    YOUR_GITHUB_USERNAME:
+      oauth_token: GITHUB_TOKEN_STORED_BY_GH_CLI

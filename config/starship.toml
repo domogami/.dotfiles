@@ -1,4 +1,5 @@
 right_format = """$battery$time"""
+command_timeout = 3600
 # Prompt: param 2 └─
 [character]
 success_symbol = " [ ](#a9a1e1)"
@@ -7,7 +8,11 @@ vicmd_symbol = "[  ](#98be65)"
 
 # Username
 [username]
-style_user = "dimmed blue"
+show_always   = true
+format = "[ ](fg:#7A9C61  bg:none)[ ](fg:#282c34 bg:#7A9C61)[ ](fg:#7A9C61 bg:#98c379)[$user](fg:#282c34 bg:#98c379)[ ](fg:#98c379 bg:none)"
+style_user    = "bold green"
+style_root    = "bold red"
+
 
 [hostname]
 ssh_only = false
@@ -17,10 +22,14 @@ style = "dimmed white"
 disabled = true
 
 [battery]
-full_symbol = ""
-charging_symbol = ""
-discharging_symbol = ""
-unknown_symbol = ""
+full_symbol = "󰁹"
+charging_symbol = "󰂄"
+discharging_symbol = "󱟞"
+unknown_symbol = "󰁼"
+# full_symbol = ""
+# charging_symbol = ""
+# discharging_symbol = ""
+# unknown_symbol = ""
 disabled = false
 format = "[ ](fg:#ff6c6b bg:none)[$symbol ](fg:#282c34 bg:#ff6c6b)[ ](fg:#ff6c6b bg:#ff7b7a)[$percentage]($style)[ ](fg:#ff7b7a bg:none)"
 [[battery.display]]
@@ -29,28 +38,28 @@ threshold=100
 
 # Last param in the first line/row
 [cmd_duration]
+disabled = true
 min_time = 1
-format = "[ ](fg:#9088c8 bg:none)[ ](fg:#282c34 bg:#9088c8)[](fg:#9088c8 bg:#a9a1e1)[$duration]($style)[](fg:#a9a1e1 bg:none)"
-disabled = false
+format = "[ ](fg:#9088c8 bg:none)[ ](fg:#282c34 bg:#9088c8)[](fg:#9088c8 bg:#a9a1e1)[ $duration]($style)[](fg:#a9a1e1 bg:none)"
 style = "fg:#282c34 bg:#a9a1e1"
 
 # Third param
 [directory]
-format = "[](fg:#da8548 bg:none)[ ](fg:#282c34 bg:#da8548)[](fg:#da8548 bg:#ECBE7B)[ $path]($style)[](fg:#ECBE7B bg:none) "
-style = "fg:#282c34 bg:#ECBE7B"
+format = "[](fg:#d19a66 bg:none)[ ](fg:#282c34 bg:#d19a66)[](fg:#d19a66 bg:#e5c07b)[ $path]($style)[](fg:#e5c07b bg:none) "
+style = "fg:#282c34 bg:#e5c07b"
 truncation_length = 3
 truncate_to_repo=false
 
 [git_branch]
-format = "[](fg:#7fa54c bg:none)[](fg:#282c34 bg:#7fa54c)[](fg:#7fa54c bg:#98be65)[ $branch]($style)[](fg:#98be65 bg:none) "
-style = "fg:#282c34 bg:#98be65"
+format = "[](fg:#7A9C61 bg:none)[](fg:#282c34 bg:#7A9C61)[](fg:#7A9C61 bg:#98c379)[ $branch]($style)[](fg:#98c379 bg:none) "
+style = "fg:#282c34 bg:#98c379"
 
 [git_commit]
 format = "[\\($hash\\)]($style) [\\($tag\\)]($style)"
 style = "green"
 
 [git_status]
-format="[](fg:#3896d6 bg:none)[ ](fg:#282c34 bg:#3896d6)[ ](fg:#3896d6 bg:#51afef)[$modified](fg:#282c34 bg:#51afef)[$untracked](fg:#282c34 bg:#51afef)[$staged](fg:#282c34 bg:#51afef)[$renamed](fg:#282c34 bg:#51afef)[](fg:#51afef bg:none)"
+format="[](fg:#3896d6 bg:none)[ ](fg:#282c34 bg:#3896d6)[ ](fg:#3896d6 bg:#51afef)[$modified](fg:#282c34 bg:#51afef)[$untracked](fg:#282c34 bg:#51afef)[$staged](fg:#282c34 bg:#51afef)[$renamed](fg:#282c34 bg:#51afef)[](fg:#51afef bg:none)"
 conflicted = "="
 ahead =	"⇡${count} "
 behind = "⇣${count} "
@@ -76,7 +85,7 @@ format = '\([$state( $progress_current/$progress_total)]($style)\) '
 disabled = false
 
 [hg_branch]
-symbol = ""
+symbol = ""
 style = "purple"
 format = "on [$symbol$branch]($style) "
 
@@ -85,6 +94,9 @@ style="fg:#282c34 bg:#51afef"
 format="[](fg:#3896d6 bg:none)[ ](fg:#282c34 bg:#3896d6)[](fg:#3896d6 bg:#51afef)[ $time]($style)[](fg:#51afef bg:none)"
 time_format = "%R"
 disabled = false
+
+[aws]
+disabled = true
 
 [docker_context]
 disabled=true
@@ -113,7 +125,6 @@ symbol = " "
 disabled=true
 symbol = " "
 
-
 [ruby]
 disabled=true
 symbol = " "
@@ -128,10 +139,13 @@ symbol = " "
 style = "bold blue"
 
 [nodejs]
-disabled=true
+disabled = false
+symbol   = ""  # Nerd-Font Node.js logo
+style    = "bold blue"
+format = "[ ](fg:#61afef bg:none)[$symbol ](fg:#282c34 bg:#61afef)[ ](fg:#61afef bg:#78c4fd)[via $version](fg:#282c34 bg:#78c4fd)[ ](fg:#78c4fd bg:none)"
 
 [swift]
-disabled=true
+disabled=false
 symbol = "ﯣ "
 
 [julia]
@@ -141,8 +155,8 @@ symbol = "ஃ "
 style = "bold green"
 
 [python]
-disabled=true
-format = 'via [${symbol}${pyenv_prefix}${version}( $virtualenv)]($style) '
+disabled=false
+format = ' via [${symbol}${pyenv_prefix}${version}( $virtualenv)]($style) '
 symbol = " "
 style = "italic Blue"
 

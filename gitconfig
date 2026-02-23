@@ -26,8 +26,11 @@
 	old = red bold
 	new = green bold
 	whitespace = red reverse
+[safe]
+	directory = /Users/dom/Documents/GitHub/obsidian-site/quartz
+	directory = /Users/dom/Documents/GitHub/obsidian-site/quartz
 [credential]
 	helper = 
-	helper = /usr/local/share/gcm-core/git-credential-manager-core
+	helper = /usr/local/share/gcm-core/git-credential-manager
 [credential "https://dev.azure.com"]
 	useHttpPath = true

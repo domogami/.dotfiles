@@ -1,0 +1,17 @@
+.cm-s-obsidian {
+  font-family: 'Hack FC Ligatured';
+}
+
+.cm-header-1,.cm-header-2,.cm-header-3 {
+  font-family: 'Hack FC Ligatured';
+}
+
+/* Change font in editor */
+.markdown-source-view {
+    font-family: "Hack FC Ligatured";
+}
+
+/* Change font in preview */
+.markdown-preview-view {
+    font-family: "Hack FC Ligatured";
+}

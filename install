@@ -1,15 +1,145 @@
 #!/usr/bin/env bash
 
-set -e
+set -euo pipefail
 
 CONFIG="install.config.yaml"
 DOTBOT_DIR="dotbot"
-
 DOTBOT_BIN="bin/dotbot"
 BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
+if [[ -t 1 ]]; then
+  C_RESET=$'\033[0m'
+  C_BOLD=$'\033[1m'
+  C_BLUE=$'\033[34m'
+  C_GREEN=$'\033[32m'
+  C_YELLOW=$'\033[33m'
+else
+  C_RESET=""
+  C_BOLD=""
+  C_BLUE=""
+  C_GREEN=""
+  C_YELLOW=""
+fi
+
+print_banner() {
+  printf '\n%s%sDom Dotfiles Installer%s\n' "$C_BOLD" "$C_BLUE" "$C_RESET"
+  printf '%s----------------------------------------%s\n' "$C_BLUE" "$C_RESET"
+}
+
+print_step() {
+  printf '%s[step]%s %s\n' "$C_BLUE" "$C_RESET" "$1"
+}
+
+print_ok() {
+  printf '%s[ok]%s   %s\n' "$C_GREEN" "$C_RESET" "$1"
+}
+
+print_note() {
+  printf '%s[note]%s %s\n' "$C_YELLOW" "$C_RESET" "$1"
+}
+
+usage() {
+  cat <<'EOF'
+Usage:
+  ./install [--with-brew | --without-brew] [dotbot args...]
+
+Options:
+  --with-brew      Install/apply packages from Brewfile during setup.
+  --without-brew   Skip Homebrew package installation (default in non-interactive mode).
+  -h, --help       Show this help text.
+
+Environment:
+  DOTFILES_INSTALL_BREW=1   Force brew bundle install.
+  DOTFILES_INSTALL_BREW=0   Force skip brew bundle install.
+EOF
+}
+
+normalize_brew_mode() {
+  local raw="${1:-}"
+  local lower
+  lower="$(printf '%s' "$raw" | tr '[:upper:]' '[:lower:]')"
+  case "$lower" in
+    1|true|yes|y|on)
+      printf '1'
+      ;;
+    0|false|no|n|off|"")
+      printf '0'
+      ;;
+    *)
+      printf 'invalid'
+      ;;
+  esac
+}
+
+BREW_MODE=""
+BREW_MODE_SET_BY_FLAG=0
+DOTBOT_ARGS=()
+
+while [[ $# -gt 0 ]]; do
+  case "$1" in
+    --with-brew)
+      BREW_MODE="1"
+      BREW_MODE_SET_BY_FLAG=1
+      shift
+      ;;
+    --without-brew)
+      BREW_MODE="0"
+      BREW_MODE_SET_BY_FLAG=1
+      shift
+      ;;
+    -h|--help)
+      usage
+      exit 0
+      ;;
+    --)
+      shift
+      DOTBOT_ARGS+=("$@")
+      break
+      ;;
+    *)
+      DOTBOT_ARGS+=("$1")
+      shift
+      ;;
+  esac
+done
+
+if [[ -z "$BREW_MODE" ]]; then
+  BREW_MODE="$(normalize_brew_mode "${DOTFILES_INSTALL_BREW:-}")"
+fi
+
+if [[ "$BREW_MODE" == "invalid" ]]; then
+  printf 'error: invalid DOTFILES_INSTALL_BREW value: %s\n' "${DOTFILES_INSTALL_BREW:-}" >&2
+  exit 1
+fi
+
+if [[ "$BREW_MODE_SET_BY_FLAG" -eq 0 ]] && [[ -z "${DOTFILES_INSTALL_BREW:-}" ]] && [[ -t 0 && -t 1 ]]; then
+  printf '\nInstall Homebrew packages from Brewfile as part of this run? [y/N]: '
+  read -r reply
+  if [[ "$reply" =~ ^[Yy]$ ]]; then
+    BREW_MODE="1"
+  else
+    BREW_MODE="0"
+  fi
+fi
+
+export DOTFILES_INSTALL_BREW="${BREW_MODE:-0}"
+
+print_banner
+print_step "Install root: ${BASEDIR}"
+
+if [[ "$DOTFILES_INSTALL_BREW" == "1" ]]; then
+  print_note "Brew package install: enabled"
+else
+  print_note "Brew package install: disabled"
+fi
+
 cd "${BASEDIR}"
+
+print_step "Syncing Dotbot submodule"
 git -C "${DOTBOT_DIR}" submodule sync --quiet --recursive
 git submodule update --init --recursive "${DOTBOT_DIR}"
+print_ok "Dotbot submodule ready"
 
-"${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${CONFIG}" "${@}"
+print_step "Running Dotbot"
+"${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${CONFIG}" "${DOTBOT_ARGS[@]}"
+print_ok "Dotfiles install complete"

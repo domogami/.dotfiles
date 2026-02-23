@@ -174,18 +174,18 @@ ssh_bubble () {
 
 
 # DEFAULT PROMPT BUILDING BLOCKS
-bubble_left="$(foreground $bubble_color)$blub_left%{$reset_color%}$(background $bubble_color)"
-bubble_right="%{$reset_color%}$(foreground $bubble_color)$blub_right%{$reset_color%} "
+# bubble_left="$(foreground $bubble_color)$blub_left%{$reset_color%}$(background $bubble_color)"
+# bubble_right="%{$reset_color%}$(foreground $bubble_color)$blub_right%{$reset_color%} "
 
-end_of_prompt_bubble="$bubble_left%(?,$(foreground $prompt_symbol_color)$prompt_symbol,$(foreground $prompt_symbol_error_color)$prompt_symbol)$bubble_right"
+# end_of_prompt_bubble="$bubble_left%(?,$(foreground $prompt_symbol_color)$prompt_symbol,$(foreground $prompt_symbol_error_color)$prompt_symbol)$bubble_right"
 
-end_of_prompt=" %(?,$(foreground $prompt_symbol_color)$prompt_symbol,$(foreground $prompt_symbol_error_color)$prompt_symbol%{$reset_color%}) "
+# end_of_prompt=" %(?,$(foreground $prompt_symbol_color)$prompt_symbol,$(foreground $prompt_symbol_error_color)$prompt_symbol%{$reset_color%}) "
 
-user_machine_bubble="$bubble_left$(foreground $user_color)$user_symbol$(foreground $user_machine_symbol_color)$user_machine_symbol$(foreground $machine_color)$machine_symbol$bubble_right"
+# user_machine_bubble="$bubble_left$(foreground $user_color)$user_symbol$(foreground $user_machine_symbol_color)$user_machine_symbol$(foreground $machine_color)$machine_symbol$bubble_right"
 
-filepath_bubble="$bubble_left$(foreground $filepath_color)$filepath_symbol$bubble_right"
+# filepath_bubble="$bubble_left$(foreground $filepath_color)$filepath_symbol$bubble_right"
 
-error_code_bubble="%(?,,$bubble_left$(foreground $prompt_symbol_error_color)%?$bubble_right)"
+# error_code_bubble="%(?,,$bubble_left$(foreground $prompt_symbol_error_color)%?$bubble_right)"
 
 # PROMPTS
 # different prompts to try out, just uncomment/comment

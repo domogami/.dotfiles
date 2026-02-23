@@ -1,29 +1,0 @@
-set +m +b +o history
-
-unset HISTFILE
-
-export PATH='/Users/dom/.cargo/bin:/opt/local/bin:/opt/local/sbin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Library/Apple/usr/bin:/Users/dom/.spicetify:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/dom/.fig/bin:/Users/dom/.local/bin'
-
-export HOME=/Users/dom
-
-
-
-The default interactive shell is now zsh.
-To update your account to use zsh, please run `chsh -s /bin/zsh`.
-For more details, please visit https://support.apple.com/kb/HT208050.
-[?1034hbash-3.2$ set +m +b +o history
-bash-3.2$ 
-bash-3.2$ unset HISTFILE
-bash-3.2$ 
-bash-3.2$ export PATH='/Users/dom/.cargo/bin:/opt/local/bin:/opt/local/sbin:/opt /homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/L ibrary/TeX/texbin:/Library/Apple/usr/bin:/Users/dom/.spicetify:/opt/homebrew/bin :/opt/homebrew/sbin:/Users/dom/.fig/bin:/Users/dom/.local/bin'
-bash-3.2$ 
-bash-3.2$ export HOME=/Users/dom
-bash-3.2$ 
-bash-3.2$ 
-bash-3.2$ { ( fig --version ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/ T/78.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/78.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 78 /var/folder s/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/78 $? ; } &
-[1] 1611
-bash-3.2$ 
-bash-3.2$ { ( which fish ) 1> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/9 2.stdout 2> /var/folders/pq/y2b49gjs29g6vb52b9d_yx180000gn/T/92.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 92 /var/folders/p q/y2b49gjs29g6vb52b9d_yx180000gn/T/92 $? ; } &
-[2] 1834
-bash-3.2$ 
-bash-3.2$ 

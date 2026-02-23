@@ -1,0 +1,30 @@
+{
+  "collapse-filter": true,
+  "search": "- path:\"Obsidian/00 - Daily Journal\"",
+  "showTags": true,
+  "showAttachments": true,
+  "hideUnresolved": true,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "path:\"00 - Personal/00 - Daily Journal\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 14701138
+      }
+    }
+  ],
+  "collapse-display": false,
+  "showArrow": false,
+  "textFadeMultiplier": 0.4,
+  "nodeSizeMultiplier": 1.31313592341089,
+  "lineSizeMultiplier": 3.00356228431482,
+  "collapse-forces": false,
+  "centerStrength": 0.838955063267654,
+  "repelStrength": 8.93168577683773,
+  "linkStrength": 0.936769453412001,
+  "linkDistance": 131,
+  "scale": 0.3135141661448802,
+  "close": true
+}

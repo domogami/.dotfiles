@@ -1,1 +1,1 @@
-test -x ~/.local/bin/fig; and eval (~/.local/bin/fig init fish post --rcfile 99_fig_post | string split0)
+test -x ~/.local/bin/kiro-cli; and eval (~/.local/bin/kiro-cli init fish post --rcfile 99_fig_post | string split0)

@@ -1,0 +1,14 @@
+{
+  "appId": "com.beatgames.beatsaber",
+  "displayLogs": false,
+  "patchingPermissions": {
+    "externalFiles": true,
+    "debuggable": false,
+    "microphone": false,
+    "flatScreenSupport": false,
+    "handTrackingType": "None",
+    "modLoader": "QuestLoader"
+  },
+  "showPatchingOptions": false,
+  "selectedThemeName": "Dark"
+}
