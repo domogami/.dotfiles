@@ -36,8 +36,13 @@ if git diff --cached --quiet; then
   exit 0
 fi
 
-timestamp="$(date '+%Y-%m-%d %H:%M:%S %z')"
-commit_message="chore(dotfiles): publish ${timestamp}"
+la_timestamp="$(TZ=America/Los_Angeles date '+%b %d, %Y at %I:%M %p %Z')"
+file_count="$(git diff --cached --name-only | wc -l | tr -d ' ')"
+file_label="files"
+if [[ "$file_count" == "1" ]]; then
+  file_label="file"
+fi
+commit_message="✨ Dotfiles refresh: ${la_timestamp} (${file_count} ${file_label} changed)"
 branch="$(git rev-parse --abbrev-ref HEAD)"
 
 echo
