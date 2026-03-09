@@ -69,7 +69,8 @@ key-mapping.preset = 'qwerty'
 # Drop it from your config, if you don't like this behavior
 # See https://nikitabobko.github.io/AeroSpace/guide#on-focus-changed-callbacks
 # See https://nikitabobko.github.io/AeroSpace/commands#move-mouse
-on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
+# Temporarily disabled to debug workspace bounce/jump behavior
+# on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
 # on-focus-changed = 'move-mouse window-lazy-center'
 
 # Gaps between windows (inner-*) and between monitor edges (outer-*).
@@ -120,64 +121,64 @@ outer.right =      10
 # '''
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#layout
-alt-slash = 'layout tiles horizontal vertical'
-alt-comma = 'layout accordion horizontal vertical'
+cmd-alt-ctrl-slash = 'layout tiles horizontal vertical'
+cmd-alt-ctrl-comma = 'layout accordion horizontal vertical'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#focus
-alt-h = 'focus left'
-alt-j = 'focus down'
-alt-k = 'focus up'
-alt-l = 'focus right'
+cmd-alt-ctrl-h = 'focus left'
+cmd-alt-ctrl-j = 'focus down'
+cmd-alt-ctrl-k = 'focus up'
+cmd-alt-ctrl-l = 'focus right'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move
-alt-shift-h = 'move left'
-alt-shift-j = 'move down'
-alt-shift-k = 'move up'
-alt-shift-l = 'move right'
+cmd-alt-ctrl-shift-h = 'move left'
+cmd-alt-ctrl-shift-j = 'move down'
+cmd-alt-ctrl-shift-k = 'move up'
+cmd-alt-ctrl-shift-l = 'move right'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#resize
-alt-shift-minus = 'resize smart -50'
-alt-shift-equal = 'resize smart +50'
+cmd-alt-ctrl-shift-minus = 'resize smart -50'
+cmd-alt-ctrl-shift-equal = 'resize smart +50'
 
-alt-minus = 'resize smart -50'
-alt-equal = 'resize smart +50'
+cmd-alt-ctrl-minus = 'resize smart -50'
+cmd-alt-ctrl-equal = 'resize smart +50'
 
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace
-alt-1 = 'workspace 1'
-alt-2 = 'workspace 2'
-alt-3 = 'workspace 3'
-alt-4 = 'workspace 4'
-alt-5 = 'workspace 5'
-alt-6 = 'workspace 6'
-alt-7 = 'workspace 7'
-alt-8 = 'workspace 8'
-alt-9 = 'workspace 9'
-# alt-0 = 'workspace 10'
+cmd-alt-ctrl-1 = 'workspace 1'
+cmd-alt-ctrl-2 = 'workspace 2'
+cmd-alt-ctrl-3 = 'workspace 3'
+cmd-alt-ctrl-4 = 'workspace 4'
+cmd-alt-ctrl-5 = 'workspace 5'
+cmd-alt-ctrl-6 = 'workspace 6'
+cmd-alt-ctrl-7 = 'workspace 7'
+cmd-alt-ctrl-8 = 'workspace 8'
+cmd-alt-ctrl-9 = 'workspace 9'
+# cmd-alt-ctrl-0 = 'workspace 10'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
-alt-shift-1 = 'move-node-to-workspace 1'
-alt-shift-2 = 'move-node-to-workspace 2'
-alt-shift-3 = 'move-node-to-workspace 3'
-alt-shift-4 = 'move-node-to-workspace 4'
-alt-shift-5 = 'move-node-to-workspace 5'
-alt-shift-6 = 'move-node-to-workspace 6'
-alt-shift-7 = 'move-node-to-workspace 7'
-alt-shift-8 = 'move-node-to-workspace 8'
-alt-shift-9 = 'move-node-to-workspace 9'
-# alt-shift-0 = 'move-node-to-workspace 10'
+cmd-alt-ctrl-shift-1 = 'move-node-to-workspace 1'
+cmd-alt-ctrl-shift-2 = 'move-node-to-workspace 2'
+cmd-alt-ctrl-shift-3 = 'move-node-to-workspace 3'
+cmd-alt-ctrl-shift-4 = 'move-node-to-workspace 4'
+cmd-alt-ctrl-shift-5 = 'move-node-to-workspace 5'
+cmd-alt-ctrl-shift-6 = 'move-node-to-workspace 6'
+cmd-alt-ctrl-shift-7 = 'move-node-to-workspace 7'
+cmd-alt-ctrl-shift-8 = 'move-node-to-workspace 8'
+cmd-alt-ctrl-shift-9 = 'move-node-to-workspace 9'
+# cmd-alt-ctrl-shift-0 = 'move-node-to-workspace 10'
 
 # Replacing this with fullscreen
-# alt-shift-f = 'move-node-to-workspace F'
-alt-f = 'fullscreen'
+# cmd-alt-ctrl-shift-f = 'move-node-to-workspace F'
+cmd-alt-ctrl-f = 'fullscreen'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
-alt-tab = 'workspace-back-and-forth'
+cmd-alt-ctrl-tab = 'workspace-back-and-forth'
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-workspace-to-monitor
-alt-shift-tab = 'move-workspace-to-monitor --wrap-around next'
+cmd-alt-ctrl-shift-tab = 'move-workspace-to-monitor --wrap-around next'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#mode
-alt-shift-semicolon = 'mode service'
+cmd-alt-ctrl-shift-semicolon = 'mode service'
 
 [workspace-to-monitor-force-assignment]
     1 = 'main'
@@ -200,10 +201,10 @@ r = ['flatten-workspace-tree', 'mode main'] # reset layout
 f = ['layout floating tiling', 'mode main'] # Toggle between floating and tiling layout
 backspace = ['close-all-windows-but-current', 'mode main']
 
-alt-shift-h = ['join-with left', 'mode main']
-alt-shift-j = ['join-with down', 'mode main']
-alt-shift-k = ['join-with up', 'mode main']
-alt-shift-l = ['join-with right', 'mode main']
+cmd-alt-ctrl-shift-h = ['join-with left', 'mode main']
+cmd-alt-ctrl-shift-j = ['join-with down', 'mode main']
+cmd-alt-ctrl-shift-k = ['join-with up', 'mode main']
+cmd-alt-ctrl-shift-l = ['join-with right', 'mode main']
 
 # Command to list apps $ aerospace list-apps
 # [[on-window-detected]]
@@ -229,7 +230,11 @@ alt-shift-l = ['join-with right', 'mode main']
 [[on-window-detected]]
     if.app-id = "com.googlecode.iterm2"
     run = "move-node-to-workspace 2"
-    
+
+[[on-window-detected]]
+    if.app-id = "com.cmuxterm.app"
+    run = "move-node-to-workspace 2"
+
 [[on-window-detected]]
     if.app-id = "com.neovide.neovide"
     run = "move-node-to-workspace 2"
@@ -259,6 +264,10 @@ alt-shift-l = ['join-with right', 'mode main']
 
 [[on-window-detected]]
     if.app-id = "com.microsoft.VSCode"
+    run = "move-node-to-workspace 3"
+
+[[on-window-detected]]
+    if.app-id = "com.openai.codex"
     run = "move-node-to-workspace 3"
 
 [[on-window-detected]]

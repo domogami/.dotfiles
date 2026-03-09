@@ -92,6 +92,9 @@ settings:
             label: Material Mint
             value: ctp-material-mint-dark
         -
+            label: One Dark
+            value: ctp-onedark-dark
+        -
             label: Nord
             value: ctp-nord-dark
         -
@@ -147,6 +150,10 @@ settings:
 
 .theme-dark.anp-theme-ext-dark.ctp-atom-dark {
   --ctp-accent: var(--ctp-blue);
+}
+
+.theme-dark.anp-theme-ext-dark.ctp-onedark-dark {
+  --ctp-accent: 152, 195, 121;
 }
 
 .theme-dark.anp-theme-ext-amoled {
@@ -3908,4 +3915,34 @@ settings:
   	10
   ,
   10 ;
+}
+
+.theme-dark.anp-theme-ext-dark.ctp-onedark-dark,
+.anp-theme-ext-dark.ctp-onedark-dark .themed-color-wrapper > .theme-dark {
+  --ctp-ext-rosewater: 238, 187, 216;
+  --ctp-ext-flamingo: 224, 121, 108;
+  --ctp-ext-pink: 198, 120, 221;
+  --ctp-ext-mauve: 198, 120, 221;
+  --ctp-ext-red: 224, 108, 117;
+  --ctp-ext-maroon: 190, 80, 70;
+  --ctp-ext-peach: 209, 154, 102;
+  --ctp-ext-yellow: 229, 192, 123;
+  --ctp-ext-green: 152, 195, 121;
+  --ctp-ext-teal: 86, 182, 194;
+  --ctp-ext-sky: 86, 182, 194;
+  --ctp-ext-sapphire: 97, 175, 239;
+  --ctp-ext-blue: 97, 175, 239;
+  --ctp-ext-lavender: 171, 178, 191;
+  --ctp-ext-text: 171, 178, 191;
+  --ctp-ext-subtext1: 146, 153, 168;
+  --ctp-ext-subtext0: 125, 133, 151;
+  --ctp-ext-overlay2: 104, 112, 129;
+  --ctp-ext-overlay1: 92, 99, 112;
+  --ctp-ext-overlay0: 74, 80, 94;
+  --ctp-ext-surface2: 61, 68, 81;
+  --ctp-ext-surface1: 51, 56, 66;
+  --ctp-ext-surface0: 44, 49, 58;
+  --ctp-ext-base: 40, 44, 52;
+  --ctp-ext-mantle: 33, 37, 43;
+  --ctp-ext-crust: 27, 31, 39;
 }

@@ -50,7 +50,25 @@ The installer config lives in `install.config.yaml`.
 ```bash
 DOTFILES_INSTALL_BREW=1 ./install
 DOTFILES_INSTALL_BREW=0 ./install
+DOTFILES_APPLY_DEFAULTS=0 ./install
 ```
+
+### macOS Defaults
+
+- Managed macOS defaults are applied automatically during `./install` via `scripts/macos_defaults.zsh`.
+- Run defaults sync directly:
+
+```bash
+./scripts/macos_defaults.zsh
+```
+
+- Skip defaults during install:
+
+```bash
+DOTFILES_APPLY_DEFAULTS=0 ./install
+```
+
+- The script is idempotent and only restarts affected apps (`Finder`, `Dock`) when relevant values change.
 
 ### Validation and Safety
 
@@ -108,6 +126,7 @@ DOTFILES_INSTALL_BREW=0 ./install
 
 - Dotbot (`./install`, `install.config.yaml`)
 - Homebrew bootstrap script (`scripts/setup_homebrew.zsh`)
+- macOS defaults bootstrap script (`scripts/macos_defaults.zsh`)
 - Obsidian settings sync helper (`scripts/obsidian_settings.zsh`)
 
 ## Repository Guides

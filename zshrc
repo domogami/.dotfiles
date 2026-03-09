@@ -99,6 +99,8 @@ export PATH=$PATH:/Users/dom/.local/share/lunarvim
 
 # Easily Source
 alias sc="source ~/.zshrc"
+# Fun Spotify Terminal Visualizer
+alias spt='spotatui'
 
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 

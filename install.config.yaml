@@ -19,6 +19,11 @@
 
 - shell:
   -
+    command: ./scripts/macos_defaults.zsh
+    stdin: true
+    stdout: true
+    stderr: true
+  -
     command: ./scripts/setup_homebrew.zsh
     stdin: true
     stdout: true

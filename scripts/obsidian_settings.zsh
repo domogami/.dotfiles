@@ -19,6 +19,7 @@ typeset -a SETTINGS_FILES=(
   graph.json
   hotkeys.json
   templates.json
+  plugins/obsidian-style-settings/data.json
 )
 
 typeset -a SETTINGS_DIRS=(
@@ -49,17 +50,21 @@ ensure_paths() {
 snapshot() {
   ensure_paths
 
-  local file
+  local file repo_parent
   for file in "${SETTINGS_FILES[@]}"; do
     if [[ -f "$VAULT_OBSIDIAN_DIR/$file" ]]; then
+      repo_parent="$(dirname "$REPO_OBSIDIAN_DIR/$file")"
+      mkdir -p "$repo_parent"
       cp "$VAULT_OBSIDIAN_DIR/$file" "$REPO_OBSIDIAN_DIR/$file"
       echo "snapshot: $file"
     fi
   done
 
-  local dir
+  local dir repo_dir_parent
   for dir in "${SETTINGS_DIRS[@]}"; do
     if [[ -d "$VAULT_OBSIDIAN_DIR/$dir" ]]; then
+      repo_dir_parent="$(dirname "$REPO_OBSIDIAN_DIR/$dir")"
+      mkdir -p "$repo_dir_parent"
       rm -rf "$REPO_OBSIDIAN_DIR/$dir"
       cp -R "$VAULT_OBSIDIAN_DIR/$dir" "$REPO_OBSIDIAN_DIR/$dir"
       echo "snapshot: $dir/"
@@ -71,7 +76,7 @@ link_with_backup() {
   ensure_paths
 
   local backup_root="$VAULT_OBSIDIAN_DIR/.dotfiles-backup-$(date +%Y%m%d-%H%M%S)"
-  local src dst parent
+  local src dst parent backup_parent
   local had_backup=0
 
   local file
@@ -87,7 +92,8 @@ link_with_backup() {
 
     if [[ -e "$dst" && ! -L "$dst" ]]; then
       if ! cmp -s "$src" "$dst"; then
-        mkdir -p "$backup_root"
+        backup_parent="$(dirname "$backup_root/$file")"
+        mkdir -p "$backup_parent"
         mv "$dst" "$backup_root/$file"
         had_backup=1
         echo "backup: $file"
@@ -112,7 +118,8 @@ link_with_backup() {
     fi
 
     if [[ -e "$dst" && ! -L "$dst" ]]; then
-      mkdir -p "$backup_root"
+      backup_parent="$(dirname "$backup_root/$dir")"
+      mkdir -p "$backup_parent"
       mv "$dst" "$backup_root/$dir"
       had_backup=1
       echo "backup: $dir/"
