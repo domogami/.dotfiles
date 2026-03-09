@@ -94,6 +94,8 @@ ANTIROLL_MODS=(
   "MOD_LCTL:KC_F"
 )
 ANTIROLL_TAP_TERM_EXTRA_MS="300"
+# 15 minutes of inactivity before LEDs/OLEDs are suspended.
+IDLE_SLEEP_TIMEOUT_MS="900000"
 
 while [[ $# -gt 0 ]]; do
   case "$1" in
@@ -164,6 +166,11 @@ fi
 
 if ! [[ "$KEEP_COUNT" =~ ^[0-9]+$ ]] || [[ "$KEEP_COUNT" -lt 1 ]]; then
   echo "Invalid keep count: $KEEP_COUNT (must be an integer >= 1)." >&2
+  exit 1
+fi
+
+if ! [[ "$IDLE_SLEEP_TIMEOUT_MS" =~ ^[0-9]+$ ]]; then
+  echo "Invalid IDLE_SLEEP_TIMEOUT_MS: $IDLE_SLEEP_TIMEOUT_MS (must be an integer)." >&2
   exit 1
 fi
 
@@ -473,6 +480,9 @@ PY
 #ifdef VIA_ENABLE
 #include "dynamic_keymap.h"
 #endif
+#ifndef SNAP_IDLE_TIMEOUT_MS
+#define SNAP_IDLE_TIMEOUT_MS ${IDLE_SLEEP_TIMEOUT_MS}UL
+#endif
 
 #ifdef RGBLIGHT_ENABLE
 static void apply_layer_rgb(layer_state_t active_layers, layer_state_t active_defaults) {
@@ -502,6 +512,50 @@ static void apply_layer_rgb(layer_state_t active_layers, layer_state_t active_de
     }
 }
 
+static uint8_t current_oled_gif = 0;
+static uint16_t current_oled_frame = 0;
+static uint32_t oled_anim_timer = 0;
+static uint32_t right_oled_last_keypress = 0;
+static uint32_t last_user_activity = 0;
+static bool outputs_suspended = false;
+
+static void wake_outputs_if_needed(void) {
+    if (!outputs_suspended) {
+        return;
+    }
+#ifdef RGBLIGHT_ENABLE
+    rgblight_enable_noeeprom();
+    apply_layer_rgb(layer_state, default_layer_state);
+#endif
+#ifdef OLED_ENABLE
+    oled_on();
+#endif
+    outputs_suspended = false;
+}
+
+static void mark_user_activity(void) {
+    uint32_t now = timer_read32();
+    last_user_activity = now;
+    right_oled_last_keypress = now;
+    wake_outputs_if_needed();
+}
+
+static void suspend_outputs_if_idle(void) {
+    if (outputs_suspended) {
+        return;
+    }
+    if (timer_elapsed32(last_user_activity) < SNAP_IDLE_TIMEOUT_MS) {
+        return;
+    }
+#ifdef RGBLIGHT_ENABLE
+    rgblight_disable_noeeprom();
+#endif
+#ifdef OLED_ENABLE
+    oled_off();
+#endif
+    outputs_suspended = true;
+}
+
 layer_state_t layer_state_set_user(layer_state_t state) {
     apply_layer_rgb(state, default_layer_state);
     return state;
@@ -516,18 +570,24 @@ void keyboard_post_init_user(void) {
     // One-time migration: reset VIA dynamic keymap/encoder map defaults after
     // firmware logic changes, then preserve user VIA edits on later boots.
 #ifdef VIA_ENABLE
-    const uint32_t snap_layout_version = 20260309;
+    const uint32_t snap_layout_version = 20260310;
     if (eeconfig_read_user() != snap_layout_version) {
         dynamic_keymap_reset();
         eeconfig_update_user(snap_layout_version);
     }
 #endif
+    last_user_activity = timer_read32();
+    right_oled_last_keypress = last_user_activity;
+    outputs_suspended = false;
     apply_layer_rgb(layer_state, default_layer_state);
 }
 #endif
 
 #ifdef ENCODER_ENABLE
 bool encoder_update_user(uint8_t index, bool clockwise) {
+#ifdef RGBLIGHT_ENABLE
+    mark_user_activity();
+#endif
     if (index == 0) {
         tap_code_delay(clockwise ? KC_VOLU : KC_VOLD, 10);
     } else if (index == 1) {
@@ -585,11 +645,6 @@ ${antiroll_case_lines}            return false;
     }
 }
 
-static uint8_t current_oled_gif = 0;
-static uint16_t current_oled_frame = 0;
-static uint32_t oled_anim_timer = 0;
-static uint32_t right_oled_last_keypress = 0;
-
 oled_rotation_t oled_init_user(oled_rotation_t rotation) {
     if (is_keyboard_left()) {
         return OLED_ROTATION_0;
@@ -641,6 +696,12 @@ static void render_right_oled_gif(void) {
 }
 
 bool oled_task_user(void) {
+#ifdef RGBLIGHT_ENABLE
+    suspend_outputs_if_idle();
+    if (outputs_suspended) {
+        return false;
+    }
+#endif
     if (is_keyboard_left()) {
         bongo_render(0, 0);
     } else {
@@ -653,7 +714,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     bongo_process_record(record);
 
     if (record->event.pressed) {
-        right_oled_last_keypress = timer_read32();
+        mark_user_activity();
     }
 
     // Right encoder press currently reports as KC_HOME in your layout.
@@ -691,7 +752,8 @@ EOF
 #pragma once
 
 #define OLED_BRIGHTNESS 128
-#define OLED_TIMEOUT 30000
+#define SNAP_IDLE_TIMEOUT_MS ${IDLE_SLEEP_TIMEOUT_MS}
+#define OLED_TIMEOUT SNAP_IDLE_TIMEOUT_MS
 #define SPLIT_TRANSPORT_MIRROR
 
 #define TAPPING_TERM ${TAPPING_TERM}

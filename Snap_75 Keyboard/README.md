@@ -26,6 +26,9 @@ This folder contains your custom QMK build flow for the Nullbits SNAP RP2040.
   - Right OLED: GIF carousel (all frames embedded; selected GIF loops until cycled)
   - Right GIF animation speeds up reactively while typing / high WPM
   - Key mapped as `PgDn` cycles to next GIF immediately
+- Idle sleep behavior:
+  - After 15 minutes of no key/encoder activity, RGB and both OLEDs auto-turn off
+  - Next keypress or encoder action wakes them immediately
 
 ## Requirements
 
@@ -97,6 +100,12 @@ Guidance:
 - Start around `600` and adjust in 25-50ms steps.
 - Note: anti-roll mods are enabled by default; use `--no-df-mods` to disable.
 - With anti-roll mods enabled, `D` and `F` currently use `TAPPING_TERM + 300ms`.
+
+## Idle sleep timeout
+
+- Current default idle timeout is 15 minutes (`900000ms`).
+- Implemented in generated firmware as `SNAP_IDLE_TIMEOUT_MS`, and `OLED_TIMEOUT` is tied to the same value.
+- To change it, edit `IDLE_SLEEP_TIMEOUT_MS` near the top of `build_snap.sh`, then rebuild.
 
 ## Anti-roll mod-tap behavior (D/F)
 
@@ -173,6 +182,7 @@ These are compiled firmware behaviors and require rebuilding + flashing a new UF
 - OLED GIF/bongo rendering logic
 - Encoder action logic
 - Tap-hold algorithm behavior (`get_*` QMK hook functions)
+- Idle sleep timeout behavior for RGB/OLED auto-off
 - Per-layer RGB behavior in custom C hooks
 - Firmware overrides (for example: cycle GIF on `PgDn` and play/pause on encoder-press `Home`)
 
@@ -193,7 +203,7 @@ These are compiled firmware behaviors and require rebuilding + flashing a new UF
 ## Troubleshooting
 
 - D/F hold mods do not trigger:
-  - Confirm firmware was built with `--df-mods`.
+  - Confirm firmware was not built with `--no-df-mods`.
   - In VIA, verify those keys are still `D`/`F` on your base layer (not remapped away).
 - Right encoder not skipping tracks:
   - Verify media keys work on host OS.
