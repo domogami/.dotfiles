@@ -79,7 +79,7 @@ DOTFILES_APPLY_DEFAULTS=0 ./install
 ./scripts/dotfiles_health_check.zsh --strict
 ```
 
-- Pre-commit secret scanning uses `gitleaks` via `.githooks/pre-commit`.
+- Pre-commit secret scanning uses `gitleaks` via `.githooks/pre-commit` and blocks commits if `gitleaks` is missing.
 - `./install` configures `core.hooksPath=.githooks` automatically.
 
 ## Current Stack

@@ -11,9 +11,10 @@ if [[ -z "$(git diff --cached --name-only --diff-filter=ACMR)" ]]; then
 fi
 
 if ! command -v gitleaks >/dev/null 2>&1; then
-  echo "[gitleaks] command not found; skipping secret scan."
+  echo "[gitleaks] command not found; refusing commit."
   echo "[gitleaks] install with: brew install gitleaks"
-  exit 0
+  echo "[gitleaks] or run: ./install --with-brew"
+  exit 1
 fi
 
 echo "[gitleaks] scanning staged changes..."
