@@ -35,15 +35,9 @@ for i = 1, max_items, 1 do
     menu_items[i] = menu
 end
 
-sbar.add("bracket", {'/menu\\..*/'}, {
-    background = {
-        color = colors.bg1
-    }
-})
-
 local menu_padding = sbar.add("item", "menu.padding", {
     drawing = false,
-    width = 5
+    width = 3
 })
 
 local function update_menus(env)

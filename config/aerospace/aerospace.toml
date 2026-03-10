@@ -4,16 +4,15 @@
 # It's not necessary to copy all keys to your config.
 # If the key is missing in your config, "default-config.toml" will serve as a fallback
 
-# You can use it to add commands that run after login to macOS user session.
-# 'start-at-login' needs to be 'true' for 'after-login-command' to work
-# Available commands: https://nikitabobko.github.io/AeroSpace/commands
-after-login-command = []
+# Config version for compatibility and deprecations
+config-version = 2
 
 # You can use it to add commands that run after AeroSpace startup.
-# 'after-startup-command' is run after 'after-login-command'
 # Available commands : https://nikitabobko.github.io/AeroSpace/commands
-# after-startup-command = ['exec-and-forget sketchybar']
-after-startup-command = ['exec-and-forget sketchybar']
+after-startup-command = [
+  'exec-and-forget /usr/bin/open -gj -a Ghostty',
+  'exec-and-forget sketchybar',
+]
 
 # Notify Sketchybar about workspace change
 exec-on-workspace-change = [
@@ -43,6 +42,9 @@ on-focus-changed = [
 
 # Start AeroSpace at login
 start-at-login = true
+
+# Keep numeric workspaces alive so SketchyBar can always render 1-9.
+persistent-workspaces = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
 
 # Normalizations. See: https://nikitabobko.github.io/AeroSpace/guide#normalization
 enable-normalization-flatten-containers = true
@@ -83,13 +85,13 @@ key-mapping.preset = 'qwerty'
 [gaps]
 inner.horizontal = 15
 inner.vertical =   10
-outer.left =       10
+outer.left =       14
 outer.bottom =     10
 outer.top = [
-    { monitor."Built-in Retina Display" = 15 },  # Padding for MacBook's built-in display
-    50 # Everything else should have 50 padding for SketchyBar
+    { monitor."Built-in Retina Display" = 20 },  # Tight headroom under floating SketchyBar on MacBook
+    50 # External displays keep current top inset
 ]
-outer.right =      10
+outer.right =      14
 
 # 'main' binding mode declaration
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes

@@ -2,10 +2,61 @@ local icons = require("icons")
 local colors = require("colors")
 local settings = require("settings")
 
--- Execute the event provider binary which provides the event "network_update"
--- for the network interface "en0", which is fired every 2.0 seconds.
-sbar.exec(
-    "killall network_load >/dev/null; $CONFIG_DIR/helpers/event_providers/network_load/bin/network_load en0 network_update 2.0")
+local active_interface = "en0"
+
+local function trim(value)
+    return (value or ""):gsub("^%s+", ""):gsub("%s+$", "")
+end
+
+local function start_network_provider(interface)
+    sbar.exec(
+        "killall network_load >/dev/null; $CONFIG_DIR/helpers/event_providers/network_load/bin/network_load "
+            .. interface
+            .. " network_update 2.0"
+    )
+end
+
+local function detect_active_interface(callback)
+    sbar.exec("route -n get default 2>/dev/null | awk '/interface:/{print $2}'", function(output)
+        local detected = trim(output)
+        if detected ~= "" then
+            active_interface = detected
+        end
+        start_network_provider(active_interface)
+        if callback then
+            callback()
+        end
+    end)
+end
+
+local function rate_to_bits(rate)
+    local raw = trim(rate)
+    local value, unit = raw:match("^(%d+)%s*([KMG]?Bps)$")
+    if not value then
+        return 0
+    end
+
+    local bytes_per_second = tonumber(value) or 0
+    if unit == "KBps" then
+        bytes_per_second = bytes_per_second * 1000
+    elseif unit == "MBps" then
+        bytes_per_second = bytes_per_second * 1000000
+    elseif unit == "GBps" then
+        bytes_per_second = bytes_per_second * 1000000000
+    end
+
+    return bytes_per_second * 8
+end
+
+local function format_bits(bits_per_second)
+    if bits_per_second >= 1000000 then
+        return string.format("%.1fMbps", bits_per_second / 1000000.0)
+    end
+    if bits_per_second >= 1000 then
+        return string.format("%03dKbps", math.floor((bits_per_second / 1000.0) + 0.5))
+    end
+    return string.format("%03dbps", math.floor(bits_per_second + 0.5))
+end
 
 local popup_width = 250
 
@@ -66,9 +117,10 @@ local wifi = sbar.add("item", "widgets.wifi.padding", {
 -- Background around the item
 local wifi_bracket = sbar.add("bracket", "widgets.wifi.bracket", {wifi.name, wifi_up.name, wifi_down.name}, {
     background = {
-        color = colors.bg1,
-        border_color = colors.rainbow[#colors.rainbow - 4],
-        border_width = 1
+        drawing = false,
+        color = colors.transparent,
+        border_color = colors.transparent,
+        border_width = 0
     },
     popup = {
         align = "center",
@@ -164,14 +216,17 @@ sbar.add("item", {
 })
 
 wifi_up:subscribe("network_update", function(env)
-    local up_color = (env.upload == "000 Bps") and colors.grey or colors.red
-    local down_color = (env.download == "000 Bps") and colors.grey or colors.blue
+    local upload_bits = rate_to_bits(env.upload)
+    local download_bits = rate_to_bits(env.download)
+    local up_color = (upload_bits == 0) and colors.grey or colors.red
+    local down_color = (download_bits == 0) and colors.grey or colors.blue
+
     wifi_up:set({
         icon = {
             color = up_color
         },
         label = {
-            string = env.upload,
+            string = format_bits(upload_bits),
             color = up_color
         }
     })
@@ -180,14 +235,15 @@ wifi_up:subscribe("network_update", function(env)
             color = down_color
         },
         label = {
-            string = env.download,
+            string = format_bits(download_bits),
             color = down_color
         }
     })
 end)
 
 wifi:subscribe({"wifi_change", "system_woke"}, function(env)
-    sbar.exec("ipconfig getifaddr en0", function(ip)
+    detect_active_interface(function()
+        sbar.exec("ipconfig getifaddr " .. active_interface, function(ip)
         local connected = not (ip == "")
         wifi:set({
             icon = {
@@ -195,6 +251,7 @@ wifi:subscribe({"wifi_change", "system_woke"}, function(env)
                 color = connected and colors.white or colors.red
             }
         })
+    end)
     end)
 end)
 
@@ -219,12 +276,12 @@ local function toggle_details()
                 label = result
             })
         end)
-        sbar.exec("ipconfig getifaddr en0", function(result)
+        sbar.exec("ipconfig getifaddr " .. active_interface, function(result)
             ip:set({
                 label = result
             })
         end)
-        sbar.exec("ipconfig getsummary en0 | awk -F ' SSID : '  '/ SSID : / {print $2}'", function(result)
+        sbar.exec("networksetup -getairportnetwork Wi-Fi | sed 's/^Current Wi-Fi Network: //'", function(result)
             ssid:set({
                 label = result
             })
@@ -273,3 +330,5 @@ hostname:subscribe("mouse.clicked", copy_label_to_clipboard)
 ip:subscribe("mouse.clicked", copy_label_to_clipboard)
 mask:subscribe("mouse.clicked", copy_label_to_clipboard)
 router:subscribe("mouse.clicked", copy_label_to_clipboard)
+
+detect_active_interface()

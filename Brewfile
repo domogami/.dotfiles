@@ -109,7 +109,6 @@ brew "vips"
 # --- Windowing / Bar / Desktop -----------------------------------------------
 brew "felixkratz/formulae/borders"
 brew "felixkratz/formulae/sketchybar"
-brew "koekeishiya/formulae/skhd"
 brew "nowplaying-cli"
 brew "powerlevel10k"
 

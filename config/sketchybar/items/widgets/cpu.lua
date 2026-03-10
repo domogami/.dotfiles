@@ -6,37 +6,47 @@ local settings = require("settings")
 -- the cpu load data, which is fired every 2.0 seconds.
 sbar.exec("killall cpu_load >/dev/null; $CONFIG_DIR/helpers/event_providers/cpu_load/bin/cpu_load cpu_update 2.0")
 
-local cpu = sbar.add("graph", "widgets.cpu", 42, {
+local cpu = sbar.add("graph", "widgets.cpu", 56, {
     position = "right",
+    padding_left = 1,
+    y_offset = 0,
     graph = {
-        color = colors.blue
+        color = colors.blue,
+        fill_color = colors.with_alpha(colors.blue, 0.2),
+        line_width = 1.0
     },
     background = {
-        height = 22,
-        color = {
-            alpha = 0
-        },
-        border_color = {
-            alpha = 0
-        },
-        drawing = true
+        drawing = true,
+        color = colors.transparent,
+        border_width = 0,
+        height = 15,
+        y_offset = 5
     },
     icon = {
-        string = icons.cpu
+        string = icons.cpu,
+        color = colors.white,
+        padding_left = 0,
+        padding_right = 4,
+        font = {
+            style = settings.font.style_map["Regular"],
+            size = 18.0
+        },
+        y_offset = 0
     },
     label = {
-        string = "cpu ??%",
+        string = "??%",
         font = {
             family = settings.font.numbers,
             style = settings.font.style_map["Bold"],
-            size = 9.0
+            size = 11.0
         },
-        align = "right",
-        padding_right = 0,
-        width = 0,
-        y_offset = 4
+        align = "left",
+        padding_left = 4,
+        padding_right = 2,
+        width = "dynamic",
+        y_offset = 0
     },
-    padding_right = settings.paddings + 6
+    padding_right = settings.paddings + 8
 })
 
 cpu:subscribe("cpu_update", function(env)
@@ -57,9 +67,16 @@ cpu:subscribe("cpu_update", function(env)
 
     cpu:set({
         graph = {
+            color = color,
+            fill_color = colors.with_alpha(color, 0.2)
+        },
+        label = {
+            string = env.total_load .. "%",
             color = color
         },
-        label = "cpu " .. env.total_load .. "%"
+        icon = {
+            color = colors.white
+        }
     })
 end)
 
@@ -67,16 +84,6 @@ cpu:subscribe("mouse.clicked", function(env)
     sbar.exec("open -a 'Activity Monitor'")
 end)
 
--- Background around the cpu item
-sbar.add("bracket", "widgets.cpu.bracket", {cpu.name}, {
-    background = {
-        color = colors.bg1,
-        border_color = colors.rainbow[#colors.rainbow - 5],
-        border_width = 1
-    }
-})
-
--- Background around the cpu item
 sbar.add("item", "widgets.cpu.padding", {
     position = "right",
     width = settings.group_paddings

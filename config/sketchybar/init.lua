@@ -12,6 +12,9 @@ require("default")
 require("items")
 sbar.end_config()
 
+-- Layout depends on instantiated items, so apply it after end_config.
+require("layout")
+
 -- Run the event loop of the sketchybar module (without this there will be no
 -- callback functions executed in the lua module)
 sbar.event_loop()

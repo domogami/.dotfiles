@@ -4,9 +4,13 @@ local settings = require("settings")
 local app_icons = require("helpers.app_icons")
 
 local spaces = {}
+local workspace_index = {}
 
 local workspaces = get_workspaces()
-local current_workspace = get_current_workspace()
+local current_workspace = tostring(get_current_workspace())
+local active_workspace = current_workspace
+local sketchybar_bin = "/opt/homebrew/opt/sketchybar/bin/sketchybar"
+
 local function split(str, sep)
     local result = {}
     local regex = ("([^%s]+)"):format(sep)
@@ -16,8 +20,151 @@ local function split(str, sep)
     return result
 end
 
+local function round(value)
+    return math.floor(value + 0.5)
+end
+
+local function highlighted_background(index, x_offset)
+    return {
+        drawing = true,
+        color = settings.items.colors.background,
+        border_width = 1,
+        corner_radius = settings.items.corner_radius,
+        height = settings.items.height,
+        border_color = settings.items.highlight_color(index),
+        x_offset = x_offset or 0
+    }
+end
+
+local function inactive_background()
+    return {
+        drawing = false,
+        color = colors.transparent,
+        border_width = 0,
+        corner_radius = settings.items.corner_radius,
+        height = settings.items.height,
+        border_color = colors.transparent,
+        x_offset = 0
+    }
+end
+
+local function first_bounding_rect(query)
+    if not query or not query.bounding_rects then
+        return nil
+    end
+
+    for _, rect in pairs(query.bounding_rects) do
+        return rect
+    end
+
+    return nil
+end
+
+local function find_highlight_owner()
+    local active_index = workspace_index[tostring(active_workspace)]
+    if active_index and spaces[active_index] then
+        local active_query = spaces[active_index]:query()
+        if active_query then
+            return active_index, active_query
+        end
+    end
+
+    for index, space in ipairs(spaces) do
+        local query = space:query()
+        if query
+            and query.geometry
+            and query.geometry.background
+            and (
+                (query.icon and query.icon.highlight == "on")
+                or tonumber(query.geometry.background.border_width or 0) > 0
+            ) then
+            return index, query
+        end
+    end
+
+    return nil, nil
+end
+
+local function apply_text_highlights(target_index)
+    for index, space in ipairs(spaces) do
+        local selected = index == target_index
+        space:set({
+            icon = {
+                highlight = selected
+            },
+            label = {
+                highlight = selected
+            }
+        })
+    end
+end
+
+local function animate_highlight_to(target_workspace)
+    local target_index = workspace_index[tostring(target_workspace)]
+    if not target_index then
+        return
+    end
+
+    local source_index, source_query = find_highlight_owner()
+    apply_text_highlights(target_index)
+
+    if not source_index or source_index == target_index then
+        for index, space in ipairs(spaces) do
+            space:set({
+                background = index == target_index and highlighted_background(index) or inactive_background()
+            })
+        end
+        active_workspace = tostring(target_workspace)
+        return
+    end
+
+    local target_space = spaces[target_index]
+    local target_query = target_space:query()
+    local source_rect = first_bounding_rect(source_query)
+    local target_rect = first_bounding_rect(target_query)
+
+    if not source_rect or not target_rect then
+        for index, space in ipairs(spaces) do
+            space:set({
+                background = index == target_index and highlighted_background(index) or inactive_background()
+            })
+        end
+        active_workspace = tostring(target_workspace)
+        return
+    end
+
+    local source_visual_x = source_rect.origin[1] + (source_query.geometry.background.x_offset or 0)
+    local target_x = target_rect.origin[1]
+    local initial_offset = round(source_visual_x - target_x)
+    local overshoot = initial_offset < 0 and settings.items.animation.overshoot or -settings.items.animation.overshoot
+
+    for index, space in ipairs(spaces) do
+        if index == target_index then
+            space:set({
+                background = highlighted_background(index, initial_offset)
+            })
+        else
+            space:set({
+                background = inactive_background()
+            })
+        end
+    end
+
+    sbar.exec(string.format(
+        "%s --animate tanh %d --set %s background.x_offset=%d background.x_offset=0",
+        sketchybar_bin,
+        settings.items.animation.frames,
+        target_space.name,
+        overshoot
+    ))
+
+    active_workspace = tostring(target_workspace)
+end
+
 for i, workspace in ipairs(workspaces) do
-    local selected = workspace == current_workspace
+    local workspace_name = tostring(workspace)
+    local selected = workspace_name == current_workspace
+    workspace_index[workspace_name] = i
     local space = sbar.add("item", "item." .. i, {
         icon = {
             font = {
@@ -40,12 +187,7 @@ for i, workspace in ipairs(workspaces) do
         },
         padding_right = 1,
         padding_left = 1,
-        background = {
-            color = settings.items.colors.background,
-            border_width = 1,
-            height = settings.items.height,
-            border_color = selected and settings.items.highlight_color(i) or settings.items.default_color(i)
-        },
+        background = selected and highlighted_background(i) or inactive_background(),
         popup = {
             background = {
                 border_width = 5,
@@ -100,19 +242,9 @@ for i, workspace in ipairs(workspaces) do
     })
 
     space:subscribe("aerospace_workspace_change", function(env)
-        local selected = env.FOCUSED_WORKSPACE == workspace
-        space:set({
-            icon = {
-                highlight = selected
-            },
-            label = {
-                highlight = selected
-            },
-            background = {
-                border_color = selected and settings.items.highlight_color(i) or settings.items.default_color(i)
-            }
-        })
-
+        if tostring(env.FOCUSED_WORKSPACE) == workspace_name then
+            animate_highlight_to(workspace_name)
+        end
     end)
 
     space:subscribe("mouse.clicked", function(env)

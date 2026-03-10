@@ -53,7 +53,7 @@ behavior:
   playing_icon: ▶
   paused_icon: ⏸
   set_window_title: true
-  visualizer_style: Equalizer
+  visualizer_style: BarGraph
   dismissed_announcements: []
   relay_server_url: wss://spotatui-party.spotatui.workers.dev/ws
   stop_after_current_track: false

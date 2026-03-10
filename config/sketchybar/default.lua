@@ -26,10 +26,12 @@ sbar.default({
 		padding_right = settings.paddings,
 	},
 	background = {
+		drawing = false,
 		height = 28,
 		corner_radius = 9,
-		border_width = 2,
-		border_color = colors.bg2,
+		border_width = 0,
+		border_color = colors.transparent,
+		color = colors.transparent,
 		image = {
 			corner_radius = 9,
 			border_color = colors.grey,

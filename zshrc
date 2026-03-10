@@ -21,8 +21,10 @@ alias brow='arch --x86_64 /usr/local/Homebrew/bin/brew'
 path=('/opt/homebrew/bin' $path)
 export PATH
 
-# NOTE: Tmux Iterm2 integration
-alias tmux=tmux -CC
+# NOTE: Tmux iTerm2 integration
+if [[ "$TERM_PROGRAM" == "iTerm.app" ]]; then
+  alias tmux='tmux -CC'
+fi
 
 # NOTE: Vim Shortcuts
 # alias v="neovide --multigrid --frame none"
