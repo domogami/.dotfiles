@@ -3,6 +3,10 @@ local colors = require("colors")
 local settings = require("settings")
 
 local active_interface = "en0"
+local wifi_up_color = colors.grey
+local wifi_down_color = colors.grey
+local wifi_status_color = colors.white
+local wifi_hover = false
 
 local function trim(value)
     return (value or ""):gsub("^%s+", ""):gsub("%s+$", "")
@@ -117,10 +121,12 @@ local wifi = sbar.add("item", "widgets.wifi.padding", {
 -- Background around the item
 local wifi_bracket = sbar.add("bracket", "widgets.wifi.bracket", {wifi.name, wifi_up.name, wifi_down.name}, {
     background = {
-        drawing = false,
+        drawing = true,
         color = colors.transparent,
         border_color = colors.transparent,
-        border_width = 0
+        border_width = 0,
+        corner_radius = 8,
+        height = 24
     },
     popup = {
         align = "center",
@@ -215,43 +221,88 @@ sbar.add("item", {
     width = settings.group_paddings
 })
 
-wifi_up:subscribe("network_update", function(env)
-    local upload_bits = rate_to_bits(env.upload)
-    local download_bits = rate_to_bits(env.download)
-    local up_color = (upload_bits == 0) and colors.grey or colors.red
-    local down_color = (download_bits == 0) and colors.grey or colors.blue
+local function apply_wifi_hover()
+    wifi_bracket:set({
+        background = {
+            color = wifi_hover and colors.with_alpha(colors.bg2, 0.22) or colors.transparent,
+            border_width = wifi_hover and 1 or 0,
+            border_color = wifi_hover and colors.with_alpha(colors.blue, 0.50) or colors.transparent
+        }
+    })
+
+    wifi:set({
+        icon = {
+            color = wifi_hover and colors.white or wifi_status_color
+        }
+    })
 
     wifi_up:set({
         icon = {
-            color = up_color
+            color = wifi_up_color
+        },
+        label = {
+            color = wifi_up_color
+        }
+    })
+
+    wifi_down:set({
+        icon = {
+            color = wifi_down_color
+        },
+        label = {
+            color = wifi_down_color
+        }
+    })
+end
+
+local function set_wifi_hover(active)
+    if wifi_hover == active then
+        return
+    end
+    wifi_hover = active
+    sbar.animate("tanh", 10, apply_wifi_hover)
+end
+
+wifi_up:subscribe("network_update", function(env)
+    local upload_bits = rate_to_bits(env.upload)
+    local download_bits = rate_to_bits(env.download)
+    wifi_up_color = (upload_bits == 0) and colors.grey or colors.red
+    wifi_down_color = (download_bits == 0) and colors.grey or colors.blue
+
+    wifi_up:set({
+        icon = {
+            color = wifi_up_color
         },
         label = {
             string = format_bits(upload_bits),
-            color = up_color
+            color = wifi_up_color
         }
     })
     wifi_down:set({
         icon = {
-            color = down_color
+            color = wifi_down_color
         },
         label = {
             string = format_bits(download_bits),
-            color = down_color
+            color = wifi_down_color
         }
     })
+    apply_wifi_hover()
 end)
 
 wifi:subscribe({"wifi_change", "system_woke"}, function(env)
     detect_active_interface(function()
         sbar.exec("ipconfig getifaddr " .. active_interface, function(ip)
-        local connected = not (ip == "")
-        wifi:set({
-            icon = {
-                string = connected and icons.wifi.connected or icons.wifi.disconnected,
-                color = connected and colors.white or colors.red
-            }
-        })
-    end)
+            local connected = not (ip == "")
+            wifi_status_color = connected and colors.white or colors.red
+            wifi:set({
+                icon = {
+                    string = connected and icons.wifi.connected or icons.wifi.disconnected,
+                    color = wifi_status_color
+                }
+            })
+            apply_wifi_hover()
+        end)
     end)
 end)
 
@@ -304,7 +355,15 @@ end
 wifi_up:subscribe("mouse.clicked", toggle_details)
 wifi_down:subscribe("mouse.clicked", toggle_details)
 wifi:subscribe("mouse.clicked", toggle_details)
-wifi:subscribe("mouse.exited.global", hide_details)
+wifi_up:subscribe("mouse.entered", function() set_wifi_hover(true) end)
+wifi_down:subscribe("mouse.entered", function() set_wifi_hover(true) end)
+wifi:subscribe("mouse.entered", function() set_wifi_hover(true) end)
+wifi_up:subscribe({ "mouse.exited", "mouse.exited.global" }, function() set_wifi_hover(false) end)
+wifi_down:subscribe({ "mouse.exited", "mouse.exited.global" }, function() set_wifi_hover(false) end)
+wifi:subscribe("mouse.exited.global", function()
+    set_wifi_hover(false)
+    hide_details()
+end)
 
 local function copy_label_to_clipboard(env)
     local label = sbar.query(env.NAME).label.value
@@ -331,4 +390,5 @@ ip:subscribe("mouse.clicked", copy_label_to_clipboard)
 mask:subscribe("mouse.clicked", copy_label_to_clipboard)
 router:subscribe("mouse.clicked", copy_label_to_clipboard)
 
+apply_wifi_hover()
 detect_active_interface()
