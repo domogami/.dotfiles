@@ -13,11 +13,11 @@
 
 #-- File Editor
 # Default: $EDITOR
-editor = ""
+editor = "nvim"
 
 #-- Directory Editor
 # 
-dir_editor = ""
+dir_editor = "nvim"
 
 #-- Auto check for update
 auto_check_update = true
@@ -162,7 +162,7 @@ enable_md5_checksum = false
 #
 #-- Zoxide Support - Smart directory navigation!
 # Requires: zoxide
-zoxide_support = false
+zoxide_support = true
 
 #-- File opening rules
 # Map file extensions to commands used to open them.
@@ -170,6 +170,6 @@ zoxide_support = false
 # MUST BE IN THE VERY END OF THE FILE BECAUSE TOML CANNOT CLOSE TABLES
 # Example:
 #   png = "feh"
-#   pdf = "zathura"
-#   conf = "nvim"
+pdf = "zathura"
+conf = "nvim"
 [open_with]
