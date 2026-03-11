@@ -1,11 +1,11 @@
 // CONFIGURATION
-const float DURATION = 0.20;               // How long the ripple animates (seconds)
-const float MAX_RADIUS = 0.060;            // Max radius in normalized coords (0.5 = 1/4 screen height)
-const float RING_THICKNESS = 0.028;        // Ring width in normalized coords
-const float CURSOR_WIDTH_CHANGE_THRESHOLD = 0.35; // Triggers ripple if cursor width changes by this fraction
-vec4 COLOR = vec4(iCurrentCursorColor.rgb, 0.78); // loud preset: keep it cursor-colored with stronger alpha
-const float BLUR = 3.5;                    // Blur level in pixels
-const float ANIMATION_START_OFFSET = 0.0;  // Start the ripple slightly progressed (0.0 - 1.0)
+const float DURATION = 0.14;               // How long the ripple animates (seconds)
+const float MAX_RADIUS = 0.036;            // Smaller radius for a subtler effect
+const float RING_THICKNESS = 0.010;        // Thinner ring
+const float CURSOR_WIDTH_CHANGE_THRESHOLD = 0.45; // Trigger less aggressively
+vec4 COLOR = vec4(iCurrentCursorColor.rgb, 0.28); // Softer alpha
+const float BLUR = 1.8;                    // Lower blur to reduce glow
+const float ANIMATION_START_OFFSET = 0.0;  // Start progress
 
 
 // Easing functions
@@ -106,13 +106,13 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord){
         // float easedProgress = easeOutExpo(rippleProgress);
         // float easedProgress = easeOutCirc(rippleProgress);
         // float easedProgress = easeOutSine(rippleProgress);
-        float easedProgress = easeOutBack(rippleProgress);
+        float easedProgress = easeOutSine(rippleProgress);
 
         // RIPPLE CALCULATION
         float rippleRadius = easedProgress * MAX_RADIUS;
         
-        float fade = 1.0; // no fade
-        // float fade = 1.0 - easedProgress; // linear fade
+        float fade = 1.0 - easedProgress; // linear fade
+        // float fade = 1.0; // no fade
         // float fade = 1.0 - easeOutPulse(rippleProgress);
         // float fade = 1.0 - exponentialDecayPulse(rippleProgress);
         

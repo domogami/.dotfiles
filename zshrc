@@ -38,6 +38,14 @@ alias v.="open -n -a neovide --args --frame=buttonless $PWD"
 alias y="yazi"
 alias ycd='yazi; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
 
+# Use ~/.config/superfile as the default config/hotkey location for superfile.
+spf() {
+  command spf \
+    -c "$HOME/.config/superfile/config.toml" \
+    --hotkey-file "$HOME/.config/superfile/vimHotkey.toml" \
+    "$@"
+}
+
 alias ls="eza -l --icons --git -a"
 alias l="eza -l --icons --git -a"
 alias lt="eza --tree --level=2 --long --icons --git"

@@ -1,7 +1,7 @@
 const path = require("path");
 
 module.exports = {
-  name: "SketchybarCustomIcons",
+  name: "SketchybarCustomIconsV2",
   inputDir: path.resolve(__dirname, "glyphs"),
   outputDir: path.resolve(__dirname, "../../assets/fonts"),
   fontTypes: ["ttf"],

@@ -1,0 +1,76 @@
+##############################################
+#                                            #
+#                OneDark Theme               #
+#                                            #
+##############################################
+
+# This theme was created by: https://github.com/CommandJoo ! Thank you <3
+
+# This contains the theme config file for superfile! For more details see:
+# https://superfile.dev/configure/custom-theme/
+
+###############################################################################
+#                           Code Syntax Highlighting                          #
+###############################################################################
+
+# Find one you like at: https://github.com/alecthomas/chroma/blob/master/styles.
+
+code_syntax_highlight = "onedark"
+
+###############################################################################
+#                                 Base Colors                                 #
+###############################################################################
+
+#-- Full Screen
+full_screen_fg = "#ABB2BF"
+full_screen_bg = "#282C34"
+
+#-- Gradient
+# Note: This currently only supports two colors.
+gradient_color = ["#4AA5F0", "#C162DE"]
+
+#-- File Panel
+file_panel_fg = "#ABB2BF"
+file_panel_bg = "#21252B"
+file_panel_border = "#3E4452"
+file_panel_border_active = "#4AA5F0"
+file_panel_top_directory_icon = "#D18F52"
+file_panel_top_path = "#D18F52"
+file_panel_item_selected_fg = "#D7DAE0"
+file_panel_item_selected_bg = "#21252B"
+
+#-- Footer
+footer_fg = "#9DA5B4"
+footer_bg = "#21252B"
+footer_border = "#3E4452"
+footer_border_active = "#8CC265"
+
+#-- Sidebar
+sidebar_fg = "#ABB2BF"
+sidebar_bg = "#21252B"
+sidebar_title = "#4AA5F0"
+sidebar_border = "#3E4452"
+sidebar_border_active = "#E05561"
+sidebar_item_selected_fg = "#D7DAE0"
+sidebar_item_selected_bg = "#21252B"
+sidebar_divider = "#3E4452"
+
+#-- Modals
+modal_fg = "#ABB2BF"
+modal_bg = "#21252B"
+modal_border_active = "#42B3C2"
+modal_cancel_fg = "#282C34"
+modal_cancel_bg = "#E05561"
+modal_confirm_fg = "#282C34"
+modal_confirm_bg = "#8CC265"
+
+#-- Help Menu
+help_menu_hotkey = "#42B3C2"
+help_menu_title = "#C162DE"
+
+#-- Special
+cursor = "#4AA5F0"
+correct = "#8CC265"
+error = "#E05561"
+hint = "#4AA5F0"
+cancel = "#D18F52"

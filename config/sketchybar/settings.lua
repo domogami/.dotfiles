@@ -106,7 +106,7 @@ return {
 		},
 	},
 	custom_icons = {
-		family = "SketchybarCustomIcons",
+		family = "SketchybarCustomIconsV2",
 		style = "Regular",
 		-- Options: "without_eyes" (default), "with_eyes"
 		knight_variant = "with_eyes",

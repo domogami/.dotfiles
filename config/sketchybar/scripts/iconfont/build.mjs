@@ -33,8 +33,6 @@ function generateRingGlyph(second) {
   const center = 512;
   const outerRadius = 448;
   const innerRadius = 328;
-  const capRadius = (outerRadius - innerRadius) / 2;
-  const midRadius = (outerRadius + innerRadius) / 2;
 
   const startAngle = -90;
   let sweep = (second + 1) * 6;
@@ -48,8 +46,6 @@ function generateRingGlyph(second) {
   const outerEnd = polar(center, center, outerRadius, endAngle);
   const innerStart = polar(center, center, innerRadius, startAngle);
   const innerEnd = polar(center, center, innerRadius, endAngle);
-  const capStart = polar(center, center, midRadius, startAngle);
-  const capEnd = polar(center, center, midRadius, endAngle);
 
   const arcPath = [
     `M ${f(outerStart.x)} ${f(outerStart.y)}`,
@@ -61,8 +57,6 @@ function generateRingGlyph(second) {
 
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
   <path fill="#000000" d="${arcPath}"/>
-  <circle cx="${f(capStart.x)}" cy="${f(capStart.y)}" r="${capRadius}" fill="#000000"/>
-  <circle cx="${f(capEnd.x)}" cy="${f(capEnd.y)}" r="${capRadius}" fill="#000000"/>
 </svg>`;
 }
 
