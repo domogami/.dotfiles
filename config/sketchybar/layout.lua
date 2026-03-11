@@ -145,6 +145,10 @@ local function apply_density(profile)
 		},
 	})
 
+	sbar.set("calendar.seconds", {
+		width = profile.calendar_seconds_width or 34,
+	})
+
 	sbar.set("calendar.edge_pad", {
 		width = profile.calendar_edge_pad or (settings.group_paddings + 6),
 	})

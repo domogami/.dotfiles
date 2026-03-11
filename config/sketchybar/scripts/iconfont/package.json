@@ -1,0 +1,11 @@
+{
+  "name": "sketchybar-iconfont-builder",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node ./build.mjs && ./node_modules/.bin/fantasticon -c ./fantasticonrc.cjs"
+  },
+  "devDependencies": {
+    "fantasticon": "^4.1.0"
+  }
+}

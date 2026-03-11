@@ -302,6 +302,17 @@ local spaces_indicator = sbar.add("item", {
     }
 })
 
+local spaces_indicator_label_width = 55
+local spaces_indicator_menu_right_pad = 8
+local spaces_indicator_spaces_right_pad = 0
+
+local function apply_spaces_indicator_trailing_padding()
+    local in_spaces_mode = spaces_indicator:query().icon.value == icons.switch.on
+    spaces_indicator:set({
+        padding_right = in_spaces_mode and spaces_indicator_spaces_right_pad or spaces_indicator_menu_right_pad
+    })
+end
+
 -- Event handles
 space_window_observer:subscribe("space_windows_change", function(env)
     for i, workspace in ipairs(workspaces) do
@@ -360,9 +371,18 @@ spaces_indicator:subscribe("swap_menus_and_spaces", function(env)
     spaces_indicator:set({
         icon = currently_on and icons.switch.off or icons.switch.on
     })
+    apply_spaces_indicator_trailing_padding()
 end)
 
 spaces_indicator:subscribe("mouse.entered", function(env)
+    -- Prime the background so it grows with (or slightly ahead of) the text reveal.
+    spaces_indicator:set({
+        background = {
+            color = { alpha = 0.35 },
+            border_color = { alpha = 0.35 }
+        }
+    })
+
     sbar.animate("tanh", 30, function()
         spaces_indicator:set({
             background = {
@@ -377,13 +397,13 @@ spaces_indicator:subscribe("mouse.entered", function(env)
                 color = colors.bg1
             },
             label = {
-                width = "dynamic"
+                width = spaces_indicator_label_width
             }
         })
     end)
 end)
 
-spaces_indicator:subscribe("mouse.exited", function(env)
+spaces_indicator:subscribe({ "mouse.exited", "mouse.exited.global" }, function(env)
     sbar.animate("tanh", 30, function()
         spaces_indicator:set({
             background = {
@@ -407,3 +427,5 @@ end)
 spaces_indicator:subscribe("mouse.clicked", function(env)
     sbar.trigger("swap_menus_and_spaces")
 end)
+
+apply_spaces_indicator_trailing_padding()

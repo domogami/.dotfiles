@@ -44,7 +44,8 @@ return {
 			front_app_truncation_alpha = 0.90,
 			widget_graph_width = 58,
 			calendar_label_width = 58,
-			calendar_edge_pad = 9,
+			calendar_seconds_width = 14,
+			calendar_edge_pad = 11,
 			calendar_cluster_pad = 8,
 		},
 		compact = {
@@ -59,7 +60,8 @@ return {
 			front_app_truncation_alpha = 0.85,
 			widget_graph_width = 52,
 			calendar_label_width = 52,
-			calendar_edge_pad = 7,
+			calendar_seconds_width = 12,
+			calendar_edge_pad = 9,
 			calendar_cluster_pad = 6,
 		},
 	},
@@ -102,6 +104,14 @@ return {
 			["Heavy"] = "Bold",
 			["Black"] = "ExtraBold",
 		},
+	},
+	custom_icons = {
+		family = "SketchybarCustomIcons",
+		style = "Regular",
+		-- Options: "without_eyes" (default), "with_eyes"
+		knight_variant = "with_eyes",
+		knight_size = 17.0,
+		seconds_size = 14.0,
 	},
 	default_font = {
 		text = "SF Pro", -- Used for text

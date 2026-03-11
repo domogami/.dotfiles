@@ -1,6 +1,10 @@
 -- Require the sketchybar module
 sbar = require("sketchybar")
 
+local custom_icon_font = (os.getenv("CONFIG_DIR") or (os.getenv("HOME") .. "/.config/sketchybar"))
+	.. "/assets/fonts/SketchybarCustomIcons.ttf"
+sbar.exec("sketchybar --load-font '" .. custom_icon_font .. "'")
+
 -- Set the bar name, if you are using another bar instance than sketchybar
 -- sbar.set_bar_name("bottom_bar")
 
