@@ -3,25 +3,77 @@ local colors = require("colors")
 local settings = require("settings")
 
 local active_interface = "en0"
+local wifi_interface = "en0"
+local network_provider_interface = nil
 local wifi_up_color = colors.grey
 local wifi_down_color = colors.grey
 local wifi_status_color = colors.white
 local wifi_hover = false
+local apply_wifi_hover
+local wifi
 
 local function trim(value)
     return (value or ""):gsub("^%s+", ""):gsub("%s+$", "")
 end
 
+local function parse_interface_state(output)
+    local ip = trim(output:match("\n%s*inet%s+([%d%.]+)") or output:match("^%s*inet%s+([%d%.]+)") or "")
+    local netmask = trim(output:match("netmask%s+(0x%x+)") or "")
+    local status = trim(output:match("status:%s*(%S+)") or "")
+
+    return {
+        ip = ip,
+        netmask = netmask,
+        status = status,
+        connected = status == "active" and ip ~= ""
+    }
+end
+
+local function netmask_to_dotted(netmask)
+    local hex = trim(netmask):gsub("^0x", "")
+    if #hex ~= 8 then
+        return netmask
+    end
+
+    local octets = {}
+    for index = 1, 8, 2 do
+        octets[#octets + 1] = tostring(tonumber(hex:sub(index, index + 1), 16) or 0)
+    end
+
+    return table.concat(octets, ".")
+end
+
 local function start_network_provider(interface)
+    if not interface or interface == "" or network_provider_interface == interface then
+        return
+    end
+    network_provider_interface = interface
+
     sbar.exec(
-        "killall network_load >/dev/null; $CONFIG_DIR/helpers/event_providers/network_load/bin/network_load "
+        "killall network_load >/dev/null 2>&1; $CONFIG_DIR/helpers/event_providers/network_load/bin/network_load "
             .. interface
             .. " network_update 2.0"
     )
 end
 
+local function detect_wifi_interface(callback)
+    sbar.exec(
+        "networksetup -listallhardwareports | awk '/Hardware Port: (Wi-Fi|AirPort)/{getline; sub(/^Device: /, \"\"); print; exit}'",
+        function(output)
+            local detected = trim(output)
+            if detected ~= "" then
+                wifi_interface = detected
+            end
+
+            if callback then
+                callback(wifi_interface)
+            end
+        end
+    )
+end
+
 local function detect_active_interface(callback)
-    sbar.exec("route -n get default 2>/dev/null | awk '/interface:/{print $2}'", function(output)
+    sbar.exec("netstat -rn -f inet | awk '$1 == \"default\" { print $NF; exit }'", function(output)
         local detected = trim(output)
         if detected ~= "" then
             active_interface = detected
@@ -30,6 +82,22 @@ local function detect_active_interface(callback)
         if callback then
             callback()
         end
+    end)
+end
+
+local function refresh_wifi_status()
+    detect_wifi_interface(function(interface)
+        sbar.exec("ifconfig " .. interface, function(output)
+            local state = parse_interface_state(output)
+            wifi_status_color = state.connected and colors.white or colors.red
+            wifi:set({
+                icon = {
+                    string = state.connected and icons.wifi.connected or icons.wifi.disconnected,
+                    color = wifi_status_color
+                }
+            })
+            apply_wifi_hover()
+        end)
     end)
 end
 
@@ -111,7 +179,7 @@ local wifi_down = sbar.add("item", "widgets.wifi2", {
     y_offset = -4
 })
 
-local wifi = sbar.add("item", "widgets.wifi.padding", {
+wifi = sbar.add("item", "widgets.wifi.padding", {
     position = "right",
     label = {
         drawing = false
@@ -221,7 +289,7 @@ sbar.add("item", {
     width = settings.group_paddings
 })
 
-local function apply_wifi_hover()
+apply_wifi_hover = function()
     wifi_bracket:set({
         background = {
             color = wifi_hover and colors.with_alpha(colors.bg2, 0.22) or colors.transparent,
@@ -291,19 +359,8 @@ wifi_up:subscribe("network_update", function(env)
 end)
 
 wifi:subscribe({"wifi_change", "system_woke"}, function(env)
-    detect_active_interface(function()
-        sbar.exec("ipconfig getifaddr " .. active_interface, function(ip)
-            local connected = not (ip == "")
-            wifi_status_color = connected and colors.white or colors.red
-            wifi:set({
-                icon = {
-                    string = connected and icons.wifi.connected or icons.wifi.disconnected,
-                    color = wifi_status_color
-                }
-            })
-            apply_wifi_hover()
-        end)
-    end)
+    detect_active_interface()
+    refresh_wifi_status()
 end)
 
 local function hide_details()
@@ -327,24 +384,25 @@ local function toggle_details()
                 label = result
             })
         end)
-        sbar.exec("ipconfig getifaddr " .. active_interface, function(result)
-            ip:set({
-                label = result
-            })
+        detect_wifi_interface(function(interface)
+            sbar.exec("ifconfig " .. interface, function(result)
+                local state = parse_interface_state(result)
+                local mask_label = netmask_to_dotted(state.netmask)
+                ip:set({
+                    label = state.ip ~= "" and state.ip or "Disconnected"
+                })
+                mask:set({
+                    label = mask_label ~= "" and mask_label or "Unavailable"
+                })
+                ssid:set({
+                    label = state.connected and "Wi-Fi" or "Not Connected"
+                })
+            end)
         end)
-        sbar.exec("networksetup -getairportnetwork Wi-Fi | sed 's/^Current Wi-Fi Network: //'", function(result)
-            ssid:set({
-                label = result
-            })
-        end)
-        sbar.exec("networksetup -getinfo Wi-Fi | awk -F 'Subnet mask: ' '/^Subnet mask: / {print $2}'", function(result)
-            mask:set({
-                label = result
-            })
-        end)
-        sbar.exec("networksetup -getinfo Wi-Fi | awk -F 'Router: ' '/^Router: / {print $2}'", function(result)
+        sbar.exec("netstat -rn -f inet | awk '$1 == \"default\" && $2 !~ /^link#/ { print $2; exit }'", function(result)
+            local gateway = trim(result)
             router:set({
-                label = result
+                label = gateway ~= "" and gateway or "Unavailable"
             })
         end)
     else
@@ -392,3 +450,4 @@ router:subscribe("mouse.clicked", copy_label_to_clipboard)
 
 apply_wifi_hover()
 detect_active_interface()
+refresh_wifi_status()

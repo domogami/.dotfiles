@@ -9,6 +9,8 @@ local state = {
 	right_signature = "",
 }
 
+local layout_sync_generation = 0
+
 local function get_main_display()
 	local displays = sbar.query("displays")
 	if type(displays) ~= "table" or #displays == 0 then
@@ -213,6 +215,7 @@ local function set_split_bar(profile, left_members, right_members)
 end
 
 local function apply_layout()
+	local changed = false
 	local density_mode = get_density_mode()
 	local density_profile = get_density_profile(density_mode)
 	if state.density_mode ~= density_mode then
@@ -221,6 +224,7 @@ local function apply_layout()
 		state.density_mode = density_mode
 		state.left_signature = ""
 		state.right_signature = ""
+		changed = true
 	end
 
 	local split_mode = is_notched_main_display()
@@ -235,8 +239,9 @@ local function apply_layout()
 			state.mode = "split"
 			state.left_signature = left_signature
 			state.right_signature = right_signature
+			changed = true
 		end
-		return
+		return changed
 	end
 
 	if state.mode ~= "unified" then
@@ -244,22 +249,59 @@ local function apply_layout()
 		state.mode = "unified"
 		state.left_signature = ""
 		state.right_signature = ""
+		changed = true
+	end
+
+	return changed
+end
+
+local function schedule_layout_sync()
+	layout_sync_generation = layout_sync_generation + 1
+	local generation = layout_sync_generation
+	local recheck_delay = tonumber(settings.items.animation.geometry_recheck_delay or 0.35) or 0.35
+
+	sbar.trigger("layout_sync")
+	sbar.delay(recheck_delay, function()
+		if generation == layout_sync_generation then
+			sbar.trigger("layout_sync")
+		end
+	end)
+	sbar.delay(1.0, function()
+		if generation == layout_sync_generation then
+			sbar.trigger("layout_sync")
+		end
+	end)
+end
+
+local function refresh_layout(always_sync)
+	local changed = apply_layout()
+	if changed or always_sync then
+		schedule_layout_sync()
 	end
 end
 
 local layout_watcher = sbar.add("item", "bar.layout.watcher", {
 	drawing = false,
 	updates = true,
-	update_freq = 5,
+	update_freq = 30,
 })
 
-layout_watcher:subscribe({
-	"forced",
-	"routine",
-	"display_change",
-	"swap_menus_and_spaces",
-}, function()
-	apply_layout()
+layout_watcher:subscribe("forced", function()
+	refresh_layout(true)
 end)
 
-sbar.delay(0.3, apply_layout)
+layout_watcher:subscribe("display_change", function()
+	refresh_layout(true)
+end)
+
+layout_watcher:subscribe("swap_menus_and_spaces", function()
+	refresh_layout(true)
+end)
+
+layout_watcher:subscribe("routine", function()
+	refresh_layout(false)
+end)
+
+sbar.delay(0.3, function()
+	refresh_layout(true)
+end)

@@ -81,7 +81,6 @@ local front_app = sbar.add("item", "front_app", {
 			size = 13.0,
 		},
 	},
-	updates = true,
 })
 
 front_app:subscribe("front_app_switched", function(env)

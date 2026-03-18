@@ -63,8 +63,6 @@ behavior:
   startup_behavior: continue
   disable_auto_update: false
   auto_update_delay: '0'
-  draw_cover_art: true
-  draw_cover_art_forced: false
 theme:
   active: 152, 195, 121
   banner: 86, 182, 194

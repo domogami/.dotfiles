@@ -72,6 +72,11 @@ return {
 		animation = {
 			frames = 22,
 			overshoot = 6,
+			travel_frames = 18,
+			settle_frames = 12,
+			overshoot_min = 4,
+			overshoot_max = 8,
+			geometry_recheck_delay = 0.35,
 		},
 		padding = {
 			right = 12,
