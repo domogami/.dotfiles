@@ -2,14 +2,14 @@ right_format = """$battery$time"""
 command_timeout = 3600
 # Prompt: param 2 └─
 [character]
-success_symbol = " [ ](#a9a1e1)"
-error_symbol = " [ ](#ff6c6b)"
+success_symbol = " [❯ ](#a9a1e1)"
+error_symbol = " [❯ ](#ff6c6b)"
 vicmd_symbol = "[  ](#98be65)"
 
 # Username
 [username]
 show_always   = true
-format = "[ ](fg:#7A9C61  bg:none)[ ](fg:#282c34 bg:#7A9C61)[ ](fg:#7A9C61 bg:#98c379)[$user](fg:#282c34 bg:#98c379)[ ](fg:#98c379 bg:none)"
+format = "[⌈](fg:#7A9C61)[  $user ](fg:#98c379 bold)[⌋](fg:#7A9C61) "
 style_user    = "bold green"
 style_root    = "bold red"
 
@@ -22,44 +22,61 @@ style = "dimmed white"
 disabled = true
 
 [battery]
-full_symbol = "󰁹"
-charging_symbol = "󰂄"
-discharging_symbol = "󱟞"
+full_symbol = "􀛨"
+charging_symbol = "􀢋"
+discharging_symbol = "􀛨"
 unknown_symbol = "󰁼"
-# full_symbol = ""
-# charging_symbol = ""
-# discharging_symbol = ""
-# unknown_symbol = ""
 disabled = false
-format = "[ ](fg:#ff6c6b bg:none)[$symbol ](fg:#282c34 bg:#ff6c6b)[ ](fg:#ff6c6b bg:#ff7b7a)[$percentage]($style)[ ](fg:#ff7b7a bg:none)"
+format = "[⌈ $symbol  $percentage ⌋]($style)"
 [[battery.display]]
-style = "fg:#282c34 bg:#ff7b7a"
-threshold=100
+threshold = 15
+style = "fg:#e06c75"
+discharging_symbol = "􀛪"
+
+[[battery.display]]
+threshold = 30
+style = "fg:#e06c75"
+discharging_symbol = "􀛩"
+
+[[battery.display]]
+threshold = 60
+style = "fg:#e5c07b"
+discharging_symbol = "􀺶"
+
+[[battery.display]]
+threshold = 80
+style = "fg:#98c379"
+discharging_symbol = "􀺸"
+
+[[battery.display]]
+threshold = 100
+style = "fg:#98c379"
+discharging_symbol = "􀛨"
 
 # Last param in the first line/row
 [cmd_duration]
 disabled = true
 min_time = 1
-format = "[ ](fg:#9088c8 bg:none)[ ](fg:#282c34 bg:#9088c8)[](fg:#9088c8 bg:#a9a1e1)[ $duration]($style)[](fg:#a9a1e1 bg:none)"
-style = "fg:#282c34 bg:#a9a1e1"
+format = "[⌈](fg:#9088c8)[  $duration ]($style)[⌋](fg:#a9a1e1) "
+style = "fg:#a9a1e1"
 
 # Third param
 [directory]
-format = "[](fg:#d19a66 bg:none)[ ](fg:#282c34 bg:#d19a66)[](fg:#d19a66 bg:#e5c07b)[ $path]($style)[](fg:#e5c07b bg:none) "
-style = "fg:#282c34 bg:#e5c07b"
+format = "[⌈](fg:#d19a66)[  $path ]($style)[⌋](fg:#e5c07b) "
+style = "fg:#e5c07b"
 truncation_length = 3
 truncate_to_repo=false
 
 [git_branch]
-format = "[](fg:#7A9C61 bg:none)[](fg:#282c34 bg:#7A9C61)[](fg:#7A9C61 bg:#98c379)[ $branch]($style)[](fg:#98c379 bg:none) "
-style = "fg:#282c34 bg:#98c379"
+format = "[⌈](fg:#7A9C61)[  $branch ]($style)[⌋](fg:#98c379) "
+style = "fg:#98c379"
 
 [git_commit]
 format = "[\\($hash\\)]($style) [\\($tag\\)]($style)"
 style = "green"
 
 [git_status]
-format="[](fg:#3896d6 bg:none)[ ](fg:#282c34 bg:#3896d6)[ ](fg:#3896d6 bg:#51afef)[$modified](fg:#282c34 bg:#51afef)[$untracked](fg:#282c34 bg:#51afef)[$staged](fg:#282c34 bg:#51afef)[$renamed](fg:#282c34 bg:#51afef)[](fg:#51afef bg:none)"
+format = "[⌈](fg:#3896d6)[  $all_status$ahead_behind ](fg:#51afef)[⌋](fg:#51afef)"
 conflicted = "="
 ahead =	"⇡${count} "
 behind = "⇣${count} "
@@ -90,8 +107,8 @@ style = "purple"
 format = "on [$symbol$branch]($style) "
 
 [time]
-style="fg:#282c34 bg:#51afef"
-format="[](fg:#3896d6 bg:none)[ ](fg:#282c34 bg:#3896d6)[](fg:#3896d6 bg:#51afef)[ $time]($style)[](fg:#51afef bg:none)"
+style = "fg:#51afef"
+format = "[⌈](fg:#3896d6)[  $time ]($style)[⌋](fg:#51afef)"
 time_format = "%R"
 disabled = false
 
@@ -142,7 +159,7 @@ style = "bold blue"
 disabled = false
 symbol   = ""  # Nerd-Font Node.js logo
 style    = "bold blue"
-format = "[ ](fg:#61afef bg:none)[$symbol ](fg:#282c34 bg:#61afef)[ ](fg:#61afef bg:#78c4fd)[via $version](fg:#282c34 bg:#78c4fd)[ ](fg:#78c4fd bg:none)"
+format = "[⌈](fg:#61afef)[ $symbol $version ](fg:#78c4fd)[⌋](fg:#61afef) "
 
 [swift]
 disabled=false
@@ -167,4 +184,3 @@ format = "[$symbol$version]($style) "
 symbol = " "
 
 # Prompt: optional param 1
-

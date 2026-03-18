@@ -6,15 +6,15 @@ const domain = "com.cmuxterm.app";
 const key = "workspaceTabColor.customColors";
 
 const oneDarkPalette = [
-  "#98C379",
-  "#61AFEF",
-  "#E5C07B",
-  "#C678DD",
-  "#56B6C2",
-  "#E06C75",
-  "#D19A66",
-  "#7F848E",
-  "#ABB2BF",
+  "#98C379A6",
+  "#61AFEFA6",
+  "#E5C07BA6",
+  "#C678DDA6",
+  "#56B6C2A6",
+  "#E06C75A6",
+  "#D19A66A6",
+  "#7F848EA6",
+  "#ABB2BFA6",
 ];
 
 execFileSync("defaults", ["write", domain, key, "-array", ...oneDarkPalette], {

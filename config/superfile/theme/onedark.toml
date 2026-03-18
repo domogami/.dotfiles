@@ -31,33 +31,33 @@ gradient_color = ["#4AA5F0", "#C162DE"]
 
 #-- File Panel
 file_panel_fg = "#ABB2BF"
-file_panel_bg = "#21252B"
+file_panel_bg = "#282C34"
 file_panel_border = "#3E4452"
 file_panel_border_active = "#4AA5F0"
 file_panel_top_directory_icon = "#D18F52"
 file_panel_top_path = "#D18F52"
 file_panel_item_selected_fg = "#D7DAE0"
-file_panel_item_selected_bg = "#21252B"
+file_panel_item_selected_bg = "#2C313C"
 
 #-- Footer
 footer_fg = "#9DA5B4"
-footer_bg = "#21252B"
+footer_bg = "#282C34"
 footer_border = "#3E4452"
 footer_border_active = "#8CC265"
 
 #-- Sidebar
 sidebar_fg = "#ABB2BF"
-sidebar_bg = "#21252B"
+sidebar_bg = "#282C34"
 sidebar_title = "#4AA5F0"
 sidebar_border = "#3E4452"
 sidebar_border_active = "#E05561"
 sidebar_item_selected_fg = "#D7DAE0"
-sidebar_item_selected_bg = "#21252B"
+sidebar_item_selected_bg = "#2C313C"
 sidebar_divider = "#3E4452"
 
 #-- Modals
 modal_fg = "#ABB2BF"
-modal_bg = "#21252B"
+modal_bg = "#282C34"
 modal_border_active = "#42B3C2"
 modal_cancel_fg = "#282C34"
 modal_cancel_bg = "#E05561"

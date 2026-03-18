@@ -16,6 +16,7 @@ ssh/known_hosts.old
 
 # Machine-local auth/session files
 config/spotify-tui/.spotify_token_cache.json
+config/tmux/plugins/
 
 # Deprecated Fig app data
 fig/

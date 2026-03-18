@@ -13,15 +13,15 @@ const sessionPath = path.join(
 );
 
 const oneDarkPalette = [
-  "#61AFEF",
-  "#98C379",
-  "#E5C07B",
-  "#C678DD",
-  "#56B6C2",
-  "#E06C75",
-  "#D19A66",
-  "#7F848E",
-  "#ABB2BF",
+  "#61AFEFA6",
+  "#98C379A6",
+  "#E5C07BA6",
+  "#C678DDA6",
+  "#56B6C2A6",
+  "#E06C75A6",
+  "#D19A66A6",
+  "#7F848EA6",
+  "#ABB2BFA6",
 ];
 
 function fail(message) {

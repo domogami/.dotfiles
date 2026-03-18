@@ -1,24 +1,11 @@
 
-# Kiro CLI pre block. Keep at the top of this file.
-[[ -f "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.pre.zsh" ]] && builtin source "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.pre.zsh"
-
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
-# source /opt/homebrew/opt/powerlevel10k/powerlevel10k.zsh-theme
-source /Users/dom/.zsh_themes/bubblified.zsh-theme
-ZSH_THEME="bubblified"
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# Starship is the active prompt. Keep prompt initialization to one system.
 
 # Old Brew x86
 alias brow='arch --x86_64 /usr/local/Homebrew/bin/brew'
 # Homebrew on Apple Silicon
 path=('/opt/homebrew/bin' $path)
+typeset -U path
 export PATH
 
 # NOTE: Tmux iTerm2 integration
@@ -37,6 +24,7 @@ alias v.="open -n -a neovide --args --frame=buttonless $PWD"
 
 alias y="yazi"
 alias ycd='yazi; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
+alias nf="neofetch"
 
 # Use ~/.config/superfile as the default config/hotkey location for superfile.
 spf() {
@@ -86,9 +74,7 @@ export PATH=$PATH:/Users/dom/.spicetify
 export PATH=$PATH:/Users/dom/.cargo/bin
 export PATH=$PATH:/Users/dom/go
 export GOPATH=/Users/$USER/go 
-# GOVERSION=$(brew list go | head -n 1 | cut -d '/' -f 6)
-GOVERSION=1.20.3
-export GOROOT=$(brew --prefix)/Cellar/go/$GOVERSION/libexec
+export GOROOT="/opt/homebrew/opt/go/libexec"
 export PATH=$PATH:$GOROOT/bin
 export PATH=$PATH:$GOPATH/bin
 # fpath+="$HOME/.zsh/zen"
@@ -98,7 +84,9 @@ export PATH=$PATH:$GOPATH/bin
 
 setopt histignorespace
 
-source ~/.iterm2_shell_integration.zsh
+if [[ "$TERM_PROGRAM" == "iTerm.app" ]] && [[ -f ~/.iterm2_shell_integration.zsh ]]; then
+  source ~/.iterm2_shell_integration.zsh
+fi
 
 # pnpm
 export PNPM_HOME="/Users/dom/Library/pnpm"
@@ -111,26 +99,104 @@ export PATH=$PATH:/Users/dom/.local/share/lunarvim
 alias sc="source ~/.zshrc"
 # Fun Spotify Terminal Visualizer
 alias spt='spotatui'
-
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+alias sptl='cd /Users/dom/Documents/GitHub/spotatui && cargo run'
 
 eval "$(zoxide init --cmd cd zsh)"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+lazy_load_nvm() {
+  unset -f nvm node npm npx corepack yarn
+  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+  [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+}
+
+nvm() { lazy_load_nvm; nvm "$@"; }
+node() { lazy_load_nvm; node "$@"; }
+npm() { lazy_load_nvm; npm "$@"; }
+npx() { lazy_load_nvm; npx "$@"; }
+corepack() { lazy_load_nvm; corepack "$@"; }
+yarn() { lazy_load_nvm; yarn "$@"; }
 
 export FPATH="~/Documents/GitHub/eza/completions/zsh:$FPATH"
 
 
 eval "$(atuin init zsh)"
 
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
+# Keep current SDKMAN-managed binaries available without paying init cost on every shell.
+for sdk_candidate_bin in "$SDKMAN_DIR"/candidates/*/current/bin(N); do
+  path=("$sdk_candidate_bin" $path)
+done
 
+lazy_load_sdkman() {
+  unset -f sdk
+  [[ -s "$SDKMAN_DIR/bin/sdkman-init.sh" ]] && source "$SDKMAN_DIR/bin/sdkman-init.sh"
+}
 
+sdk() { lazy_load_sdkman; sdk "$@"; }
 
-# Kiro CLI post block. Keep at the bottom of this file.
-[[ -f "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.post.zsh"
+dom_refresh_neofetch_cache() {
+  local cache_dir="${XDG_CACHE_HOME:-$HOME/.cache}/neofetch"
+  local cache_key="${DOM_NEOFETCH_CACHE_KEY:-startup-v4}"
+  local cache_file="$cache_dir/${cache_key}.txt"
+  local lock_dir="$cache_dir/.${cache_key}.refresh.lock"
+  local tmp_file="$cache_dir/${cache_key}.$$"
+
+  mkdir -p "$cache_dir"
+
+  if ! mkdir "$lock_dir" 2>/dev/null; then
+    return
+  fi
+
+  {
+    if neofetch >| "$tmp_file" 2>/dev/null; then
+      mv -f "$tmp_file" "$cache_file"
+    else
+      rm -f "$tmp_file"
+    fi
+
+    rmdir "$lock_dir" 2>/dev/null
+  } >/dev/null 2>&1 &!
+}
+
+dom_print_neofetch_cached() {
+  local cache_dir="${XDG_CACHE_HOME:-$HOME/.cache}/neofetch"
+  local cache_key="${DOM_NEOFETCH_CACHE_KEY:-startup-v4}"
+  local cache_file="$cache_dir/${cache_key}.txt"
+  local ttl="${DOM_NEOFETCH_TTL:-300}"
+  local -a cache_stat
+  local cache_fresh=0
+
+  mkdir -p "$cache_dir"
+
+  if [[ -f "$cache_file" ]] && zmodload -F zsh/stat b:zstat 2>/dev/null; then
+    zstat -A cache_stat +mtime -- "$cache_file" 2>/dev/null
+
+    if (( ${#cache_stat[@]} && EPOCHSECONDS - cache_stat[1] < ttl )); then
+      cache_fresh=1
+    fi
+  fi
+
+  if [[ -f "$cache_file" ]]; then
+    command cat "$cache_file"
+
+    if (( ! cache_fresh )); then
+      dom_refresh_neofetch_cache
+    fi
+
+    return
+  fi
+
+  if neofetch >| "$cache_file" 2>/dev/null; then
+    command cat "$cache_file"
+  else
+    neofetch
+  fi
+}
+
+if [[ -o interactive ]] && [[ -t 1 ]] && [[ -z "${DOM_NEOFETCH_SHOWN:-}" ]] && command -v neofetch >/dev/null 2>&1; then
+  export DOM_NEOFETCH_SHOWN=1
+  dom_print_neofetch_cached
+fi
