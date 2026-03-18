@@ -60,6 +60,8 @@ behavior:
   sidebar_width_percent: 20
   playbar_height_rows: 6
   library_height_percent: 30
+  draw_cover_art: true
+  draw_cover_art_forced: false
   startup_behavior: continue
   disable_auto_update: false
   auto_update_delay: '0'
